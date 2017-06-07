@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Necro Lands Reborn.CSharp", "Necro Lands Reborn.CSharp.csproj", "{B8FBFF93-1E7B-B319-04F6-B68B2D382F31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Necro Lands Reborn.CSharp.Editor", "Necro Lands Reborn.CSharp.Editor.csproj", "{A96EE3F6-79B7-7DF7-2DBE-EAFFC58A608E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8FBFF93-1E7B-B319-04F6-B68B2D382F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FBFF93-1E7B-B319-04F6-B68B2D382F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FBFF93-1E7B-B319-04F6-B68B2D382F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FBFF93-1E7B-B319-04F6-B68B2D382F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96EE3F6-79B7-7DF7-2DBE-EAFFC58A608E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96EE3F6-79B7-7DF7-2DBE-EAFFC58A608E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96EE3F6-79B7-7DF7-2DBE-EAFFC58A608E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96EE3F6-79B7-7DF7-2DBE-EAFFC58A608E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
