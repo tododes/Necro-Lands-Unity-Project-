@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameSelectionManager : MonoBehaviour {
 
     public static GameSelectionManager singleton;
@@ -15,6 +16,7 @@ public class GameSelectionManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         selectionCamera = GameSelectionCamera.singleton;
+     
 	}
 	
 	// Update is called once per frame
@@ -23,7 +25,11 @@ public class GameSelectionManager : MonoBehaviour {
 	}
 
     public void OpenScene(){
-        string scene = gameModes[selectionCamera.getIndex()].Name;
+        GameMode mode = gameModes[selectionCamera.getIndex()];
+        string scene = mode.Name;
+        mode.Save();
         InterSceneImage.singleton.FinishScene(scene);
     }
+
+   
 }

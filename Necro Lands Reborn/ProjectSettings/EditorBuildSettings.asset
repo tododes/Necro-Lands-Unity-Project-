@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Settings.unity
     guid: aacd1f02834b929429311488053ef653
+  - enabled: 1
+    path: Assets/Ultimate Game Scene.unity
+    guid: e32c30d55dfc33b4e9e03bdab08b9927

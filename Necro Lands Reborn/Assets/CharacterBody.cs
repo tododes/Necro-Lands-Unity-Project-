@@ -6,13 +6,13 @@ public class CharacterBody : TodoBehaviour {
 
     private Enemy me;
     private bool inRange;
-    private Collider collider;
+    private Collider coll;
     private Rigidbody body;
     // Use this for initialization
     void Start () {
         me = Cp<Enemy>();
         inRange = false;
-        collider = Cp<Collider>();
+        coll = Cp<Collider>();
         body = Cp<Rigidbody>();
     }
 	
@@ -38,10 +38,10 @@ public class CharacterBody : TodoBehaviour {
             Bullet bullet = coll.GetComponent<Bullet>();
             int damage = (int)(bullet.GetDamage() * 100 / (100 + (me.GetArmor)));
             me.getDamage(damage);
-            if (me.GetHP <= 0)
-            {
+            if (me.GetHP <= 0){
+                bullet.owner.killEnemy();
                 bullet.owner.GainReward(me.getReward());
-                collider.enabled = false;
+                coll.enabled = false;
                 Destroy(body);
                 Ds(this);
             }

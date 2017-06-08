@@ -6,10 +6,17 @@ public class FPSCharacter : GameActor
     [SerializeField]
     private PlayerData playerData;
 
+    [SerializeField]
+    private int totalKill;
+
     void Start () {
         HP = MaxHP = 100;
         Bounty = 50;
+        totalKill = 0;
 	}
+
+    public int getTotalKill() { return totalKill; }
+    public void killEnemy() { totalKill++; }
 
 	void Update ()
     {

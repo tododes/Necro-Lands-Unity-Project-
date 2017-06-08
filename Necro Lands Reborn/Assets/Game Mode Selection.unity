@@ -1158,10 +1158,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1886938328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b4e34ed94bf66e45bbeebe25f118b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: e783285ea510c1c4fb55e7141f8975de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: 
+  SceneName: Ultimate Game Scene
 --- !u!1 &1915572001
 GameObject:
   m_ObjectHideFlags: 0

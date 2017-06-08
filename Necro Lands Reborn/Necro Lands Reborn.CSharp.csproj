@@ -90,6 +90,9 @@
     <Compile Include="Assets\CharacterBody.cs" />
     <Compile Include="Assets\DailyRewardManager.cs" />
     <Compile Include="Assets\DailyRewardPanel.cs" />
+    <Compile Include="Assets\Game.cs" />
+    <Compile Include="Assets\GameController.cs" />
+    <Compile Include="Assets\GameInitializer.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\Bullet.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\FPSCharacter.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\FPSCharacterController.cs" />
@@ -100,6 +103,7 @@
     <Compile Include="Assets\Gun + Skill\Skill System\FPSSkilledCharacter.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Skill.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\SkillSprite.cs" />
+    <Compile Include="Assets\MissionAccomplishedPanel.cs" />
     <Compile Include="Assets\Node.cs" />
     <Compile Include="Assets\PlayerLevelSlider.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
@@ -149,6 +153,7 @@
     <Compile Include="Assets\Scripts\AreYouSurePanel.cs" />
     <Compile Include="Assets\Scripts\Branch.cs" />
     <Compile Include="Assets\Scripts\Chrono.cs" />
+    <Compile Include="Assets\Scripts\Clock.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
@@ -170,6 +175,7 @@
     <Compile Include="Assets\Scripts\Managers\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\Mission.cs" />
     <Compile Include="Assets\Scripts\MoneyText.cs" />
     <Compile Include="Assets\Scripts\PausePanel.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
@@ -196,6 +202,9 @@
     <Compile Include="Assets\TD Inventory System\ItemSprite.cs" />
     <Compile Include="Assets\TodoBehaviour\TodoBehaviour.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\UltimateGameController.cs" />
+    <Compile Include="Assets\UltimateGameMode.cs" />
+    <Compile Include="Assets\UltimateMission.cs" />
     <Compile Include="Assets\_Complete-Game\MobileInput\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\_Complete-Game\MobileInput\Scripts\Joystick.cs" />
     <Compile Include="Assets\_Complete-Game\MobileInput\Scripts\MobileControlRig.cs" />
