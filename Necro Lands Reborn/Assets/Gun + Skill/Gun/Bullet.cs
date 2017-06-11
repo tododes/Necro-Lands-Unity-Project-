@@ -2,27 +2,27 @@
 using System.Collections;
 
 public class Bullet : MonoBehaviour {
-    [SerializeField] private int damage;
+    [SerializeField] protected int damage;
     public float speed;
     //private Rigidbody rigidBody;
-    private Vector3 startPos;
+    protected Vector3 startPos;
     public FPSCharacter owner { get; protected set; }
 
     [SerializeField]
-    private float Range;
+    protected float Range;
 
     public int GetDamage()
     {
         return damage;
     }
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    protected void Start ()
     {
         //rigidBody = GetComponent<Rigidbody>();
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    protected void Update ()
     {
         //rigidBody.MovePosition(transform.position + transform.forward * speed * Time.deltaTime);
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
@@ -31,5 +31,9 @@ public class Bullet : MonoBehaviour {
 
     public void SetOwner(FPSCharacter character){
         owner = character;
+    }
+
+    public virtual void OnHitEnemy(Enemy enemy, int damage){
+
     }
 }

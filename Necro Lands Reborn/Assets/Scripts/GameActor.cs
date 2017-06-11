@@ -22,7 +22,19 @@ public class GameActor : TodoBehaviour {
     public float GetSpeed { get { return Speed; } protected set { Speed = value; } }
     public int GetBounty { get { return Bounty; } protected set { Bounty = value; } }
 
-    public void getDamage(int amount){
+    public void SlowSpeed(float percentage){
+        Speed -= percentage * Speed;
+    }
+
+    public void getDamage(float amount){
         HP -= amount;
+    }
+
+    public void ModifyAttack(int amount){
+        Attack += amount;
+    }
+
+    public void ModifyArmor(int amount){
+        Armor += amount;
     }
 }

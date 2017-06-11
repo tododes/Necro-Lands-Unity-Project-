@@ -15,7 +15,7 @@ public class FPSCharacterController : MonoBehaviour {
         transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * Time.deltaTime * 270f, 0));
         desiredRotation.y = transform.eulerAngles.y;
         transform.eulerAngles = desiredRotation;
-        transform.Translate(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        transform.Translate(Input.GetAxis("Horizontal") * 0.75f, 0, Input.GetAxis("Vertical") * 0.75f);
 	}
 }
  

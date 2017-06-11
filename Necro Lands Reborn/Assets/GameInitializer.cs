@@ -19,10 +19,6 @@ public class GameInitializer : MonoBehaviour {
             controllerDatabase.Add(gameNames[i], contollers[i]);
         }
 
-        foreach(KeyValuePair<string, GameController> cg in controllerDatabase){
-            Debug.Log(cg.Key);
-        }
-        //Debug.Log(Application.loadedLevelName);
         GameObject go = controllerDatabase[Application.loadedLevelName].gameObject;
         Instantiate(go);
 	}

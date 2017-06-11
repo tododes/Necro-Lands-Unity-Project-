@@ -95,6 +95,10 @@ public class Gun : MonoBehaviour {
         }
     }
 
+    public void SetBulletToBeInstantiated(GameObject b){
+        bullet = b;
+    }
+
     public void Shoot()
     {
         GameObject g = Instantiate(bullet, gunEnd.position, gunEnd.rotation) as GameObject;

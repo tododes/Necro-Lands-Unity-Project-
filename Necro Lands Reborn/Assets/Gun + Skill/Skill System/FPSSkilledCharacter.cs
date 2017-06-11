@@ -5,20 +5,27 @@ using System.Collections.Generic;
 public class FPSSkilledCharacter : FPSCharacter
 {
     [SerializeField]
-    List<Skill> skills = new List<Skill>();
+    private Skill[] skills;
     List<KeyCode> keys = new List<KeyCode>();
 
-    SkillSprite[] sprites;
+    [SerializeField]
+    private SkillSprite[] sprites;
+
+    void OnEnable(){
+        skills = GetComponentsInChildren<Skill>();
+        for (int i = 0; i < skills.Length; i++){
+            keys.Add(KeyCode.Alpha1 + i);
+        }
+        for (int i = 0; i < skills.Length; i++){
+            sprites[i].SetKeyCode(keys[i]);
+            sprites[i].SetSkill(skills[i]);
+            skills[i].setOwner(this);
+        }
+    }
 
     void Start()
     {
-        sprites = FindObjectsOfType<SkillSprite>();
-        for (int i = 0; i < skills.Count; i++)
-        {
-            keys[i] = KeyCode.Alpha1 + i;
-            sprites[i].SetKeyCode(keys[i]);
-            sprites[i].SetSkill(skills[i]);
-        }
+ 
     }
 
     void Update()

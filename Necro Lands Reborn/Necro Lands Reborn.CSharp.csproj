@@ -87,9 +87,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Aura.cs" />
     <Compile Include="Assets\CharacterBody.cs" />
     <Compile Include="Assets\DailyRewardManager.cs" />
     <Compile Include="Assets\DailyRewardPanel.cs" />
+    <Compile Include="Assets\EnemyBody.cs" />
     <Compile Include="Assets\Game.cs" />
     <Compile Include="Assets\GameController.cs" />
     <Compile Include="Assets\GameInitializer.cs" />
@@ -97,13 +99,22 @@
     <Compile Include="Assets\Gun + Skill\Gun\FPSCharacter.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\FPSCharacterController.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\Flamethrower.cs" />
+    <Compile Include="Assets\Gun + Skill\Gun\GregoryBody.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\Gun.cs" />
+    <Compile Include="Assets\Gun + Skill\Gun\MiraBullet.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\Spray.cs" />
+    <Compile Include="Assets\Gun + Skill\Gun\TrevorBullet.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\WaterSpray.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\FPSSkilledCharacter.cs" />
+    <Compile Include="Assets\Gun + Skill\Skill System\GregoryPassiveSkill.cs" />
+    <Compile Include="Assets\Gun + Skill\Skill System\LucySkill.cs" />
+    <Compile Include="Assets\Gun + Skill\Skill System\MiraSkill.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Skill.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\SkillSprite.cs" />
+    <Compile Include="Assets\Gun + Skill\Skill System\TrevorPassiveSkill.cs" />
     <Compile Include="Assets\MissionAccomplishedPanel.cs" />
+    <Compile Include="Assets\Monologue.cs" />
+    <Compile Include="Assets\MonologueController.cs" />
     <Compile Include="Assets\Node.cs" />
     <Compile Include="Assets\PlayerLevelSlider.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
