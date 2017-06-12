@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6b14dd76aacdeba40b8d8029d9a6681c
+timeCreated: 1497302585
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - sprite: {instanceID: 0}
+  - owner: {instanceID: 0}
+  - gun: {instanceID: 0}
+  - sonic: {fileID: 1158079109252742, guid: 23bb6f326575d444282a251a7d33cc57, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

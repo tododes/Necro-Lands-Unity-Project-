@@ -5,8 +5,8 @@ using UnityEngine;
 public class Enemy : GameActor {
 
     public int GoldGain { get; protected set; }
+    public int ID;
    
-
     [SerializeField] private Reward reward;
 
     void Start(){
@@ -26,4 +26,10 @@ public class Enemy : GameActor {
     //    if (coll.name == "WaterSprayAOE")
     //        HP -= 10f * Time.deltaTime;
     //}
+
+    public override bool Equals(object other)
+    {
+        Enemy otherEnemy = (Enemy)other;
+        return (otherEnemy.ID == ID) && (otherEnemy.gameObject.name == otherEnemy.gameObject.name);
+    }
 }

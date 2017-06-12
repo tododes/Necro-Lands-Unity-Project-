@@ -68,7 +68,7 @@ public class TodoBehaviour : MonoBehaviour {
 
     public void r_a(Vector3 dir, float speed)
     {
-        transform.Translate(dir * speed * Time.deltaTime);
+        transform.Rotate(dir * speed * Time.deltaTime);
     }
 
     public void En(MonoBehaviour comp)

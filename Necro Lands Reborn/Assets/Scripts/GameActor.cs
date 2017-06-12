@@ -45,4 +45,6 @@ public class GameActor : TodoBehaviour {
     public void ModifyArmor(float amount){
         Armor += amount;
     }
+
+    public bool isDead() { return HP <= 0f; }
 }
