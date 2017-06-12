@@ -29,8 +29,7 @@ public class SkillSprite : MonoBehaviour {
     {
 	    if(skill)
         {
-            if(Input.GetKeyDown(key) && skill.Ready())
-            {
+            if(Input.GetKeyDown(key) && skill.Ready()){
                 skill.Use();
             }
             image.sprite = skill.sprite;

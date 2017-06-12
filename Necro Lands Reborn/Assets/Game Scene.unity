@@ -2592,6 +2592,45 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1074919525681178, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654053483218830, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360257815108326, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471400698746944, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833269060085098, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069998444366638, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114052936460511156, guid: 64b4c2f221c46624daa46836bc2bde2b,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114052936460511156, guid: 64b4c2f221c46624daa46836bc2bde2b,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114052936460511156, guid: 64b4c2f221c46624daa46836bc2bde2b,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114899123389621412, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
@@ -2945,13 +2984,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1663335000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d70fe843c094ba4e925e1359a96bf9b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0039e1fc48b9383479aa47ca9f9073f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 63be228fdac1d42338c63d3b4775123e, type: 3}
   owner: {fileID: 0}
   gun: {fileID: 0}
-  MiraBullet: {fileID: 1984659391432758, guid: 59e0a0bdfd0437040a6a17ed54841da6, type: 2}
+  damage: 30
+  controller: {fileID: 0}
 --- !u!1 &1821548351
 GameObject:
   m_ObjectHideFlags: 0

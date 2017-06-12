@@ -26,7 +26,7 @@ public class Skill : MonoBehaviour {
 	}
 
     public bool Ready(){
-        return (coolDownStatus == 0.000f);
+        return (coolDownStatus <= 0.000f);
     }
 
     public virtual void InitializeSkill(){

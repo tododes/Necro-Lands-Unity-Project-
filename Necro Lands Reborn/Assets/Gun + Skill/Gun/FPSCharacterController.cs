@@ -4,6 +4,8 @@ using System.Collections;
 public class FPSCharacterController : MonoBehaviour {
 
     private Vector3 desiredRotation;
+
+   
 	// Use this for initialization
 	void Start () {
         desiredRotation = new Vector3(0, 0, 0);

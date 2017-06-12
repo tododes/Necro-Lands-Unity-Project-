@@ -37,4 +37,12 @@ public class GameActor : TodoBehaviour {
     public void ModifyArmor(int amount){
         Armor += amount;
     }
+
+    public void ModifyAttack(float amount){
+        Attack += amount;
+    }
+
+    public void ModifyArmor(float amount){
+        Armor += amount;
+    }
 }

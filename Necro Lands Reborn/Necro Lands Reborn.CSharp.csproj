@@ -106,7 +106,10 @@
     <Compile Include="Assets\Gun + Skill\Gun\TrevorBullet.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\WaterSpray.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\FPSSkilledCharacter.cs" />
+    <Compile Include="Assets\Gun + Skill\Skill System\GregoryActiveSkill1.cs" />
+    <Compile Include="Assets\Gun + Skill\Skill System\GregoryActiveSkill2.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\GregoryPassiveSkill.cs" />
+    <Compile Include="Assets\Gun + Skill\Skill System\LucyActiveSkill1.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\LucySkill.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\MiraSkill.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Skill.cs" />
