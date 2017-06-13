@@ -1400,28 +1400,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &759231351 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1386781829318580, guid: 3d184e39aaba2924586e544f317d0a35,
-    type: 2}
-  m_PrefabInternal: {fileID: 1430047586}
---- !u!114 &759231353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 759231351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9822801a4693b43b754c3198de7487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  owner: {fileID: 0}
-  gun: {fileID: 0}
-  damage: 25
-  InActiveRange: 0
-  AreaRange: 7
 --- !u!1 &791772356 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1471400698746944, guid: 64b4c2f221c46624daa46836bc2bde2b,
@@ -1741,26 +1719,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1111878852 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1794984016115610, guid: 3d184e39aaba2924586e544f317d0a35,
-    type: 2}
-  m_PrefabInternal: {fileID: 1430047586}
---- !u!114 &1111878853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1111878852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b14dd76aacdeba40b8d8029d9a6681c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  owner: {fileID: 0}
-  gun: {fileID: 0}
-  sonic: {fileID: 1158079109252742, guid: 23bb6f326575d444282a251a7d33cc57, type: 2}
 --- !u!1 &1284385951 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1471400698746944, guid: 64b4c2f221c46624daa46836bc2bde2b,
@@ -1917,17 +1875,34 @@ Prefab:
       propertyPath: sprites.Array.data[2]
       value: 
       objectReference: {fileID: 335004048}
-    - target: {fileID: 114425382886863146, guid: 3d184e39aaba2924586e544f317d0a35,
+    - target: {fileID: 114383309769976516, guid: 3d184e39aaba2924586e544f317d0a35,
         type: 2}
-      propertyPath: STYPE
-      value: 0
+      propertyPath: Attack
+      value: 20
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114106303322374454, guid: 3d184e39aaba2924586e544f317d0a35, type: 2}
-    - {fileID: 114176994526082512, guid: 3d184e39aaba2924586e544f317d0a35, type: 2}
-    - {fileID: 114954125419525322, guid: 3d184e39aaba2924586e544f317d0a35, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d184e39aaba2924586e544f317d0a35, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1430047587 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1386781829318580, guid: 3d184e39aaba2924586e544f317d0a35,
+    type: 2}
+  m_PrefabInternal: {fileID: 1430047586}
+--- !u!114 &1430047588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1430047587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad54f79354d2a8644b631202b1a1e7ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  owner: {fileID: 0}
+  gun: {fileID: 0}
+  miraGun: {fileID: 1445044527299692, guid: 654f41f824ab08741bb11b2aa8540e4d, type: 2}
 --- !u!1 &1467825618
 GameObject:
   m_ObjectHideFlags: 0

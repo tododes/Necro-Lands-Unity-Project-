@@ -114,12 +114,14 @@
     <Compile Include="Assets\Gun + Skill\Skill System\Lucy\LucyActiveSkill1.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Lucy\LucyActiveSkill2.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Lucy\LucySkill.cs" />
+    <Compile Include="Assets\Gun + Skill\Skill System\Mira\MiraActiveSkill1.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Mira\MiraSkill.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Skill.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\SkillSprite.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorActiveSkill1.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorActiveSkill2.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorPassiveSkill.cs" />
+    <Compile Include="Assets\MiraGun.cs" />
     <Compile Include="Assets\MissionAccomplishedPanel.cs" />
     <Compile Include="Assets\Monologue.cs" />
     <Compile Include="Assets\MonologueController.cs" />

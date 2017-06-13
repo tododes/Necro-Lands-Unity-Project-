@@ -3,29 +3,29 @@ using System.Collections;
 
 public class Gun : MonoBehaviour {
 
-    public FPSCharacter owner { private get; set; }
+    public FPSCharacter owner { protected get; set; }
 
     [SerializeField]
-    private SHOOTTYPE STYPE;
-    private enum SHOOTTYPE
+    protected SHOOTTYPE STYPE;
+    protected enum SHOOTTYPE
     {
         SINGLE, ASSAULT, BURSTFIRE, FLAMETHROWER
     }
     [SerializeField]
-    private GameObject bullet;
+    protected GameObject bullet;
 
     [SerializeField]
-    private Transform gunEnd;
+    protected Transform gunEnd;
 
     [SerializeField]
-    private float intervalBetweenBullets;
-    private float currInterval;
-    private int BurstFireCount;
-    private float BurstFireWaitInterval;
+    protected float intervalBetweenBullets;
+    protected float currInterval;
+    protected int BurstFireCount;
+    protected float BurstFireWaitInterval;
 
 
     [SerializeField]
-    private int TotalAmmo, StockAmmo, CurrentStockAmmo;
+    protected int TotalAmmo, StockAmmo, CurrentStockAmmo;
 
 	protected void Start ()
     {
@@ -99,7 +99,7 @@ public class Gun : MonoBehaviour {
         bullet = b;
     }
 
-    public void Shoot()
+    public virtual void Shoot()
     {
         GameObject g = Instantiate(bullet, gunEnd.position, gunEnd.rotation) as GameObject;
         g.GetComponent<Bullet>().SetOwner(owner);

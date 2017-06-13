@@ -86,7 +86,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4500496686613554}
-  - component: {fileID: 114954125419525322}
   m_Layer: 0
   m_Name: Skill 3
   m_TagString: Untagged
@@ -118,7 +117,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4234069077205906}
-  - component: {fileID: 114106303322374454}
   m_Layer: 0
   m_Name: Skill 1
   m_TagString: Untagged
@@ -173,7 +171,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4256331293431946}
-  - component: {fileID: 114176994526082512}
   m_Layer: 0
   m_Name: Skill 2
   m_TagString: Untagged
@@ -648,36 +645,6 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072293150522060}
   m_Enabled: 1
---- !u!114 &114106303322374454
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1386781829318580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 702040dd13e3b5544ae3c595f05f9806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 722a41ac62e4d4b79916816cb8f65986, type: 3}
-  owner: {fileID: 0}
-  gun: {fileID: 0}
---- !u!114 &114176994526082512
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1794984016115610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0039e1fc48b9383479aa47ca9f9073f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 63be228fdac1d42338c63d3b4775123e, type: 3}
-  owner: {fileID: 0}
-  gun: {fileID: 0}
-  damage: 30
-  controller: {fileID: 0}
 --- !u!114 &114342248919682350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -726,7 +693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3000dda1a7c6cf14396afb912d08fad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  STYPE: 1
+  STYPE: 0
   bullet: {fileID: 1162590473075772, guid: 998e2a43ce1226f48b6f087793479564, type: 2}
   gunEnd: {fileID: 4972307197225258}
   intervalBetweenBullets: 0.1
@@ -744,23 +711,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114954125419525322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1252381956383472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a3cdd3108767b74b8cd42ad79050447, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 8153546d15afd4dbeae0a3fbad5d2e67, type: 3}
-  owner: {fileID: 0}
-  gun: {fileID: 0}
-  CylinderPrefab: {fileID: 1973909701067262, guid: 647a8cb302e571a4a8acfabbdfa261fb,
-    type: 2}
-  MyCylinder: {fileID: 0}
 --- !u!124 &124141082946557218
 Behaviour:
   m_ObjectHideFlags: 1

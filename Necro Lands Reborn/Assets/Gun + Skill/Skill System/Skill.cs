@@ -13,9 +13,9 @@ public class Skill : MonoBehaviour {
     public void setOwner(GameActor o) { owner = o; }
 
 	protected virtual void Start (){
+        InitializeSkill();
         coolDownStatus = 0.000f;
         gun = owner.GetComponentInChildren<Gun>();
-        InitializeSkill();
 	}
 
     protected virtual void Update (){
