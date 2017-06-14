@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Aura.cs" />
+    <Compile Include="Assets\BotAI.cs" />
     <Compile Include="Assets\CharacterBody.cs" />
     <Compile Include="Assets\DailyRewardManager.cs" />
     <Compile Include="Assets\DailyRewardPanel.cs" />
@@ -218,6 +219,7 @@
     <Compile Include="Assets\Scripts\ShopManager.cs" />
     <Compile Include="Assets\Scripts\SkillTreeController.cs" />
     <Compile Include="Assets\Scripts\StorageItemView.cs" />
+    <Compile Include="Assets\SensitivityLine.cs" />
     <Compile Include="Assets\TD Inventory System\InventoryManager.cs" />
     <Compile Include="Assets\TD Inventory System\Item.cs" />
     <Compile Include="Assets\TD Inventory System\ItemSprite.cs" />

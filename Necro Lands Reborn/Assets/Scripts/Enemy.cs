@@ -30,6 +30,6 @@ public class Enemy : GameActor {
     public override bool Equals(object other)
     {
         Enemy otherEnemy = (Enemy)other;
-        return (otherEnemy.ID == ID) && (otherEnemy.gameObject.name == otherEnemy.gameObject.name);
+        return (otherEnemy.ID == ID) && (gameObject.name == otherEnemy.gameObject.name);
     }
 }

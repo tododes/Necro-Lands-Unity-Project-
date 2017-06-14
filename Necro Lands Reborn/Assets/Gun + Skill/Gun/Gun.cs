@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Gun : MonoBehaviour {
+public class Gun : TodoBehaviour {
 
     public FPSCharacter owner { protected get; set; }
 
@@ -27,12 +27,15 @@ public class Gun : MonoBehaviour {
     [SerializeField]
     protected int TotalAmmo, StockAmmo, CurrentStockAmmo;
 
+    private Animation anim;
+
 	protected void Start ()
     {
         BurstFireCount = 0;
         currInterval = 0f;
         BurstFireWaitInterval = 0f;
         owner = transform.parent.GetComponent<FPSCharacter>();
+        anim = Cp<Animation>();
 	}
 
     protected void Update ()
@@ -62,6 +65,7 @@ public class Gun : MonoBehaviour {
 
                 if (Input.GetMouseButton(0))
                 {
+                    
                     if (currInterval == 0f)
                     {
                         if (BurstFireCount < 3)
@@ -101,6 +105,9 @@ public class Gun : MonoBehaviour {
 
     public virtual void Shoot()
     {
+        if (anim.isPlaying)
+            anim.Stop();
+        anim.Play();
         GameObject g = Instantiate(bullet, gunEnd.position, gunEnd.rotation) as GameObject;
         g.GetComponent<Bullet>().SetOwner(owner);
         CurrentStockAmmo--;

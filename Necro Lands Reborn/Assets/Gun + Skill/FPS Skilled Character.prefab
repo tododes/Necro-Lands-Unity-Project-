@@ -102,6 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4281403595713736}
   - component: {fileID: 114425382886863146}
+  - component: {fileID: 111997864462053592}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -301,7 +302,7 @@ Transform:
   - {fileID: 4164378190381126}
   m_Father: {fileID: 4000156543274596}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 10.1690645}
 --- !u!4 &4351023220764692
 Transform:
   m_ObjectHideFlags: 1
@@ -645,6 +646,21 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072293150522060}
   m_Enabled: 1
+--- !u!111 &111997864462053592
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1271660114990642}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b37533fdcd9595047a467f832ce2a4bf, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b37533fdcd9595047a467f832ce2a4bf, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114342248919682350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -669,7 +685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHP: 0
   HP: 0
-  Attack: 0
+  Attack: 20
   SpAttack: 0
   Armor: 0
   SpArmor: 0
