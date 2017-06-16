@@ -23,9 +23,11 @@ public class Interactable : MonoBehaviour {
         }
     }
 
-    protected virtual void OnTriggerExit(Collider coll)
-    {
-  
+    protected virtual void OnTriggerExit(Collider coll){
+        if (coll.tag.Contains("Player")){
+            FPSCharacter character = coll.GetComponent<FPSCharacter>();
+            OnStopReact(character);
+        }
     }
 
     public virtual void Interact(FPSCharacter character){
@@ -37,8 +39,7 @@ public class Interactable : MonoBehaviour {
     }
 
     public virtual void OnStopReact(FPSCharacter character){
+        character.getPlayerInteraction().setInteractable(null);
         visitingCharacter = null;
     }
-
-
 }

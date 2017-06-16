@@ -17,14 +17,15 @@ public class WeaponManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        Debug.Log(Input.GetAxis("Mouse ScrollWheel"));
 	}
 
     public void AddGunToList(Gun gun){
-        guns.Add(gun);
-        GameObject g = Instantiate(gun.gameObject, gunHolder) as GameObject;
+        //guns.Add(gun);
+        Gun g = Instantiate<Gun>(gun, gunHolder);
+        guns.Add(g);
         g.transform.localPosition = Vector3.zero;
-        g.SetActive(false);
+        g.gameObject.SetActive(false);
     }
 
     public Gun getGunAt(int i){

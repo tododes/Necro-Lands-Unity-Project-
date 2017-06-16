@@ -8,6 +8,7 @@ public class WeaponShopItem : TodoBehaviour {
     [SerializeField] private Gun gun;
     [SerializeField] private int price;
     [SerializeField] private Button MyButton;
+    [SerializeField] private Sprite sprite;
 
     public FPSCharacter visitingCharacter;
 
@@ -24,5 +25,9 @@ public class WeaponShopItem : TodoBehaviour {
 
     public void GiveGunToPlayer(){
         visitingCharacter.getWeaponManager().AddGunToList(gun);
+    }
+
+    public void setSprite(Sprite s){
+        sprite = s;
     }
 }

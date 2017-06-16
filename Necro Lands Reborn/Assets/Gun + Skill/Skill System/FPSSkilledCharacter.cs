@@ -27,10 +27,7 @@ public class FPSSkilledCharacter : FPSCharacter
         weaponManager = Cp_C<WeaponManager>();
     }
 
-    void Start()
-    {
  
-    }
 
     void Update()
     {

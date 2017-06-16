@@ -3,14 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponShop : Interactable {
-    private WeaponShopItem[] shopItem;
-    [SerializeField] private GameObject weaponGUI;
+    [SerializeField] private Canvas weaponGUI;
+    [SerializeField] private Gun[] guns;
+    [SerializeField] private WeaponShopItem[] weapons;
  
 	// Use this for initialization
 	void Start () {
         ThereIsAPlayerVisiting = false;
-        weaponGUI = transform.GetChild(0).gameObject;
-        weaponGUI.SetActive(false);
+        for (int i = 0; i < guns.Length; i++){
+            if(guns[i].getSprite())
+                weapons[i].setSprite(guns[i].getSprite());
+        }
+        weaponGUI = transform.GetChild(0).gameObject.GetComponent<Canvas>();
+        weaponGUI.enabled = false;
+       
 	}
 	
 	// Update is called once per frame
@@ -28,8 +34,7 @@ public class WeaponShop : Interactable {
 
     protected override void OnTriggerExit(Collider coll)
     {
-        if (coll.tag.Contains("Player"))
-        {
+        if (coll.tag.Contains("Player")){
             OnStopReact(coll.GetComponent<FPSCharacter>());
         }
     }
@@ -38,7 +43,8 @@ public class WeaponShop : Interactable {
     {
         base.OnStartReact(character);
         visitingCharacter.getPlayerInteraction().setInteractable(this);
-        foreach (WeaponShopItem w in shopItem)
+        //Debug.Log(shop);
+        foreach (WeaponShopItem w in weapons)
             w.visitingCharacter = visitingCharacter;
         ThereIsAPlayerVisiting = true;
     }
@@ -46,12 +52,13 @@ public class WeaponShop : Interactable {
     public override void OnStopReact(FPSCharacter character)
     {
         base.OnStopReact(character);
-        foreach (WeaponShopItem w in shopItem)
+        weaponGUI.enabled = false;
+        foreach (WeaponShopItem w in weapons)
             w.visitingCharacter = null;
         ThereIsAPlayerVisiting = false;
     }
 
     public override void Interact(FPSCharacter character){
-        weaponGUI.SetActive(true);
+        weaponGUI.enabled = true;
     }
 }

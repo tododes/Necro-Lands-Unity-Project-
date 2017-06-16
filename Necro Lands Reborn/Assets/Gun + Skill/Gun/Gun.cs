@@ -23,14 +23,18 @@ public class Gun : TodoBehaviour {
     protected int BurstFireCount;
     protected float BurstFireWaitInterval;
 
+    [SerializeField]
+    private Sprite sprite;
 
     [SerializeField]
     protected int TotalAmmo, StockAmmo, CurrentStockAmmo;
 
     private Animation anim;
+    public Sprite getSprite(){
+        return sprite;
+    }
 
-	protected void Start ()
-    {
+	protected void Start (){
         BurstFireCount = 0;
         currInterval = 0f;
         BurstFireWaitInterval = 0f;

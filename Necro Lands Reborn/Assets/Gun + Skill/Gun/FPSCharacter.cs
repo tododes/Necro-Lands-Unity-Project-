@@ -24,10 +24,12 @@ public class FPSCharacter : GameActor
         return weaponManager;
     }
 
-    void Start () {
+    protected void Start () {
         HP = MaxHP = 100;
         Bounty = 50;
         totalKill = 0;
+        weaponManager = Cp_C<WeaponManager>();
+        MyInteraction = Cp<PlayerInteraction>();
 	}
 
     public int getTotalKill() { return totalKill; }
