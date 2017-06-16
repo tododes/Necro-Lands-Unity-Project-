@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class FPSCharacter : GameActor
 {
@@ -8,6 +9,20 @@ public class FPSCharacter : GameActor
 
     [SerializeField]
     private int totalKill;
+
+    [SerializeField]
+    private WeaponManager weaponManager;
+
+    [SerializeField]
+    private PlayerInteraction MyInteraction;
+
+    public PlayerInteraction getPlayerInteraction(){
+        return MyInteraction;
+    }
+
+    public WeaponManager getWeaponManager(){
+        return weaponManager;
+    }
 
     void Start () {
         HP = MaxHP = 100;

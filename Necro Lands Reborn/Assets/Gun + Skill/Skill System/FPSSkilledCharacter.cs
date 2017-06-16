@@ -11,6 +11,9 @@ public class FPSSkilledCharacter : FPSCharacter
     [SerializeField]
     private SkillSprite[] sprites;
 
+    [SerializeField]
+    private WeaponManager weaponManager;
+
     void OnEnable(){
         skills = GetComponentsInChildren<Skill>();
         for (int i = 0; i < skills.Length; i++){
@@ -21,6 +24,7 @@ public class FPSSkilledCharacter : FPSCharacter
             sprites[i].SetSkill(skills[i]);
             skills[i].setOwner(this);
         }
+        weaponManager = Cp_C<WeaponManager>();
     }
 
     void Start()

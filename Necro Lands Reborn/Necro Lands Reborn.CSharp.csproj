@@ -127,6 +127,7 @@
     <Compile Include="Assets\Monologue.cs" />
     <Compile Include="Assets\MonologueController.cs" />
     <Compile Include="Assets\Node.cs" />
+    <Compile Include="Assets\PlayerInteraction.cs" />
     <Compile Include="Assets\PlayerLevelSlider.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -190,6 +191,7 @@
     <Compile Include="Assets\Scripts\GameSelectionManager.cs" />
     <Compile Include="Assets\Scripts\HPBar.cs" />
     <Compile Include="Assets\Scripts\InterSceneImage.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\InventoryItemImage.cs" />
     <Compile Include="Assets\Scripts\ItemImageController.cs" />
     <Compile Include="Assets\Scripts\ItemOptionButton.cs" />
@@ -229,6 +231,9 @@
     <Compile Include="Assets\UltimateGameController.cs" />
     <Compile Include="Assets\UltimateGameMode.cs" />
     <Compile Include="Assets\UltimateMission.cs" />
+    <Compile Include="Assets\WeaponManager.cs" />
+    <Compile Include="Assets\WeaponShop.cs" />
+    <Compile Include="Assets\WeaponShopItem.cs" />
     <Compile Include="Assets\_Complete-Game\MobileInput\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\_Complete-Game\MobileInput\Scripts\Joystick.cs" />
     <Compile Include="Assets\_Complete-Game\MobileInput\Scripts\MobileControlRig.cs" />
