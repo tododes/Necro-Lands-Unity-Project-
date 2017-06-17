@@ -38,7 +38,7 @@ public class Gun : TodoBehaviour {
         BurstFireCount = 0;
         currInterval = 0f;
         BurstFireWaitInterval = 0f;
-        owner = transform.parent.GetComponent<FPSCharacter>();
+        owner = transform.parent.parent.GetComponent<FPSCharacter>();
         anim = Cp<Animation>();
 	}
 

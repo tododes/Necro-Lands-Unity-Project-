@@ -1007,7 +1007,15 @@ MonoBehaviour:
   - {fileID: 2002058507}
   - {fileID: 287676136}
   - {fileID: 1014328410}
-  playerData: {fileID: 11400000, guid: 947002ca101206344b05d71495261c88, type: 2}
+  playerData:
+    TotalMoney: 0
+    Name: 
+    Level: 0
+    Exp: 0
+    Token: 0
+  id:
+    currentSavedItems: []
+    allSavedItems: []
 --- !u!4 &1363064360
 Transform:
   m_ObjectHideFlags: 0
@@ -1417,7 +1425,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1363064359}
-        m_MethodName: SetPlayerName
+        m_MethodName: SavePlayerName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -10,6 +10,8 @@ public class EnemyAI : TodoBehaviour {
     private NavMeshAgent agent;
     private Enemy myself;
     private Animator anim;
+    private bool DeadProcess;
+
 	// Use this for initialization
 	void Start () {
         destination = new Vector3(0, pos.y, 0);
@@ -28,8 +30,17 @@ public class EnemyAI : TodoBehaviour {
             agent.SetDestination(destination);
         }
         else{
-            Debug.Log("Is dead");
-            Ds(this);
+            if (!DeadProcess){
+                StartCoroutine(ProcessDeath());
+                DeadProcess = true;
+            }
         }
+    }
+
+    private IEnumerator ProcessDeath(){
+        //AnimatorStateInfo animInfo = anim.GetCurrentAnimatorStateInfo(0);
+        yield return new WaitForSeconds(2);
+        Debug.Log("Is dead");
+        gameObject.SetActive(false);
     }
 }

@@ -210,7 +210,7 @@ Prefab:
       value: Hellephant (3)
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 114899123389621412, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &31298667
@@ -297,7 +297,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: this scene
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -454,6 +454,11 @@ Prefab:
       propertyPath: sprites.Array.data[2]
       value: 
       objectReference: {fileID: 335004048}
+    - target: {fileID: 111895166143666788, guid: 3d184e39aaba2924586e544f317d0a35,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d184e39aaba2924586e544f317d0a35, type: 2}
   m_IsPrefabParent: 0
@@ -1587,7 +1592,7 @@ Prefab:
       value: Hellephant (2)
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 114899123389621412, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &675596307
@@ -1831,7 +1836,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 744355269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.58, y: -0.1, z: 18.86}
+  m_LocalPosition: {x: -20.445, y: -0.1, z: 18.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2046,6 +2051,26 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114459118770366040, guid: 04ef6698c4febd949ac452bd2f6ccb18,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114459118770366040, guid: 04ef6698c4febd949ac452bd2f6ccb18,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114459118770366040, guid: 04ef6698c4febd949ac452bd2f6ccb18,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114459118770366040, guid: 04ef6698c4febd949ac452bd2f6ccb18,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.7706643
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 04ef6698c4febd949ac452bd2f6ccb18, type: 2}
@@ -2367,34 +2392,6 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
---- !u!1 &1284385951 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1471400698746944, guid: 64b4c2f221c46624daa46836bc2bde2b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1550812459}
---- !u!114 &1284385952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1284385951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a202be1914f76d44999a7c73fe30a5c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &1284385960
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1284385951}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 1.92, z: 2.44}
-  m_Center: {x: 0, y: 0.78, z: 0.05}
 --- !u!1 &1288816566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2588,7 +2585,12 @@ MonoBehaviour:
   SpArmor: 0
   Speed: 0
   Bounty: 0
-  playerData: {fileID: 11400000, guid: 947002ca101206344b05d71495261c88, type: 2}
+  playerData:
+    TotalMoney: 0
+    Name: 
+    Level: 0
+    Exp: 0
+    Token: 0
   totalKill: 0
   weaponManager: {fileID: 0}
   MyInteraction: {fileID: 0}
@@ -2931,7 +2933,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Game Mode Selection
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -3008,66 +3010,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 1074919525681178, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654053483218830, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1360257815108326, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471400698746944, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1833269060085098, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1069998444366638, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114052936460511156, guid: 64b4c2f221c46624daa46836bc2bde2b,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114052936460511156, guid: 64b4c2f221c46624daa46836bc2bde2b,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114052936460511156, guid: 64b4c2f221c46624daa46836bc2bde2b,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1471400698746944, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 54880399107677492, guid: 64b4c2f221c46624daa46836bc2bde2b,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114053929671734772, guid: 64b4c2f221c46624daa46836bc2bde2b,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 195504478703321548, guid: 64b4c2f221c46624daa46836bc2bde2b,
-        type: 2}
-      propertyPath: m_Speed
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114899123389621412, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1572999192
@@ -3354,7 +3301,7 @@ Prefab:
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 114899123389621412, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1821548351

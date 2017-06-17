@@ -1160,7 +1160,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29130996d1a9dd844906892babd01c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settingsData: {fileID: 11400000, guid: 59b9f265a41f3b146a86033c11771927, type: 2}
+  settingsData:
+    MusicVolume: 1
+    SFXVolume: 1
   musicSlider: {fileID: 420076263}
   SFXSlider: {fileID: 1989517338}
 --- !u!4 &1064966005

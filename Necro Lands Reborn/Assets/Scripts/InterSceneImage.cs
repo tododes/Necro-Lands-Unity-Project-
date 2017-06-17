@@ -34,9 +34,14 @@ public class InterSceneImage : Image
     }
 
     public void FinishScene(string scene){
+
         onScene = false;
         canvas.sortingOrder = 10;
-        nextScene = scene;
+        Time.timeScale = 1f;
+        if(scene == "this scene")
+            nextScene = Application.loadedLevelName;
+        else
+            nextScene = scene;
     }
 
     void Update(){

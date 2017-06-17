@@ -6,6 +6,7 @@ public class Skill : MonoBehaviour {
     public Sprite sprite;
     protected float coolDown;
     protected float coolDownStatus;
+    
     [SerializeField] protected GameActor owner;
     [SerializeField] protected Gun gun;
 

@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryData : ScriptableObject {
+[System.Serializable]
+public class InventoryData{
    [SerializeField] private List<Item> currentSavedItems = new List<Item>();
    [SerializeField] private List<Item> allSavedItems = new List<Item>();
-  
+
     public int getCurrentSavedItemsCount() { return currentSavedItems.Count; }
     public int getAllSavedItemsCount() { return allSavedItems.Count; }
 

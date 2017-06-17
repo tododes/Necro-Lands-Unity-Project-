@@ -5,7 +5,10 @@ using UnityEngine;
 public class Node : MonoBehaviour {
 
     [SerializeField] private List<Node> childs = new List<Node>();
+
     private Node parent;
+    private Node chosenChild;
+
     [SerializeField] private int status;
     private bool statusChanged;
 

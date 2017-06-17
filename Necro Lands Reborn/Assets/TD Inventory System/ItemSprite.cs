@@ -39,7 +39,6 @@ public class ItemSprite : MonoBehaviour {
 
     public void setItem(Item i) {
         item = i;
-        image.sprite = i.sprite;
     }
 
     public Item getItem() { return item; }

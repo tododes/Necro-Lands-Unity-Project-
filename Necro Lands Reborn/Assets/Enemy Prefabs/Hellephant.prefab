@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 222927732916249208}
   - component: {fileID: 114058874346895094}
   - component: {fileID: 114615470189410722}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill HP Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 224908866964812028}
   - component: {fileID: 222721562113286128}
   - component: {fileID: 114052936460511156}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background HP Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,8 +76,9 @@ GameObject:
   - component: {fileID: 114965975806878104}
   - component: {fileID: 195504478703321548}
   - component: {fileID: 114053929671734772}
-  - component: {fileID: 114899123389621412}
-  m_Layer: 0
+  - component: {fileID: 65655825817150418}
+  - component: {fileID: 114687160815987744}
+  m_Layer: 12
   m_Name: Hellephant
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -111,7 +112,7 @@ GameObject:
   - component: {fileID: 114431142917869060}
   - component: {fileID: 114797761490488976}
   - component: {fileID: 114393619793030402}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Enemy HP Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +139,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1471400698746944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.48, z: 4.36}
+  m_LocalPosition: {x: 0, y: -0.48, z: 19.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4843604278956356}
@@ -171,7 +172,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 999
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
@@ -187,6 +188,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.92, z: 2.44}
   m_Center: {x: 0, y: 0.98, z: 0.05}
+--- !u!65 &65655825817150418
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1471400698746944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.92, z: 2.44}
+  m_Center: {x: 0, y: 0.78, z: 0.05}
 --- !u!95 &95685376826555420
 Animator:
   serializedVersion: 3
@@ -216,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: -0.014705896, g: -0.0020545004, b: -0.0020545004, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -313,6 +326,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rect: {fileID: 0}
+--- !u!114 &114687160815987744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1471400698746944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a202be1914f76d44999a7c73fe30a5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114797761490488976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -329,17 +353,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114899123389621412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1471400698746944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ceae9f87347f2d45b47c481e9049a8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114965975806878104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -359,6 +372,7 @@ MonoBehaviour:
   SpArmor: 100
   Speed: 100
   Bounty: 100
+  ID: 0
   reward:
     goldGain: 80
     expGain: 60
@@ -417,7 +431,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

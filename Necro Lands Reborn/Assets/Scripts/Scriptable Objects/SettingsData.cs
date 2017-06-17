@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SettingsData : ScriptableObject {
+[System.Serializable]
+public class SettingsData {
 
     public float MusicVolume;
     public float SFXVolume;

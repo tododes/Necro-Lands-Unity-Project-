@@ -26,7 +26,7 @@ public class Mission{
     public virtual bool isAccomplished() { return accomplished; }
 
     public virtual void validateAccomplishment(int playerKill) {
-        if (playerKill >= kill && (clock.min > 0 && clock.sec > 0))
+        if (playerKill >= kill && (clock.min > 0 || clock.sec > 0))
             accomplished = true;
         
     }

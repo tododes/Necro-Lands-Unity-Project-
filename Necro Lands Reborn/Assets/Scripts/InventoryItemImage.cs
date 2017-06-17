@@ -30,8 +30,6 @@ public class InventoryItemImage : Image {
     void Update(){
         if(index < playerMenuManager.getInventoryCount()){
             item = playerMenuManager.getInventoryItemAt(index);
-            if (item != null)
-                sprite = item.sprite;
         }
         else{
             item = null;

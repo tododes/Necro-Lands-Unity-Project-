@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 public class ShopManager : MonoBehaviour {
 
@@ -10,6 +12,9 @@ public class ShopManager : MonoBehaviour {
 
     [SerializeField] private PlayerData playerData;
     [SerializeField] private InventoryData inventoryData;
+
+    private BinaryFormatter bf;
+    private FileStream fs;
 
     void Awake() {
         singleton = this;
@@ -21,7 +26,9 @@ public class ShopManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         shopListViews = GetComponentsInChildren<ShopListView>();
-        //inventoryData.ClearStorage();
+        bf = new BinaryFormatter();
+        playerData = Load<PlayerData>("/PlayerData.data");
+        inventoryData = Load<InventoryData>("/InventoryData.data");
 	}
 
     public void GoToPayment(){
@@ -35,9 +42,13 @@ public class ShopManager : MonoBehaviour {
         int totalPrice = getTotalBilling();
         if(playerData.TotalMoney >= totalPrice){
             playerData.TotalMoney -= totalPrice;
+            Debug.Log("Start");
             foreach (KeyValuePair<Item, int> shoppingItem in shoppingCart){
+                Debug.Log(shoppingItem.Key + " " +shoppingItem.Value);
                 inventoryData.AddAllSavedItems(shoppingItem.Key);
             }
+            Save<PlayerData>("/PlayerData.data", playerData);
+            Save<InventoryData>("/InventoryData.data", inventoryData);
         }
     }
 
@@ -54,4 +65,17 @@ public class ShopManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void Save<T>(string path, T obj){
+        fs = File.Create(Application.persistentDataPath + path);
+        bf.Serialize(fs, obj);
+        fs.Close();
+    }
+
+    public T Load<T>(string path){
+        fs = File.Open(Application.persistentDataPath + path, FileMode.Open);
+        T obj = (T)bf.Deserialize(fs);
+        fs.Close();
+        return obj;
+    }
 }

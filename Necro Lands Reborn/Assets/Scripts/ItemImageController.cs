@@ -14,7 +14,7 @@ public class ItemImageController : TodoBehaviour, IPointerEnterHandler, IPointer
     private InventoryItemImage MyImage;
 
     public void OnPointerEnter(PointerEventData eventData){
-        if (MyImage.getItem()){
+        if (MyImage.getItem() != null){
             Ac(itemOptionImage);
             if (!optionButton)
                 optionButton = itemOptionImage.GetComponent<ItemOptionButton>();

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerData : ScriptableObject {
+[System.Serializable]
+public class PlayerData{
     public int TotalMoney;
     public string Name;
 

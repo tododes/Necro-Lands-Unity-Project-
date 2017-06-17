@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
-public class Item : MonoBehaviour{
-
-    public Sprite sprite;
+[System.Serializable]
+public class Item{
 
     protected bool Consumable;
     protected int Amount;

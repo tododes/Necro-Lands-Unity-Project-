@@ -27,7 +27,6 @@ public class StorageItemView : TodoBehaviour {
         MyItem = i;
         if(!image)
             image = Cp_C<Image>();
-        image.sprite = i.sprite;
     }
     public Item getItem() { return MyItem; }
 
