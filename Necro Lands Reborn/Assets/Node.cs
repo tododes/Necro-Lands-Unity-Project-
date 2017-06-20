@@ -5,9 +5,8 @@ using UnityEngine;
 public class Node : MonoBehaviour {
 
     [SerializeField] private List<Node> childs = new List<Node>();
-
-    private Node parent;
-    private Node chosenChild;
+    [SerializeField] private Node parent;
+    [SerializeField] private Node chosenChild;
 
     [SerializeField] private int status;
     private bool statusChanged;
@@ -17,6 +16,7 @@ public class Node : MonoBehaviour {
             childs.Add(n);
     }
 
+    public int getStatus() { return status; }
     public Node getParent() { return parent; }
     public Node getChildAt(int i) { return childs[i]; }
 
@@ -47,5 +47,13 @@ public class Node : MonoBehaviour {
             status = change;
             statusChanged = true;
         }
+    }
+
+    public int checkActivatedNode(){
+        for (int i = 0; i < childs.Count; i++){
+            if (childs[i].getStatus() >= 2)
+                return (i + 1);
+        }
+        return -1;
     }
 }

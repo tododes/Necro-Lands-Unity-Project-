@@ -122,6 +122,7 @@
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorActiveSkill1.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorActiveSkill2.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorPassiveSkill.cs" />
+    <Compile Include="Assets\HealingRune.cs" />
     <Compile Include="Assets\MiraGun.cs" />
     <Compile Include="Assets\MissionAccomplishedPanel.cs" />
     <Compile Include="Assets\Monologue.cs" />

@@ -45,4 +45,17 @@ public class FPSCharacter : GameActor
         playerData.Exp += reward.getExpGain();
         playerData.Token += reward.getTokenGain();
     }
+
+    private IEnumerator RegenerateHealth(float rate, float duration){
+        float D = duration / Time.deltaTime;
+        int intD = (int) D;
+        for(int i = 0; i < intD; i++){
+            HP += rate * Time.deltaTime;
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+    }
+
+    public void RegenHealth(float rate, float duration){
+        StartCoroutine(RegenerateHealth(rate, duration));
+    }
 }
