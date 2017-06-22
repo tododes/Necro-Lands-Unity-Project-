@@ -11,6 +11,8 @@ public class Node : MonoBehaviour {
     [SerializeField] private int status;
     private bool statusChanged;
 
+    [SerializeField] private Talent talent;
+
     public void AddChild(Node n){
         if(!childs.Contains(n))
             childs.Add(n);
@@ -52,8 +54,12 @@ public class Node : MonoBehaviour {
     public int checkActivatedNode(){
         for (int i = 0; i < childs.Count; i++){
             if (childs[i].getStatus() >= 2)
-                return (i + 1);
+                return i;
         }
         return -1;
+    }
+
+    public Talent getTalent(){
+        return talent;
     }
 }

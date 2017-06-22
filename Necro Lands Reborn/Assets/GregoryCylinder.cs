@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GregoryCylinder : TodoBehaviour {
+public class GregoryCylinder : Magic {
 
     private Vector3 rotationRate;
     private Vector3 originPosition;
@@ -15,7 +15,9 @@ public class GregoryCylinder : TodoBehaviour {
 
     void OnTriggerStay(Collider coll){
         if (coll.tag.Contains("Enemy")){
-            coll.GetComponent<Enemy>().getDamage(5f * Time.deltaTime);
+            float dmg = damage * Time.deltaTime;
+            coll.GetComponent<Enemy>().getDamage(damage * Time.deltaTime);
+            owner.Heal(dmg * spellLifesteal);
         }
     }
 

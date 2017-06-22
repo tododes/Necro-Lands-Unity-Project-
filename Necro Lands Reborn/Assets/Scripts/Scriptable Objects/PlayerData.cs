@@ -10,4 +10,10 @@ public class PlayerData{
     public int Level;
     public int Exp;
     public int Token;
+
+    private List<string> skillNames = new List<string>();
+
+    public void AddSkillName(string name){
+        skillNames.Add(name);
+    }
 }

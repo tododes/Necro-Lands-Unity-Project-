@@ -47,4 +47,12 @@ public class GameActor : TodoBehaviour {
     }
 
     public bool isDead() { return HP <= 0f; }
+
+    public void Heal(float amount){
+        if (HP < MaxHP)
+            HP += amount;
+        if(HP > MaxHP){
+            HP = MaxHP;
+        }
+    }
 }

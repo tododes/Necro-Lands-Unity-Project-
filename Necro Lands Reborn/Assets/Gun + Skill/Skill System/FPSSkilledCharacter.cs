@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class FPSSkilledCharacter : FPSCharacter
 {
+    [SerializeField] private float HPRegen, Lifesteal, spellLifesteal, magicAmplification;
+
     [SerializeField]
     private Skill[] skills;
     List<KeyCode> keys = new List<KeyCode>();
@@ -13,6 +17,9 @@ public class FPSSkilledCharacter : FPSCharacter
 
     [SerializeField]
     private WeaponManager weaponManager;
+
+   
+    private BinaryFormatter bf;
 
     void OnEnable(){
         skills = GetComponentsInChildren<Skill>();
@@ -27,10 +34,27 @@ public class FPSSkilledCharacter : FPSCharacter
         weaponManager = Cp_C<WeaponManager>();
     }
 
- 
+    protected new void Start(){
+        base.Start();
+        bf = new BinaryFormatter();
+        FileStream fs = File.Open(Application.persistentDataPath + TalentTreeController.TalentDataPath, FileMode.Open);
+        Talent talent = (Talent) bf.Deserialize(fs);
+        MaxHP += talent.BonusHP;
+        HP += talent.BonusHP;
+        Attack += talent.BonusAttack;
+        Armor += talent.BonusArmor;
+        Speed += talent.BonusMoveSpeed;
+        HPRegen += talent.BonusHPRegen;
+        Lifesteal += talent.BonusLifesteal;
+        spellLifesteal += talent.BonusSpellLifesteal;
+        magicAmplification += talent.BonusMagicDamage;
+    }
 
-    void Update()
-    {
+    public float getSpellLifesteal(){
+        return spellLifesteal;
+    }
+
+    void Update(){
 
     }
 }

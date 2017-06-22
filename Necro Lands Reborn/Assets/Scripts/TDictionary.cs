@@ -5,8 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class TDictionary<TKey, TValue>
 {
-    private List<TKey> keys;
-    private List<TValue> values;
+    [SerializeField] private List<TKey> keys;
+    [SerializeField] private List<TValue> values;
     private int counter;
 
     public TDictionary(){
