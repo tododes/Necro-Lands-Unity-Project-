@@ -62,4 +62,8 @@ public class Node : MonoBehaviour {
     public Talent getTalent(){
         return talent;
     }
+
+    public void setTalent(Talent t){
+        talent = t;
+    }
 }

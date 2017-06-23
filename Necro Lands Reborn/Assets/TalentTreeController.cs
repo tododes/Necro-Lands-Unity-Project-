@@ -11,6 +11,11 @@ public class TalentTreeController : TodoBehaviour {
 
     public const string TalentTreeDataPath = "/TalentTreeData.data";
     public const string TalentDataPath = "/TalentData.data";
+    public const string PlayerTalentListDataPath = "/PlayerTalentListData.data";
+
+    [SerializeField] private int NumberOfPlayers;
+    [SerializeField] private List<PlayerTalentList> playerTalentCollection = new List<PlayerTalentList>();
+    [SerializeField] private List<Node> nodes;
 
     [SerializeField]
     private Node Root;
@@ -25,8 +30,16 @@ public class TalentTreeController : TodoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        nodes = new List<Node>(GetComponentsInChildren<Node>());
         sb = new StringBuilder();
         bf = new BinaryFormatter();
+        for (int i = 0; i < NumberOfPlayers; i++){
+            playerTalentCollection.Add(new PlayerTalentList());
+        }
+        List<Talent> talents = InitializeTalentTreeFromPlayer();
+        for(int i = 0; i < talents.Count; i++){
+            nodes[i].setTalent(talents[i]);
+        }
         Root.ChangeStatus(2);
 	}
 	
@@ -51,6 +64,17 @@ public class TalentTreeController : TodoBehaviour {
         fs.Close();
     }
 
+    private List<Talent> InitializeTalentTreeFromPlayer(){
+        FileStream fs = File.Open(Application.persistentDataPath + "/PlayerData.data", FileMode.Open);
+        PlayerData pd = (PlayerData) bf.Deserialize(fs);
+        for(int i = 0; i < playerTalentCollection.Count; i++){
+            List<Talent> talents = playerTalentCollection[i].getTalentByName(pd.Name);
+            if (talents != null)
+                return talents;
+        }
+        return null;
+    }
+
     public void loadTalentTree(){
         FileStream fs = File.Open(Application.persistentDataPath + TalentTreeDataPath, FileMode.Open);
         string code = (string) bf.Deserialize(fs);
@@ -70,4 +94,22 @@ public class TalentTreeController : TodoBehaviour {
         bf.Serialize(fs, currentTalent);
         fs.Close();
     }
+}
+
+public class PlayerTalentList
+{
+    [SerializeField] private string name;
+    [SerializeField] private List<Talent> playerTalents;
+
+    public PlayerTalentList(){
+        playerTalents = new List<Talent>();
+    }
+
+    public List<Talent> getTalentByName(string n){
+        if (name == n)
+            return playerTalents;
+        return null;
+    }
+
+    public string getName() { return name; }
 }
