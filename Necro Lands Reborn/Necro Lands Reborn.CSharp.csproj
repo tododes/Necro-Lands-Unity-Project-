@@ -87,13 +87,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Aura.cs" />
-    <Compile Include="Assets\BotAI.cs" />
-    <Compile Include="Assets\CharacterBody.cs" />
-    <Compile Include="Assets\DailyRewardManager.cs" />
+    <Compile Include="Assets\ApplicationInitializer.cs" />
     <Compile Include="Assets\DailyRewardPanel.cs" />
-    <Compile Include="Assets\EnemyBody.cs" />
-    <Compile Include="Assets\Game.cs" />
     <Compile Include="Assets\GameController.cs" />
     <Compile Include="Assets\GameInitializer.cs" />
     <Compile Include="Assets\GregoryCylinder.cs" />
@@ -123,10 +118,6 @@
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorActiveSkill2.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorPassiveSkill.cs" />
     <Compile Include="Assets\HealingRune.cs" />
-    <Compile Include="Assets\MiraGun.cs" />
-    <Compile Include="Assets\MissionAccomplishedPanel.cs" />
-    <Compile Include="Assets\Monologue.cs" />
-    <Compile Include="Assets\MonologueController.cs" />
     <Compile Include="Assets\Node.cs" />
     <Compile Include="Assets\PlayerInteraction.cs" />
     <Compile Include="Assets\PlayerLevelSlider.cs" />
@@ -176,17 +167,24 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\RuneGenerator.cs" />
     <Compile Include="Assets\Scripts\AreYouSurePanel.cs" />
+    <Compile Include="Assets\Scripts\Aura.cs" />
+    <Compile Include="Assets\Scripts\BotAI.cs" />
     <Compile Include="Assets\Scripts\Branch.cs" />
+    <Compile Include="Assets\Scripts\CharacterBody.cs" />
     <Compile Include="Assets\Scripts\Chrono.cs" />
     <Compile Include="Assets\Scripts\Clock.cs" />
+    <Compile Include="Assets\Scripts\DailyRewardManager.cs" />
+    <Compile Include="Assets\Scripts\DamageImage.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\EnemyBillboard.cs" />
+    <Compile Include="Assets\Scripts\EnemyBody.cs" />
     <Compile Include="Assets\Scripts\EnemyHPBar.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\Game.cs" />
     <Compile Include="Assets\Scripts\GameActor.cs" />
     <Compile Include="Assets\Scripts\GameMode.cs" />
     <Compile Include="Assets\Scripts\GameSelectionCamera.cs" />
@@ -202,8 +200,14 @@
     <Compile Include="Assets\Scripts\Managers\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\MiraGun.cs" />
     <Compile Include="Assets\Scripts\Mission.cs" />
+    <Compile Include="Assets\Scripts\MissionAccomplishedPanel.cs" />
+    <Compile Include="Assets\Scripts\MissionDatabase.cs" />
+    <Compile Include="Assets\Scripts\MissionFailedPanel.cs" />
     <Compile Include="Assets\Scripts\MoneyText.cs" />
+    <Compile Include="Assets\Scripts\Monologue.cs" />
+    <Compile Include="Assets\Scripts\MonologueController.cs" />
     <Compile Include="Assets\Scripts\PausePanel.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
@@ -226,6 +230,12 @@
     <Compile Include="Assets\Scripts\StorageItemView.cs" />
     <Compile Include="Assets\Scripts\TDictionary.cs" />
     <Compile Include="Assets\Scripts\Talent.cs" />
+    <Compile Include="Assets\Scripts\UltimateGameController.cs" />
+    <Compile Include="Assets\Scripts\UltimateGameMode.cs" />
+    <Compile Include="Assets\Scripts\UltimateMission.cs" />
+    <Compile Include="Assets\Scripts\WeaponManager.cs" />
+    <Compile Include="Assets\Scripts\WeaponShop.cs" />
+    <Compile Include="Assets\Scripts\WeaponShopItem.cs" />
     <Compile Include="Assets\SensitivityLine.cs" />
     <Compile Include="Assets\SkillShopController.cs" />
     <Compile Include="Assets\SkillShopItem.cs" />
@@ -236,12 +246,6 @@
     <Compile Include="Assets\TodoBehaviour\TodoBehaviour.cs" />
     <Compile Include="Assets\TrevorSonic.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\UltimateGameController.cs" />
-    <Compile Include="Assets\UltimateGameMode.cs" />
-    <Compile Include="Assets\UltimateMission.cs" />
-    <Compile Include="Assets\WeaponManager.cs" />
-    <Compile Include="Assets\WeaponShop.cs" />
-    <Compile Include="Assets\WeaponShopItem.cs" />
     <Compile Include="Assets\_Complete-Game\MobileInput\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\_Complete-Game\MobileInput\Scripts\Joystick.cs" />
     <Compile Include="Assets\_Complete-Game\MobileInput\Scripts\MobileControlRig.cs" />

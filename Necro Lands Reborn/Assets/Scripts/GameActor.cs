@@ -26,7 +26,7 @@ public class GameActor : TodoBehaviour {
         Speed -= percentage * Speed;
     }
 
-    public void getDamage(float amount){
+    public virtual void getDamage(float amount){
         HP -= amount;
     }
 

@@ -5,16 +5,32 @@ using System.Collections.Generic;
 public class FPSCharacter : GameActor
 {
     [SerializeField]
-    private PlayerData playerData;
+    protected PlayerData playerData;
 
     [SerializeField]
-    private int totalKill;
+    protected int totalKill;
 
     [SerializeField]
-    private WeaponManager weaponManager;
+    protected WeaponManager weaponManager;
 
     [SerializeField]
-    private PlayerInteraction MyInteraction;
+    protected PlayerInteraction MyInteraction;
+
+    [SerializeField]
+    protected DamageImage damageImage;
+
+    [SerializeField]
+    protected Gun gun;
+
+    [SerializeField]
+    private MissionFailedPanel failedPanel;
+
+    private Vector3 playerDown, playerFall;
+    private Rigidbody body;
+
+    public DamageImage getDamageImage(){
+        return damageImage;
+    }
 
     public PlayerInteraction getPlayerInteraction(){
         return MyInteraction;
@@ -30,7 +46,11 @@ public class FPSCharacter : GameActor
         totalKill = 0;
         weaponManager = Cp_C<WeaponManager>();
         MyInteraction = Cp<PlayerInteraction>();
-	}
+        gun = Cp_C<Gun>();
+        playerDown = new Vector3(0, 0, 90);
+        playerFall = Vector3.zero;
+        body = Cp<Rigidbody>();
+    }
 
     public int getTotalKill() { return totalKill; }
     public void killEnemy() { totalKill++; }
@@ -57,5 +77,29 @@ public class FPSCharacter : GameActor
 
     public void RegenHealth(float rate, float duration){
         StartCoroutine(RegenerateHealth(rate, duration));
+    }
+
+    public override void getDamage(float amount){
+        damageImage.Trigger(amount / MaxHP);
+        base.getDamage(amount);
+        if(HP <= 0f){
+            HP = 0f;
+            StartCoroutine(DeadMotion());
+        }
+    }
+
+    private IEnumerator DeadMotion(){
+        failedPanel.Trigger();
+        gun.gameObject.SetActive(false);
+        body.constraints = RigidbodyConstraints.FreezeRotationX;
+        playerFall.x = transform.position.x;
+        playerFall.z = transform.position.z;
+        playerFall.y = 0f;
+        transform.position = playerFall;
+        while (transform.eulerAngles.z < 90f){
+            transform.eulerAngles += playerDown * Time.deltaTime;
+            transform.position -= Vector3.down * Time.deltaTime;
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
     }
 }

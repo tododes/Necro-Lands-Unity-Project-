@@ -12,7 +12,7 @@ public class AreYouSurePanel : MonoBehaviour {
     protected Vector3 IncrementFactor;
     [SerializeField] protected float desiredSize;
 
-    private Vector3 zeroVector;
+    protected Vector3 zeroVector;
 
     protected void Awake (){
         singleton = this;

@@ -713,7 +713,7 @@ Animation:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1367452460859858}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: b37533fdcd9595047a467f832ce2a4bf, type: 2}
   m_Animations:
@@ -777,10 +777,19 @@ MonoBehaviour:
   SpArmor: 0
   Speed: 0
   Bounty: 0
-  playerData: {fileID: 11400000, guid: 947002ca101206344b05d71495261c88, type: 2}
+  playerData:
+    TotalMoney: 0
+    Name: 
+    Level: 0
+    Exp: 0
+    Token: 0
   totalKill: 0
   weaponManager: {fileID: 0}
   MyInteraction: {fileID: 0}
+  HPRegen: 0
+  Lifesteal: 0
+  spellLifesteal: 0
+  magicAmplification: 0
   skills: []
   sprites:
   - {fileID: 0}

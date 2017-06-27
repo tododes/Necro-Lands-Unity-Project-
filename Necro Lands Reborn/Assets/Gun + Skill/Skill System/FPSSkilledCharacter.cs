@@ -37,17 +37,19 @@ public class FPSSkilledCharacter : FPSCharacter
     protected new void Start(){
         base.Start();
         bf = new BinaryFormatter();
-        FileStream fs = File.Open(Application.persistentDataPath + TalentTreeController.TalentDataPath, FileMode.Open);
-        Talent talent = (Talent) bf.Deserialize(fs);
-        MaxHP += talent.BonusHP;
-        HP += talent.BonusHP;
-        Attack += talent.BonusAttack;
-        Armor += talent.BonusArmor;
-        Speed += talent.BonusMoveSpeed;
-        HPRegen += talent.BonusHPRegen;
-        Lifesteal += talent.BonusLifesteal;
-        spellLifesteal += talent.BonusSpellLifesteal;
-        magicAmplification += talent.BonusMagicDamage;
+        if(File.Exists(Application.persistentDataPath + TalentTreeController.TalentDataPath)){
+            FileStream fs = File.Open(Application.persistentDataPath + TalentTreeController.TalentDataPath, FileMode.Open);
+            Talent talent = (Talent)bf.Deserialize(fs);
+            MaxHP += talent.BonusHP;
+            HP += talent.BonusHP;
+            Attack += talent.BonusAttack;
+            Armor += talent.BonusArmor;
+            Speed += talent.BonusMoveSpeed;
+            HPRegen += talent.BonusHPRegen;
+            Lifesteal += talent.BonusLifesteal;
+            spellLifesteal += talent.BonusSpellLifesteal;
+            magicAmplification += talent.BonusMagicDamage;
+        }
     }
 
     public float getSpellLifesteal(){

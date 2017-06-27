@@ -6,13 +6,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameController : MonoBehaviour  {
 
-    //public static GameController singleton;
-
     [SerializeField] private Mission objective;
     [SerializeField] protected FPSCharacter fpsCharacter;
 
+    protected BinaryFormatter bf;
     protected MissionAccomplishedPanel panel;
     protected bool Accomplished;
+    protected MissionDatabase missionDatabase;
 
     public bool isAccomplished{
         get { return Accomplished; }
@@ -24,6 +24,8 @@ public class GameController : MonoBehaviour  {
     }
 
     protected virtual void Start () {
+        bf = new BinaryFormatter();
+        missionDatabase = LoadMissionDatabase();
         game = new Game<Mission>("/MissionData.data");
         objective = game.getObjective();
         fpsCharacter = GameObject.FindGameObjectWithTag("Player").GetComponent<FPSCharacter>();
@@ -37,7 +39,15 @@ public class GameController : MonoBehaviour  {
         }
         objective.validateAccomplishment(fpsCharacter.getTotalKill());
         if (objective.isAccomplished()){
+            missionDatabase.MissionAccomplished(objective);
             panel.Trigger();
         }
 	}
+
+    protected MissionDatabase LoadMissionDatabase(){
+        FileStream fs = File.Open(Application.persistentDataPath + "/MissionDatabase.data", FileMode.Open);
+        MissionDatabase m = (MissionDatabase) bf.Deserialize(fs);
+        fs.Close();
+        return m;
+    }
 }

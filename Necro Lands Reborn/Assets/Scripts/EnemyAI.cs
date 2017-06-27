@@ -24,7 +24,7 @@ public class EnemyAI : TodoBehaviour {
 	// Update is called once per frame
 	void Update () {
         anim.SetFloat("Health", myself.GetHP);
-        if(myself.GetHP > 0){
+        if(myself.GetHP > 0 && !target.isDead()){
             destination.x = target.pos.x;
             destination.z = target.pos.z;
             agent.SetDestination(destination);
