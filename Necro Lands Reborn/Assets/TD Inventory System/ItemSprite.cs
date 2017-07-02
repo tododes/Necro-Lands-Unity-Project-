@@ -31,10 +31,8 @@ public class ItemSprite : MonoBehaviour {
         }
     }
 
-    public void UseItem()
-    {
-        if (item.Active)
-            item.OnEffect();
+    public void GetPassiveEffect(){
+        item.OnPassiveEffect(character);
     }
 
     public void setItem(Item i) {
@@ -42,14 +40,4 @@ public class ItemSprite : MonoBehaviour {
     }
 
     public Item getItem() { return item; }
-
-	//// Use this for initialization
-	//void Start () {
-	
-	//}
-	
-	//// Update is called once per frame
-	//void Update () {
-	
-	//}
 }

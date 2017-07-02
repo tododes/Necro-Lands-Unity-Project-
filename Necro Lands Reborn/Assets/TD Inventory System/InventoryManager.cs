@@ -23,6 +23,11 @@ public class InventoryManager : MonoBehaviour {
         for (int i = 0; i < inventoryData.getCurrentSavedItemsCount(); i++){
             items.Add(inventoryData.getCurrentSavedItemsAt(i));
         }
+        for (int i = 0; i < items.Count; i++){
+            itemImages[i].setItem(items[i]);
+            itemImages[i].SetKey(itemKeys[i]);
+            itemImages[i].GetPassiveEffect();
+        }
     }
 
     public void AddItemToInventory(Item i){
@@ -32,9 +37,6 @@ public class InventoryManager : MonoBehaviour {
 	
 	void Update ()
     {
-        for (int i = 0; i < items.Count; i++) {
-            itemImages[i].setItem(items[i]);
-            itemImages[i].SetKey(itemKeys[i]);
-        }
+ 
 	}
 }

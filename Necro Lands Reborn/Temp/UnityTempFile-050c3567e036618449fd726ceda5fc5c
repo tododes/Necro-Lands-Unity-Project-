@@ -1,0 +1,261 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-unsafe
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:Library/FacebookSDK/Facebook.Unity.Settings.dll
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_5_6_0
+-define:UNITY_5_6
+-define:UNITY_5
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_GENERICS
+-define:ENABLE_PVR_GI
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_RUNTIME_NAVMESH_BUILDING
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:ENABLE_NATIVE_ARRAY
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:ENABLE_VIDEO
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VR
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:NET_2_0_SUBSET
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:ENABLE_NATIVE_ARRAY_CHECKS
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+-define:CROSS_PLATFORM_INPUT
+Assets/ApplicationInitializer.cs
+Assets/DailyRewardPanel.cs
+Assets/GameController.cs
+Assets/GameInitializer.cs
+Assets/GregoryCylinder.cs
+"Assets/Gun + Skill/Gun/Bullet.cs"
+"Assets/Gun + Skill/Gun/FPSCharacter.cs"
+"Assets/Gun + Skill/Gun/FPSCharacterController.cs"
+"Assets/Gun + Skill/Gun/Flamethrower.cs"
+"Assets/Gun + Skill/Gun/GregoryBody.cs"
+"Assets/Gun + Skill/Gun/Gun.cs"
+"Assets/Gun + Skill/Gun/LucyBullet.cs"
+"Assets/Gun + Skill/Gun/MiraBullet.cs"
+"Assets/Gun + Skill/Gun/Spray.cs"
+"Assets/Gun + Skill/Gun/TrevorBullet.cs"
+"Assets/Gun + Skill/Gun/WaterSpray.cs"
+"Assets/Gun + Skill/Skill System/FPSSkilledCharacter.cs"
+"Assets/Gun + Skill/Skill System/Gregory/GregoryActiveSkill1.cs"
+"Assets/Gun + Skill/Skill System/Gregory/GregoryActiveSkill2.cs"
+"Assets/Gun + Skill/Skill System/Gregory/GregoryPassiveSkill.cs"
+"Assets/Gun + Skill/Skill System/Lucy/LucyActiveSkill1.cs"
+"Assets/Gun + Skill/Skill System/Lucy/LucyActiveSkill2.cs"
+"Assets/Gun + Skill/Skill System/Lucy/LucySkill.cs"
+"Assets/Gun + Skill/Skill System/Mira/MiraActiveSkill1.cs"
+"Assets/Gun + Skill/Skill System/Mira/MiraSkill.cs"
+"Assets/Gun + Skill/Skill System/Skill.cs"
+"Assets/Gun + Skill/Skill System/SkillSprite.cs"
+"Assets/Gun + Skill/Skill System/Trevor/TrevorActiveSkill1.cs"
+"Assets/Gun + Skill/Skill System/Trevor/TrevorActiveSkill2.cs"
+"Assets/Gun + Skill/Skill System/Trevor/TrevorPassiveSkill.cs"
+Assets/HealingRune.cs
+Assets/Node.cs
+Assets/PlayerInteraction.cs
+Assets/PlayerLevelSlider.cs
+Assets/PostProcessing/Runtime/Attributes/GetSetAttribute.cs
+Assets/PostProcessing/Runtime/Attributes/MinAttribute.cs
+Assets/PostProcessing/Runtime/Attributes/TrackballAttribute.cs
+Assets/PostProcessing/Runtime/Attributes/TrackballGroupAttribute.cs
+Assets/PostProcessing/Runtime/Components/AmbientOcclusionComponent.cs
+Assets/PostProcessing/Runtime/Components/BloomComponent.cs
+Assets/PostProcessing/Runtime/Components/BuiltinDebugViewsComponent.cs
+Assets/PostProcessing/Runtime/Components/ChromaticAberrationComponent.cs
+Assets/PostProcessing/Runtime/Components/ColorGradingComponent.cs
+Assets/PostProcessing/Runtime/Components/DepthOfFieldComponent.cs
+Assets/PostProcessing/Runtime/Components/DitheringComponent.cs
+Assets/PostProcessing/Runtime/Components/EyeAdaptationComponent.cs
+Assets/PostProcessing/Runtime/Components/FogComponent.cs
+Assets/PostProcessing/Runtime/Components/FxaaComponent.cs
+Assets/PostProcessing/Runtime/Components/GrainComponent.cs
+Assets/PostProcessing/Runtime/Components/MotionBlurComponent.cs
+Assets/PostProcessing/Runtime/Components/ScreenSpaceReflectionComponent.cs
+Assets/PostProcessing/Runtime/Components/TaaComponent.cs
+Assets/PostProcessing/Runtime/Components/UserLutComponent.cs
+Assets/PostProcessing/Runtime/Components/VignetteComponent.cs
+Assets/PostProcessing/Runtime/Models/AmbientOcclusionModel.cs
+Assets/PostProcessing/Runtime/Models/AntialiasingModel.cs
+Assets/PostProcessing/Runtime/Models/BloomModel.cs
+Assets/PostProcessing/Runtime/Models/BuiltinDebugViewsModel.cs
+Assets/PostProcessing/Runtime/Models/ChromaticAberrationModel.cs
+Assets/PostProcessing/Runtime/Models/ColorGradingModel.cs
+Assets/PostProcessing/Runtime/Models/DepthOfFieldModel.cs
+Assets/PostProcessing/Runtime/Models/DitheringModel.cs
+Assets/PostProcessing/Runtime/Models/EyeAdaptationModel.cs
+Assets/PostProcessing/Runtime/Models/FogModel.cs
+Assets/PostProcessing/Runtime/Models/GrainModel.cs
+Assets/PostProcessing/Runtime/Models/MotionBlurModel.cs
+Assets/PostProcessing/Runtime/Models/ScreenSpaceReflectionModel.cs
+Assets/PostProcessing/Runtime/Models/UserLutModel.cs
+Assets/PostProcessing/Runtime/Models/VignetteModel.cs
+Assets/PostProcessing/Runtime/PostProcessingBehaviour.cs
+Assets/PostProcessing/Runtime/PostProcessingComponent.cs
+Assets/PostProcessing/Runtime/PostProcessingContext.cs
+Assets/PostProcessing/Runtime/PostProcessingModel.cs
+Assets/PostProcessing/Runtime/PostProcessingProfile.cs
+Assets/PostProcessing/Runtime/Utils/ColorGradingCurve.cs
+Assets/PostProcessing/Runtime/Utils/GraphicsUtils.cs
+Assets/PostProcessing/Runtime/Utils/MaterialFactory.cs
+Assets/PostProcessing/Runtime/Utils/RenderTextureFactory.cs
+Assets/RuneGenerator.cs
+Assets/Scripts/AreYouSurePanel.cs
+Assets/Scripts/Aura.cs
+Assets/Scripts/Branch.cs
+Assets/Scripts/CharacterBody.cs
+Assets/Scripts/Chrono.cs
+Assets/Scripts/Clock.cs
+Assets/Scripts/DailyRewardManager.cs
+Assets/Scripts/DamageImage.cs
+Assets/Scripts/Enemy.cs
+Assets/Scripts/Enemy/EnemyAttack.cs
+Assets/Scripts/Enemy/EnemyHealth.cs
+Assets/Scripts/Enemy/EnemyMovement.cs
+Assets/Scripts/EnemyAI.cs
+Assets/Scripts/EnemyBillboard.cs
+Assets/Scripts/EnemyBody.cs
+Assets/Scripts/EnemyHPBar.cs
+Assets/Scripts/EnemySpawner.cs
+Assets/Scripts/Game.cs
+Assets/Scripts/GameActor.cs
+Assets/Scripts/GameMode.cs
+Assets/Scripts/GameSelectionCamera.cs
+Assets/Scripts/GameSelectionManager.cs
+Assets/Scripts/HPBar.cs
+Assets/Scripts/InterSceneImage.cs
+Assets/Scripts/Interactable.cs
+Assets/Scripts/InventoryItemImage.cs
+Assets/Scripts/ItemImageController.cs
+Assets/Scripts/ItemOptionButton.cs
+Assets/Scripts/ItemStoragePanel.cs
+Assets/Scripts/Magic.cs
+Assets/Scripts/Managers/EnemyManager.cs
+Assets/Scripts/Managers/GameOverManager.cs
+Assets/Scripts/Managers/ScoreManager.cs
+Assets/Scripts/MiraGun.cs
+Assets/Scripts/Mission.cs
+Assets/Scripts/MissionAccomplishedPanel.cs
+Assets/Scripts/MissionDatabase.cs
+Assets/Scripts/MissionFailedPanel.cs
+Assets/Scripts/MoneyText.cs
+Assets/Scripts/Monologue.cs
+Assets/Scripts/MonologueController.cs
+Assets/Scripts/PausePanel.cs
+Assets/Scripts/Player/PlayerHealth.cs
+Assets/Scripts/Player/PlayerMovement.cs
+Assets/Scripts/Player/PlayerShooting.cs
+Assets/Scripts/PlayerAttribute.cs
+Assets/Scripts/PlayerHPBar.cs
+Assets/Scripts/PlayerMenuManager.cs
+Assets/Scripts/PlayerSelectionContainer.cs
+Assets/Scripts/PlayerSkillDatabase.cs
+Assets/Scripts/Reward.cs
+"Assets/Scripts/Scriptable Objects/InventoryData.cs"
+"Assets/Scripts/Scriptable Objects/PlayerData.cs"
+"Assets/Scripts/Scriptable Objects/SettingsData.cs"
+"Assets/Scripts/Scriptable Objects/SkillDatabase.cs"
+Assets/Scripts/SettingsManager.cs
+Assets/Scripts/ShopListView.cs
+Assets/Scripts/ShopListViewButton.cs
+Assets/Scripts/ShopListViewText.cs
+Assets/Scripts/ShopManager.cs
+Assets/Scripts/StorageItemView.cs
+Assets/Scripts/TDictionary.cs
+Assets/Scripts/Talent.cs
+Assets/Scripts/UltimateGameController.cs
+Assets/Scripts/UltimateGameMode.cs
+Assets/Scripts/UltimateMission.cs
+Assets/Scripts/WeaponManager.cs
+Assets/Scripts/WeaponShop.cs
+Assets/Scripts/WeaponShopItem.cs
+Assets/SkillShopController.cs
+Assets/SkillShopItem.cs
+"Assets/TD Inventory System/InventoryManager.cs"
+"Assets/TD Inventory System/Item.cs"
+"Assets/TD Inventory System/ItemSprite.cs"
+Assets/TalentTreeController.cs
+Assets/TodoBehaviour/TodoBehaviour.cs
+Assets/TrevorSonic.cs
+Assets/TutorialInfo/Scripts/Readme.cs
+Assets/_Complete-Game/MobileInput/Scripts/CrossPlatformInputManager.cs
+Assets/_Complete-Game/MobileInput/Scripts/Joystick.cs
+Assets/_Complete-Game/MobileInput/Scripts/MobileControlRig.cs
+Assets/_Complete-Game/MobileInput/Scripts/PlatformSpecific/MobileInput.cs
+Assets/_Complete-Game/MobileInput/Scripts/PlatformSpecific/StandaloneInput.cs
+Assets/_Complete-Game/MobileInput/Scripts/VirtualInput.cs
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity

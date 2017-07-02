@@ -27,6 +27,7 @@ public class FPSCharacter : GameActor
 
     private Vector3 playerDown, playerFall;
     private Rigidbody body;
+    protected Modifier modifier;
 
     public DamageImage getDamageImage(){
         return damageImage;
@@ -101,5 +102,9 @@ public class FPSCharacter : GameActor
             transform.position -= Vector3.down * Time.deltaTime;
             yield return new WaitForSeconds(Time.deltaTime);
         }
+    }
+
+    public void AddModifier(Modifier newMod){
+        modifier = modifier + newMod;
     }
 }

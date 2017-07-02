@@ -168,7 +168,6 @@
     <Compile Include="Assets\RuneGenerator.cs" />
     <Compile Include="Assets\Scripts\AreYouSurePanel.cs" />
     <Compile Include="Assets\Scripts\Aura.cs" />
-    <Compile Include="Assets\Scripts\BotAI.cs" />
     <Compile Include="Assets\Scripts\Branch.cs" />
     <Compile Include="Assets\Scripts\CharacterBody.cs" />
     <Compile Include="Assets\Scripts\Chrono.cs" />
@@ -236,7 +235,6 @@
     <Compile Include="Assets\Scripts\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\WeaponShop.cs" />
     <Compile Include="Assets\Scripts\WeaponShopItem.cs" />
-    <Compile Include="Assets\SensitivityLine.cs" />
     <Compile Include="Assets\SkillShopController.cs" />
     <Compile Include="Assets\SkillShopItem.cs" />
     <Compile Include="Assets\TD Inventory System\InventoryManager.cs" />
