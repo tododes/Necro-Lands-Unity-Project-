@@ -6,65 +6,18 @@ using System.IO;
 
 public class ShopManager : MonoBehaviour {
 
-    private Dictionary<Item, int> shoppingCart = new Dictionary<Item, int>();
-    public static ShopManager singleton;
-    private ShopListView[] shopListViews;
+    [SerializeField]
+    private PlayerData playerData;
+    [SerializeField]
+    private InventoryData inventoryData;
 
-    [SerializeField] private PlayerData playerData;
-    [SerializeField] private InventoryData inventoryData;
 
     private BinaryFormatter bf;
     private FileStream fs;
 
-    void Awake() {
-        singleton = this;
-    }
+    public static ShopManager singleton;
 
-    public void AddItemToCart(Item item, int amount){
-        shoppingCart.Add(item, amount);
-    }
-    // Use this for initialization
-    void Start () {
-        shopListViews = GetComponentsInChildren<ShopListView>();
-        bf = new BinaryFormatter();
-        playerData = Load<PlayerData>("/PlayerData.data");
-        inventoryData = Load<InventoryData>("/InventoryData.data");
-	}
-
-    public void GoToPayment(){
-        foreach(ShopListView slv in shopListViews){
-            if(slv.getAmount() > 0)
-                shoppingCart.Add(slv.getItem(), slv.getAmount());
-        }
-    }
-
-    public void ConfirmPayment(){
-        int totalPrice = getTotalBilling();
-        if(playerData.TotalMoney >= totalPrice){
-            playerData.TotalMoney -= totalPrice;
-            Debug.Log("Start");
-            foreach (KeyValuePair<Item, int> shoppingItem in shoppingCart){
-                Debug.Log(shoppingItem.Key + " " +shoppingItem.Value);
-                inventoryData.AddAllSavedItems(shoppingItem.Key);
-            }
-            Save<PlayerData>("/PlayerData.data", playerData);
-            Save<InventoryData>("/InventoryData.data", inventoryData);
-        }
-    }
-
-    public int getTotalBilling()
-    {
-        int total = 0;
-        foreach(KeyValuePair<Item, int> item in shoppingCart){
-            total += item.Key.price * item.Value;
-        }
-        return total;
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Awake() { singleton = this; }
 
     public void Save<T>(string path, T obj){
         fs = File.Create(Application.persistentDataPath + path);
@@ -77,5 +30,22 @@ public class ShopManager : MonoBehaviour {
         T obj = (T)bf.Deserialize(fs);
         fs.Close();
         return obj;
+    }
+
+    void Start(){
+        bf = new BinaryFormatter();
+        playerData = Load<PlayerData>(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY);
+        inventoryData = Load<InventoryData>(Application.persistentDataPath + SaveKey.INVENTORY_KEY);
+    }
+
+    public void BuyItem(Item item){
+        inventoryData.AddAllSavedItems(item);
+        playerData.TotalMoney -= item.price;
+        EndShopScene();
+    }
+
+    public void EndShopScene(){
+        Save<InventoryData>(Application.persistentDataPath + SaveKey.INVENTORY_KEY, inventoryData);
+        Save<PlayerData>(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY, playerData);
     }
 }

@@ -1,13 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ShopListView : MonoBehaviour {
+public class ShopListView : TodoBehaviour {
 
     [SerializeField] private Item item;
-    [SerializeField] private int amount;
+    [SerializeField] private SureBuyPanel panel;
 
     public Item getItem() { return item; }
-    public int getAmount() { return amount; }
-    public void addAmount(int a) { amount += a; } 
+
+    public void Buy(){
+        panel.setItem(item);
+        panel.Trigger();
+    }
+
+    void Start(){
+        Cp<Button>().onClick.AddListener(Buy);
+    }
 }

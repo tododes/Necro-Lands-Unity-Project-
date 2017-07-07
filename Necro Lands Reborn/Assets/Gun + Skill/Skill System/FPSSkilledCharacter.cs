@@ -37,8 +37,8 @@ public class FPSSkilledCharacter : FPSCharacter
     protected new void Start(){
         base.Start();
         bf = new BinaryFormatter();
-        if(File.Exists(Application.persistentDataPath + TalentTreeController.TalentDataPath)){
-            FileStream fs = File.Open(Application.persistentDataPath + TalentTreeController.TalentDataPath, FileMode.Open);
+        if(File.Exists(Application.persistentDataPath + SaveKey.CURRENTTALENT_KEY)){
+            FileStream fs = File.Open(Application.persistentDataPath + SaveKey.CURRENTTALENT_KEY, FileMode.Open);
             Talent talent = (Talent)bf.Deserialize(fs);
             MaxHP += talent.BonusHP;
             HP += talent.BonusHP;
@@ -57,6 +57,6 @@ public class FPSSkilledCharacter : FPSCharacter
     }
 
     void Update(){
-
+        
     }
 }

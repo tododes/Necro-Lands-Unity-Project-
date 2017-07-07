@@ -21,7 +21,7 @@ public class GameMode : MonoBehaviour {
 	// Use this for initialization
 	protected void Start () {
         binaryFormatter = new BinaryFormatter();
-        fileStream = File.Open(Application.persistentDataPath + "/MissionDatabase.data", FileMode.Open);
+        fileStream = File.Open(Application.persistentDataPath + SaveKey.MISSIONDATABASE_KEY, FileMode.Open);
         missionDB = (MissionDatabase) binaryFormatter.Deserialize(fileStream);
         fileStream.Close();
         Unlocked = missionDB.isMissionUnlocked(mission);
@@ -39,6 +39,6 @@ public class GameMode : MonoBehaviour {
     public virtual void Save(){
         Clock clock = new Clock(3, 0);
         mission = new Mission("Ez standard", "Catch the cat", 3, clock, true, false, true);
-        SaveMission<Mission>(mission, "/MissionData.data");
+        SaveMission<Mission>(mission, SaveKey.MISSION_KEY);
     }
 }

@@ -11,6 +11,6 @@ public class UltimateGameMode : GameMode {
         Clock clock = new Clock(5, 0);
         mission = new UltimateMission("Ez ultimate", "Catch the chicken", 5, clock, true, false, true, 2, 3);
         UltimateMission um = (UltimateMission) mission;
-        SaveMission<UltimateMission>(um, "/MissionData.data");
+        SaveMission<UltimateMission>(um, SaveKey.MISSION_KEY);
     }
 }

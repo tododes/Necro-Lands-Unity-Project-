@@ -24,6 +24,15 @@ public class Chrono {
         Second = second;
     }
 
+    public Chrono(DateTime dateTime){
+        Year = dateTime.Year;
+        Month = dateTime.Month;
+        Day = dateTime.Day;
+        Hour = dateTime.Hour;
+        Minute = dateTime.Minute;
+        Second = dateTime.Second;
+    }
+
     public override string ToString(){
         StringBuilder sb = new StringBuilder();
         sb.Append(Month);

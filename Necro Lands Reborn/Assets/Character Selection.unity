@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82dda5bf05fab8e43820a62146445c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: P3
+  playerName: Mira
 --- !u!1001 &532478325
 Prefab:
   m_ObjectHideFlags: 0
@@ -786,7 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82dda5bf05fab8e43820a62146445c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: P4
+  playerName: Lucy
 --- !u!1 &1149186994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82dda5bf05fab8e43820a62146445c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: P1
+  playerName: Gregory
 --- !u!1 &1452762658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,7 +1650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82dda5bf05fab8e43820a62146445c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: P2
+  playerName: Trevor
 --- !u!1 &2043684688
 GameObject:
   m_ObjectHideFlags: 0

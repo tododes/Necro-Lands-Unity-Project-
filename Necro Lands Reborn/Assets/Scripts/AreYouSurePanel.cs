@@ -51,7 +51,7 @@ public class AreYouSurePanel : MonoBehaviour {
         Index = 0;
     }
 
-    public void Yes(string name)
+    public virtual void Yes(string name)
     {
         if (name == "Quit")
             Application.Quit();

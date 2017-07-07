@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class PlayerMenuManager : MonoBehaviour {
 
@@ -17,6 +19,10 @@ public class PlayerMenuManager : MonoBehaviour {
     }
 
     void Start(){
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream fs = File.Open(Application.persistentDataPath + SaveKey.INVENTORY_KEY, FileMode.Open);
+        inventoryData = (InventoryData) bf.Deserialize(fs);
+
         for (int i = 0; i < inventoryData.getAllSavedItemsCount(); i++){
             storage.Add(inventoryData.getAllSavedItemsAt(i));
         }

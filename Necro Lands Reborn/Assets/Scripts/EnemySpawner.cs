@@ -6,7 +6,6 @@ public class EnemySpawner : TodoBehaviour {
 
     [SerializeField] private List<GameObject> enemies = new List<GameObject>();
     [SerializeField] private float multiplier;
-    private List<Parent> parents;
 
 	void Start () {
         multiplier = Mathf.Clamp(multiplier, 1, 100);
@@ -49,12 +48,3 @@ public class EnemySpawner : TodoBehaviour {
 //        return instance;
 //    }
 //}
-
-public class Parent
-{
-
-}
-
-public class Child : Parent {
-
-}

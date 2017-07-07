@@ -3,6 +3,7 @@ using System.Collections;
 
 [System.Serializable]
 public class Item{
+    public string name;
 
     protected bool Consumable;
     protected int Amount;

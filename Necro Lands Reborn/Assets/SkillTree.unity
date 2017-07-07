@@ -682,9 +682,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &373090529
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -786,9 +789,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &388119625
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1275,6 +1281,881 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4892e3902b17e3e4992cd04e83cb4949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumberOfPlayers: 4
+  playerTalentCollection:
+  - name: Gregory
+    playerTalents:
+    - Name: Gregory1
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 5
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory2
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 7
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 10
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory3
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 15
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory4
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 7
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 15
+    - Name: Gregory5
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 10
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 17
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory6
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 25
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory7
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 10
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 20
+    - Name: Gregory8
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 10
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 30
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory9
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 20
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 17
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory10
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 40
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory11
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 15
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 30
+    - Name: Gregory12
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 15
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 25
+      BonusDamageReflection: 20
+    - Name: Gregory13
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 10
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 50
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory14
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 30
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 17
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory15
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 40
+      BonusMoveSpeed: 25
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory16
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 60
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: Gregory17
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 15
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 40
+    - Name: Gregory18
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 15
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 35
+      BonusDamageReflection: 20
+  - name: Trevor
+    playerTalents:
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+  - name: 'Mira '
+    playerTalents:
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+  - name: Lucy
+    playerTalents:
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+    - Name: 
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicDamage: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      BonusHPRegen: 0
+      BonusDPSAura: 0
+      BonusDamageReflection: 0
+  nodes: []
   Root: {fileID: 379311327}
   currentTalent:
     Name: 
@@ -1283,9 +2164,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!4 &732277132
 Transform:
   m_ObjectHideFlags: 0
@@ -1370,9 +2254,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &874445290
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1611,9 +2498,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &941938020
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1964,9 +2854,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &1147822280
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2075,9 +2968,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &1432265557
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2186,9 +3082,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &1459741060
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2298,9 +3197,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &1509603410
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2411,9 +3313,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &1564889488
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2524,9 +3429,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &1626422554
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2765,9 +3673,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &1669593754
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2993,9 +3904,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &1816693702
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3209,9 +4123,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &1820710771
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3479,9 +4396,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &1948548568
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3590,9 +4510,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &2000197791
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3818,9 +4741,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &2030342160
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3944,9 +4870,12 @@ MonoBehaviour:
     BonusArmor: 0
     BonusMoveSpeed: 0
     BonusMagicDamage: 0
+    BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
     BonusHPRegen: 0
+    BonusDPSAura: 0
+    BonusDamageReflection: 0
 --- !u!58 &2069068454
 CircleCollider2D:
   m_ObjectHideFlags: 0

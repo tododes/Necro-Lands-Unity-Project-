@@ -293,6 +293,14 @@ MonoBehaviour:
     Level: 0
     Exp: 0
     Token: 0
+  lastLoginChrono:
+    Year: 0
+    Month: 0
+    Week: 0
+    Day: 0
+    Hour: 0
+    Minute: 0
+    Second: 0
 --- !u!1001 &352576102
 Prefab:
   m_ObjectHideFlags: 0
@@ -517,6 +525,34 @@ MonoBehaviour:
   missionDB:
     missions: []
     missionsAccomplishment: 
+    missionsUnlockStatus: 
+  playerData:
+    TotalMoney: 0
+    Name: 
+    Level: 0
+    Exp: 0
+    Token: 0
+  inventoryData:
+    currentSavedItems: []
+    allSavedItems: []
+  loginData:
+    Year: 0
+    Month: 0
+    Week: 0
+    Day: 0
+    Hour: 0
+    Minute: 0
+    Second: 0
+  missionData:
+    name: 
+    description: 
+    kill: 0
+    clock:
+      Minute: 0
+      Second: 0
+    useTimer: 0
+    accomplished: 0
+    unlocked: 0
 --- !u!4 &664672758
 Transform:
   m_ObjectHideFlags: 0
@@ -624,6 +660,7 @@ GameObject:
   - component: {fileID: 817238356}
   - component: {fileID: 817238355}
   - component: {fileID: 817238354}
+  - component: {fileID: 817238357}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -647,7 +684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -353, y: 240}
+  m_AnchoredPosition: {x: -750, y: 240}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817238354
@@ -735,6 +772,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 817238352}
+--- !u!114 &817238357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817238352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9586530b1e3489d41ba1efb75a7528f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &835512223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,6 +1402,7 @@ GameObject:
   - component: {fileID: 1750848404}
   - component: {fileID: 1750848403}
   - component: {fileID: 1750848402}
+  - component: {fileID: 1750848405}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -1377,7 +1426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -353, y: 60}
+  m_AnchoredPosition: {x: -950, y: 60}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1750848402
@@ -1465,6 +1514,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1750848400}
+--- !u!114 &1750848405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1750848400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9586530b1e3489d41ba1efb75a7528f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1914423307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,6 +1536,7 @@ GameObject:
   - component: {fileID: 1914423311}
   - component: {fileID: 1914423310}
   - component: {fileID: 1914423309}
+  - component: {fileID: 1914423312}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -1499,7 +1560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -353, y: 150}
+  m_AnchoredPosition: {x: -850, y: 150}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914423309
@@ -1587,3 +1648,14 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1914423307}
+--- !u!114 &1914423312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914423307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9586530b1e3489d41ba1efb75a7528f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

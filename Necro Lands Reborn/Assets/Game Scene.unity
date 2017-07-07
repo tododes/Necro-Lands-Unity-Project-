@@ -639,6 +639,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114255183439225402, guid: 3d184e39aaba2924586e544f317d0a35,
+        type: 2}
+      propertyPath: guns.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114342248919682350, guid: 3d184e39aaba2924586e544f317d0a35,
         type: 2}
       propertyPath: playerCanvases.Array.size
@@ -719,6 +724,16 @@ Prefab:
       propertyPath: failedPanel
       value: 
       objectReference: {fileID: 1160373500}
+    - target: {fileID: 114255183439225402, guid: 3d184e39aaba2924586e544f317d0a35,
+        type: 2}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 2022209622}
+    - target: {fileID: 114342248919682350, guid: 3d184e39aaba2924586e544f317d0a35,
+        type: 2}
+      propertyPath: weaponManager
+      value: 
+      objectReference: {fileID: 1540817865}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d184e39aaba2924586e544f317d0a35, type: 2}
   m_IsPrefabParent: 0
@@ -1374,7 +1389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c088e4b830f5e64d9089c9c63ce7e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gun: {fileID: 11481388, guid: 3809608945325aa418f98a7f6690d837, type: 2}
+  gun: {fileID: 114611183466783056, guid: 6d43c9aed9e99754ab0d4256352fd5ce, type: 2}
   price: 0
   MyButton: {fileID: 0}
   sprite: {fileID: 0}
@@ -3121,9 +3136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 500695994ee3cb243a7d7c33f394c637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentlyFocusedEnemy: []
-  IKnowWhereTheEnemyIs: 0
-  gun: {fileID: 0}
 --- !u!23 &1359075056
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3598,6 +3610,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1530042769}
+--- !u!114 &1540817865 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114255183439225402, guid: 3d184e39aaba2924586e544f317d0a35,
+    type: 2}
+  m_PrefabInternal: {fileID: 193689569}
+  m_Script: {fileID: 11500000, guid: 03d5d778b78a744448cb6e54c3a95f78, type: 3}
 --- !u!1001 &1550812459
 Prefab:
   m_ObjectHideFlags: 0
@@ -3666,6 +3684,10 @@ Prefab:
         type: 2}
       propertyPath: m_StoppingDistance
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471400698746944, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
@@ -4541,6 +4563,12 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'Money : 0'
+--- !u!114 &2022209622 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114884585668407386, guid: 3d184e39aaba2924586e544f317d0a35,
+    type: 2}
+  m_PrefabInternal: {fileID: 193689569}
+  m_Script: {fileID: 11500000, guid: 3000dda1a7c6cf14396afb912d08fad5, type: 3}
 --- !u!1001 &2034746318
 Prefab:
   m_ObjectHideFlags: 0
