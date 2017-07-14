@@ -10,7 +10,9 @@ public class ItemSprite : MonoBehaviour {
 
     [SerializeField]
     private KeyCode myKey;
-    private FPSCharacter character;
+
+    [SerializeField] private FPSCharacter character;
+    [SerializeField] private ItemSpriteDatabase itemSpriteDB;
 
     void Start(){
         character = GameObject.FindGameObjectWithTag("Player").GetComponent<FPSCharacter>();
@@ -37,6 +39,7 @@ public class ItemSprite : MonoBehaviour {
 
     public void setItem(Item i) {
         item = i;
+        image.sprite = itemSpriteDB.getSpriteByItem(i);
     }
 
     public Item getItem() { return item; }

@@ -16,7 +16,7 @@ public class SureBuyPanel : AreYouSurePanel {
     public void setItem(Item i) { item = i; }
 
     public override void Yes(string name){
-        base.Yes(name);
         manager.BuyItem(item);
+        No();
     }
 }

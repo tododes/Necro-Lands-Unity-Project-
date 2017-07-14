@@ -18,7 +18,7 @@ public class ItemStoragePanel : AreYouSurePanel {
     new void Start(){
         base.Start();
         bf = new BinaryFormatter();
-        inventoryData = Load<InventoryData>("/InventoryData.data");
+        inventoryData = Load<InventoryData>(SaveKey.INVENTORY_KEY);
         for(int i = 0; i < inventoryData.getAllSavedItemsCount(); i++){
             storageItems.Add(inventoryData.getAllSavedItemsAt(i));
         }

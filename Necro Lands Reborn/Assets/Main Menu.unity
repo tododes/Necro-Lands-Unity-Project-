@@ -301,6 +301,7 @@ MonoBehaviour:
     Hour: 0
     Minute: 0
     Second: 0
+  rewardPanel: {fileID: 814666656}
 --- !u!1001 &352576102
 Prefab:
   m_ObjectHideFlags: 0
@@ -486,6 +487,14 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 22400532, guid: ff79c1a8441257041b9307bffe04244c, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400532, guid: ff79c1a8441257041b9307bffe04244c, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff79c1a8441257041b9307bffe04244c, type: 2}
   m_IsPrefabParent: 0
@@ -553,6 +562,15 @@ MonoBehaviour:
     useTimer: 0
     accomplished: 0
     unlocked: 0
+  skillDB:
+    skillNames:
+    - Gregory-S-1
+    - Gregory-S-2
+    - Gregory-S-3
+    skills:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
 --- !u!4 &664672758
 Transform:
   m_ObjectHideFlags: 0
@@ -578,7 +596,7 @@ GameObject:
   - component: {fileID: 814666654}
   - component: {fileID: 814666656}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Daily Reward Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -4,19 +4,13 @@ using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
-[System.Serializable]
-public class PlayerSkillDatabase {
+
+public class PlayerSkillDatabase : ScriptableObject {
 
     [SerializeField] private List<string> playerName = new List<string>();
     [SerializeField] private List<SkillArrayList> playerSkills = new List<SkillArrayList>();
 
-    private BinaryFormatter bf;
-    private SkillDatabase skillDB;
-
-    public PlayerSkillDatabase(BinaryFormatter b){
-        bf = b;
-        skillDB = new SkillDatabase();
-    }
+    [SerializeField] private SkillDatabase skillDB;
 
     public Skill[] getSkillsOf(string name){
         SkillArrayList sal = playerSkills[playerName.IndexOf(name)];

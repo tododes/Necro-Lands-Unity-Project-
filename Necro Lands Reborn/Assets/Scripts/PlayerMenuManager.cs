@@ -13,16 +13,17 @@ public class PlayerMenuManager : MonoBehaviour {
     [SerializeField] private InventoryData inventoryData;
 
     public Sprite DefaultSprite;
+    private BinaryFormatter bf;
 
     void Awake(){
         singleton = this;
     }
 
     void Start(){
-        BinaryFormatter bf = new BinaryFormatter();
+        bf = new BinaryFormatter();
         FileStream fs = File.Open(Application.persistentDataPath + SaveKey.INVENTORY_KEY, FileMode.Open);
         inventoryData = (InventoryData) bf.Deserialize(fs);
-
+        fs.Close();
         for (int i = 0; i < inventoryData.getAllSavedItemsCount(); i++){
             storage.Add(inventoryData.getAllSavedItemsAt(i));
         }
@@ -51,5 +52,8 @@ public class PlayerMenuManager : MonoBehaviour {
         for(int i = 0; i < inventoryForBattle.Count; i++){
             inventoryData.AddCurrentSavedItems(inventoryForBattle[i]);
         }
+        FileStream fs = File.Create(Application.persistentDataPath + SaveKey.INVENTORY_KEY);
+        bf.Serialize(fs, inventoryData);
+        fs.Close();
     }
 }

@@ -681,13 +681,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &373090529
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -788,13 +803,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &388119625
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1288,873 +1318,1953 @@ MonoBehaviour:
     - Name: Gregory1
       BonusHP: 0
       BonusAttack: 0
-      BonusArmor: 5
+      BonusArmor: 10
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
     - Name: Gregory2
       BonusHP: 0
       BonusAttack: 0
-      BonusArmor: 7
+      BonusArmor: 10
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 10
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
     - Name: Gregory3
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 15
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: Gregory4
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 7
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 15
-    - Name: Gregory5
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 10
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 17
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: Gregory6
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 25
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: Gregory7
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 10
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 20
-    - Name: Gregory8
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 10
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 30
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: Gregory9
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 20
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 17
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: Gregory10
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 40
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: Gregory11
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 15
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 30
-    - Name: Gregory12
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 15
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 25
-      BonusDamageReflection: 20
-    - Name: Gregory13
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory4
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 10
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 50
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: Gregory14
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0.15
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory5
       BonusHP: 0
       BonusAttack: 0
-      BonusArmor: 30
+      BonusArmor: 20
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 17
+      BonusMagicAttack: 0
+      BonusMagicArmor: 20
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: Gregory15
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory6
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 40
-      BonusMoveSpeed: 25
-      BonusMagicDamage: 0
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory7
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 20
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0.2
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory8
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 20
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 40
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory9
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 40
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 20
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory10
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 80
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory11
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 20
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0.3
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory12
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 20
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 25
+        bonusDamageReflection: 0.2
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory13
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 20
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 80
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory14
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 80
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 20
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Gregory15
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 160
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
     - Name: Gregory16
       BonusHP: 0
       BonusAttack: 0
-      BonusArmor: 60
+      BonusArmor: 100
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 20
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
     - Name: Gregory17
       BonusHP: 0
       BonusAttack: 0
-      BonusArmor: 15
+      BonusArmor: 20
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 40
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0.4
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
     - Name: Gregory18
       BonusHP: 0
       BonusAttack: 0
-      BonusArmor: 15
+      BonusArmor: 20
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 35
-      BonusDamageReflection: 20
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 45
+        bonusDamageReflection: 0.2
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
   - name: Trevor
     playerTalents:
-    - Name: 
+    - Name: Trevor1
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 10
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor2
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 10
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0.05
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor3
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 40
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor4
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 15
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0.05
+      trevorModifier:
+        bonusCritical: 0.2
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor5
+      BonusHP: 0
+      BonusAttack: 20
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0.1
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor6
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 70
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor7
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 20
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0.15
+      trevorModifier:
+        bonusCritical: 0.3
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor8
+      BonusHP: 0
+      BonusAttack: 30
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0.15
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor9
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 20
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 1
+        bonusMagicDamage: 0.1
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor10
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 130
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor11
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 20
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0.15
+      trevorModifier:
+        bonusCritical: 0.5
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor12
+      BonusHP: 0
+      BonusAttack: 20
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0.25
+      trevorModifier:
+        bonusCritical: 0.3
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor13
+      BonusHP: 0
+      BonusAttack: 50
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0.25
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor14
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 22
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 2
+        bonusMagicDamage: 0.12
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor15
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 220
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor16
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 160
       BonusArmor: 0
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMoveSpeed: 20
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor17
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 20
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      BonusSpellLifesteal: 0.15
+      trevorModifier:
+        bonusCritical: 0.7
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Trevor18
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 20
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-  - name: 'Mira '
+      BonusSpellLifesteal: 0.35
+      trevorModifier:
+        bonusCritical: 0.3
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+  - name: Mira
     playerTalents:
-    - Name: 
+    - Name: Mira1
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 5
+      BonusArmor: 5
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 5
+      BonusMagicArmor: 5
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira2
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 5
+      BonusArmor: 5
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 5
+      BonusMagicArmor: 5
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 5
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira3
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 10
+      BonusArmor: 10
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 10
+      BonusMagicArmor: 10
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira4
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 5
+      BonusArmor: 5
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 5
+      BonusMagicArmor: 5
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0.02
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira5
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 8
+      BonusArmor: 8
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 8
+      BonusMagicArmor: 8
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 10
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira6
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 20
+      BonusArmor: 20
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 20
+      BonusMagicArmor: 20
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira7
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 8
+      BonusArmor: 8
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 8
+      BonusMagicArmor: 8
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0.04
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira8
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 8
+      BonusArmor: 8
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 8
+      BonusMagicArmor: 8
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 15
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira9
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusAttack: 8
+      BonusArmor: 8
+      BonusMoveSpeed: 10
+      BonusMagicAttack: 8
+      BonusMagicArmor: 8
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 15
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira10
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 40
+      BonusArmor: 40
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 40
+      BonusMagicArmor: 40
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira11
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 8
+      BonusArmor: 8
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 8
+      BonusMagicArmor: 8
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0.08
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira12
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 8
+      BonusArmor: 8
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 8
+      BonusMagicArmor: 8
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0.04
+        bonusCombatFury: 0
+        shootIntervalReduction: 0.1
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira13
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 10
+      BonusArmor: 10
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 10
+      BonusMagicArmor: 10
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 25
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira14
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusAttack: 10
+      BonusArmor: 10
+      BonusMoveSpeed: 20
+      BonusMagicAttack: 10
+      BonusMagicArmor: 10
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 15
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira15
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 80
+      BonusArmor: 80
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 80
+      BonusMagicArmor: 80
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira16
+      BonusHP: 400
+      BonusAttack: 50
+      BonusArmor: 50
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 50
+      BonusMagicArmor: 50
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira17
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 12
+      BonusArmor: 12
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 12
+      BonusMagicArmor: 12
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0.12
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Mira18
       BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
+      BonusAttack: 8
+      BonusArmor: 8
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
+      BonusMagicAttack: 8
+      BonusMagicArmor: 8
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0.04
+        bonusCombatFury: 0
+        shootIntervalReduction: 0.25
+      lucyModifier:
+        bonusAttackReductionAura: 0
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
   - name: Lucy
     playerTalents:
-    - Name: 
+    - Name: Lucy1
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 30
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy2
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 30
+        extraBulletStun: 0
+        statSwapCooldownReduction: 5
+        cooldownReduction: 0
+    - Name: Lucy3
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 60
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy4
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 30
+        extraBulletStun: 0.4
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy5
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 40
+        extraBulletStun: 0
+        statSwapCooldownReduction: 8
+        cooldownReduction: 0
+    - Name: Lucy6
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 120
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy7
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 40
+        extraBulletStun: 1
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy8
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 40
+        extraBulletStun: 0
+        statSwapCooldownReduction: 12
+        cooldownReduction: 0
+    - Name: Lucy9
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 40
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 8
+    - Name: Lucy10
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 210
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy11
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 40
+        extraBulletStun: 2
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy12
+      BonusHP: 0
+      BonusAttack: 30
+      BonusArmor: 0
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 40
+        extraBulletStun: 1
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy13
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 50
+        extraBulletStun: 0
+        statSwapCooldownReduction: 999
+        cooldownReduction: 0
+    - Name: Lucy14
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 40
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 12
+    - Name: Lucy15
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 300
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy16
+      BonusHP: 0
+      BonusAttack: 0
+      BonusArmor: 10
+      BonusMoveSpeed: 0
+      BonusMagicAttack: 0
+      BonusMagicArmor: 0
+      BonusLifesteal: 0
+      BonusSpellLifesteal: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 210
+        extraBulletStun: 0
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy17
       BonusHP: 0
       BonusAttack: 0
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 50
+        extraBulletStun: 3
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
+    - Name: Lucy18
       BonusHP: 0
-      BonusAttack: 0
+      BonusAttack: 60
       BonusArmor: 0
       BonusMoveSpeed: 0
-      BonusMagicDamage: 0
+      BonusMagicAttack: 0
       BonusMagicArmor: 0
       BonusLifesteal: 0
       BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
-    - Name: 
-      BonusHP: 0
-      BonusAttack: 0
-      BonusArmor: 0
-      BonusMoveSpeed: 0
-      BonusMagicDamage: 0
-      BonusMagicArmor: 0
-      BonusLifesteal: 0
-      BonusSpellLifesteal: 0
-      BonusHPRegen: 0
-      BonusDPSAura: 0
-      BonusDamageReflection: 0
+      trevorModifier:
+        bonusCritical: 0
+        bonusDamageInstance: 0
+        bonusMagicDamage: 0
+      gregoryModifier:
+        bonusReactiveArmor: 0
+        bonusHPRegen: 0
+        bonusDPSAura: 0
+        bonusDamageReflection: 0
+      miraModifier:
+        bonusFuryShot: 0
+        bonusCombatFury: 0
+        shootIntervalReduction: 0
+      lucyModifier:
+        bonusAttackReductionAura: 40
+        extraBulletStun: 1
+        statSwapCooldownReduction: 0
+        cooldownReduction: 0
   nodes: []
   Root: {fileID: 379311327}
   currentTalent:
@@ -2163,13 +3273,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!4 &732277132
 Transform:
   m_ObjectHideFlags: 0
@@ -2253,13 +3378,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &874445290
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2497,13 +3637,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &941938020
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2853,13 +4008,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &1147822280
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2967,13 +4137,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &1432265557
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3081,13 +4266,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &1459741060
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3196,13 +4396,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &1509603410
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3312,13 +4527,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &1564889488
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3428,13 +4658,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &1626422554
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3672,13 +4917,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &1669593754
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3903,13 +5163,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &1816693702
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4122,13 +5397,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &1820710771
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4395,13 +5685,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &1948548568
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4509,13 +5814,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &2000197791
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4740,13 +6060,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &2030342160
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4869,13 +6204,28 @@ MonoBehaviour:
     BonusAttack: 0
     BonusArmor: 0
     BonusMoveSpeed: 0
-    BonusMagicDamage: 0
+    BonusMagicAttack: 0
     BonusMagicArmor: 0
     BonusLifesteal: 0
     BonusSpellLifesteal: 0
-    BonusHPRegen: 0
-    BonusDPSAura: 0
-    BonusDamageReflection: 0
+    trevorModifier:
+      bonusCritical: 0
+      bonusDamageInstance: 0
+      bonusMagicDamage: 0
+    gregoryModifier:
+      bonusReactiveArmor: 0
+      bonusHPRegen: 0
+      bonusDPSAura: 0
+      bonusDamageReflection: 0
+    miraModifier:
+      bonusFuryShot: 0
+      bonusCombatFury: 0
+      shootIntervalReduction: 0
+    lucyModifier:
+      bonusAttackReductionAura: 0
+      extraBulletStun: 0
+      statSwapCooldownReduction: 0
+      cooldownReduction: 0
 --- !u!58 &2069068454
 CircleCollider2D:
   m_ObjectHideFlags: 0

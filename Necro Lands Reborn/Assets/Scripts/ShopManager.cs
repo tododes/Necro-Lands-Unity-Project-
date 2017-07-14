@@ -34,18 +34,19 @@ public class ShopManager : MonoBehaviour {
 
     void Start(){
         bf = new BinaryFormatter();
-        playerData = Load<PlayerData>(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY);
-        inventoryData = Load<InventoryData>(Application.persistentDataPath + SaveKey.INVENTORY_KEY);
+        playerData = Load<PlayerData>(SaveKey.PLAYERDATA_KEY);
+        inventoryData = Load<InventoryData>(SaveKey.INVENTORY_KEY);
     }
 
     public void BuyItem(Item item){
         inventoryData.AddAllSavedItems(item);
         playerData.TotalMoney -= item.price;
         EndShopScene();
+
     }
 
     public void EndShopScene(){
-        Save<InventoryData>(Application.persistentDataPath + SaveKey.INVENTORY_KEY, inventoryData);
-        Save<PlayerData>(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY, playerData);
+        Save<InventoryData>(SaveKey.INVENTORY_KEY, inventoryData);
+        Save<PlayerData>(SaveKey.PLAYERDATA_KEY, playerData);
     }
 }

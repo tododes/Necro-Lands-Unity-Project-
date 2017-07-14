@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class StorageItemView : TodoBehaviour {
 
-    private Item MyItem;
+    [SerializeField] private Item MyItem;
     private PlayerMenuManager playerMenuManager;
     private Button button;
     [SerializeField] private Image image;

@@ -28,4 +28,11 @@ public class SkillDatabase {
         }
         return ss;
     }
+
 }
+
+//[System.Serializable]
+//public class PlayerSkillDatabase {
+//    [SerializeField] private List<string> playerNames;
+//    [SerializeField] private List<List<string>> playerSkills;
+//}

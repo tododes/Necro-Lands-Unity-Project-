@@ -13,4 +13,7 @@ public class SaveKey{
     public const string TALENTTREEDATA_KEY = "/TalentTreeData.data";
     public const string CURRENTTALENT_KEY = "/TalentData.data";
     public const string PLAYERTALENTDATABASE_KEY = "/PlayerTalentListData.data";
+
+    public const string SKILLDATABASE_KEY = "/SkillDatabase.data";
+    public const string PLAYERSKILLDATABASE_KEY = "/PlayerSkillDatabase.data";
 }

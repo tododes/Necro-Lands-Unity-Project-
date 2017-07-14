@@ -9,6 +9,7 @@ public class InventoryItemImage : Image {
     private int index;
     private PlayerMenuManager playerMenuManager;
     private Sprite defaultSprite;
+    [SerializeField] private ItemSpriteDatabase itemSpriteDB;
 
     new void Start(){
         base.Start();
@@ -30,6 +31,7 @@ public class InventoryItemImage : Image {
     void Update(){
         if(index < playerMenuManager.getInventoryCount()){
             item = playerMenuManager.getInventoryItemAt(index);
+            sprite = itemSpriteDB.getSpriteByItem(item);
         }
         else{
             item = null;

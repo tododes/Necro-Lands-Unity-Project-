@@ -11,6 +11,7 @@ public class ApplicationInitializer : MonoBehaviour {
     [SerializeField] private InventoryData inventoryData;
     [SerializeField] private Chrono loginData;
     [SerializeField] private Mission missionData;
+    [SerializeField] private SkillDatabase skillDB;
     //[SerializeField] private PlayerTalentList pTalentList;
 
     private BinaryFormatter bf;
@@ -25,7 +26,7 @@ public class ApplicationInitializer : MonoBehaviour {
         Save<InventoryData>(inventoryData, SaveKey.PLAYERDATA_KEY);
         Save<Chrono>(loginData, SaveKey.PLAYERDATA_KEY);
         Save<Mission>(missionData, SaveKey.PLAYERDATA_KEY);
-        //Save<PlayerTalentList>(pTalentList, SaveKey.PLAYERTALENTDATABASE_KEY);
+        Save<SkillDatabase>(skillDB, SaveKey.SKILLDATABASE_KEY);
     }
 
     private void Save<T>(T obj, string path){

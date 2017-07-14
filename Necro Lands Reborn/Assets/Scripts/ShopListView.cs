@@ -7,7 +7,8 @@ public class ShopListView : TodoBehaviour {
 
     [SerializeField] private Item item;
     [SerializeField] private SureBuyPanel panel;
-
+    [SerializeField] private ItemSpriteDatabase itemSpriteDB;
+ 
     public Item getItem() { return item; }
 
     public void Buy(){
@@ -17,5 +18,7 @@ public class ShopListView : TodoBehaviour {
 
     void Start(){
         Cp<Button>().onClick.AddListener(Buy);
+        Cp<Image>().sprite = itemSpriteDB.getSpriteByItem(item); 
+        //Cp<Image>().sprite = item.sprite;
     }
 }

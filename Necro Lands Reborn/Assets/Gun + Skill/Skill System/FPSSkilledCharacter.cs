@@ -32,12 +32,7 @@ public class FPSSkilledCharacter : FPSCharacter
             skills[i].setOwner(this);
         }
         weaponManager = Cp_C<WeaponManager>();
-    }
-
-    protected new void Start(){
-        base.Start();
-        bf = new BinaryFormatter();
-        if(File.Exists(Application.persistentDataPath + SaveKey.CURRENTTALENT_KEY)){
+        if (File.Exists(Application.persistentDataPath + SaveKey.CURRENTTALENT_KEY)){
             FileStream fs = File.Open(Application.persistentDataPath + SaveKey.CURRENTTALENT_KEY, FileMode.Open);
             Talent talent = (Talent)bf.Deserialize(fs);
             MaxHP += talent.BonusHP;
@@ -45,11 +40,17 @@ public class FPSSkilledCharacter : FPSCharacter
             Attack += talent.BonusAttack;
             Armor += talent.BonusArmor;
             Speed += talent.BonusMoveSpeed;
-            HPRegen += talent.BonusHPRegen;
+            //HPRegen += talent.BonusHPRegen;
             Lifesteal += talent.BonusLifesteal;
             spellLifesteal += talent.BonusSpellLifesteal;
-            magicAmplification += talent.BonusMagicDamage;
+            magicAmplification += talent.trevorModifier.bonusMagicDamage;
         }
+    }
+
+    protected new void Start(){
+        base.Start();
+        bf = new BinaryFormatter();
+       
     }
 
     public float getSpellLifesteal(){

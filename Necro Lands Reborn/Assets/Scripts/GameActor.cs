@@ -30,6 +30,15 @@ public class GameActor : TodoBehaviour {
         HP -= amount;
     }
 
+    public void ModifyHealth(int h){
+        //float percentage = HP / MaxHP;
+        //MaxHP += h;
+        //Debug.Log(MaxHP);
+        //HP = percentage * MaxHP;
+        MaxHP += h;
+        HP += h;
+    }
+
     public void ModifyAttack(int amount){
         Attack += amount;
     }
@@ -44,6 +53,10 @@ public class GameActor : TodoBehaviour {
 
     public void ModifyArmor(float amount){
         Armor += amount;
+    }
+
+    public void ModifySpeed(float amount){
+        Speed += amount;
     }
 
     public bool isDead() { return HP <= 0f; }

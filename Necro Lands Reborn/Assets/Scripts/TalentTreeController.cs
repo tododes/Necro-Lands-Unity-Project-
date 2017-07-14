@@ -88,7 +88,7 @@ public class TalentTreeController : TodoBehaviour {
     }
 
     public void SaveCurrentTalent(){
-        FileStream fs = File.Create(Application.persistentDataPath + SaveKey.TALENTTREEDATA_KEY);
+        FileStream fs = File.Create(Application.persistentDataPath + SaveKey.CURRENTTALENT_KEY);
         bf.Serialize(fs, currentTalent);
         fs.Close();
     }

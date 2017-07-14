@@ -20,7 +20,6 @@ public class AreYouSurePanel : MonoBehaviour {
 
     protected void Start(){
         rect = GetComponent<RectTransform>();
-        Index = 0;
         IncrementFactor = Vector3.one * 2 * desiredSize;
         zeroVector = new Vector3(0, 0, 1);
     }
@@ -43,7 +42,6 @@ public class AreYouSurePanel : MonoBehaviour {
         if (Index == 1 && rect.localScale.x < desiredSize){
             rect.localScale = rect.localScale + IncrementFactor * Time.deltaTime;
         }
-           
     }
 
     public void No()
@@ -59,8 +57,7 @@ public class AreYouSurePanel : MonoBehaviour {
             Application.LoadLevel(name);
     }
 
-    public void Trigger()
-    {
+    public virtual void Trigger(){
         Index = 1;
     }
 }

@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 412420796}
   - component: {fileID: 412420795}
   - component: {fileID: 412420797}
+  - component: {fileID: 412420798}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -190,6 +191,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skill: {fileID: 0}
   price: 0
+--- !u!114 &412420798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412420793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 412420795}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1167376252
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +493,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSkillDB:
-    playerName: []
+    playerName:
+    - Gregory
+    - Trevor
+    - Mira
+    - Lucy
+    playerSkills:
+    - skillNames:
+      - Gregory-S-1
+      - Gregory-S-2
+      - Gregory-S-3
+    - skillNames: []
+    - skillNames: []
+    - skillNames: []
   shopItem: []
 --- !u!1 &1815993962
 GameObject:

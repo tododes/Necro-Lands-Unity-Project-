@@ -20,6 +20,7 @@ public class DailyRewardManager : MonoBehaviour {
 
     [SerializeField] private PlayerData playerData;
     [SerializeField] private Chrono lastLoginChrono;
+    [SerializeField] private DailyRewardPanel rewardPanel;
 
     void Awake(){
         singleton = this;
@@ -30,10 +31,12 @@ public class DailyRewardManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        if (File.Exists(Application.persistentDataPath + SaveKey.LOGINDATA_KEY)){
+        if (File.Exists(Application.persistentDataPath + SaveKey.LOGINDATA_KEY))
+        {
             lastLoginChrono = LoadLastLoginTime();
         }
-        else{
+        else
+        {
             NeverLogin = true;
             lastLoginChrono = new Chrono(DateTime.Now);
         }
@@ -43,17 +46,24 @@ public class DailyRewardManager : MonoBehaviour {
 
         Debug.Log(currentLoginTime.Subtract(previousLoginTime));
 
-        if (!NeverLogin){
-            if (currentLoginTime.Subtract(previousLoginTime).Days > 1){
+        if (!NeverLogin)
+        {
+            if (currentLoginTime.Subtract(previousLoginTime).Days > 1)
+            {
+                Debug.Log("trigger time extra day");
                 DailyRewardPanel.singleton.Trigger();
                 CurrentStreak = 0;
             }
-            else if (currentLoginTime.Subtract(previousLoginTime).Days == 1){
+            else if (currentLoginTime.Subtract(previousLoginTime).Days == 1)
+            {
+                Debug.Log("trigger time reset day");
                 DailyRewardPanel.singleton.Trigger();
                 CurrentStreak++;
             }
         }
-        else {
+        else
+        {
+            Debug.Log("trigger time first play");
             DailyRewardPanel.singleton.Trigger();
             CurrentStreak = 0;
         }
@@ -63,8 +73,7 @@ public class DailyRewardManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
-	}
+    }
 
     public void ClaimReward(){
         Reward reward = rewards[CurrentStreak];

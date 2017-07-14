@@ -20,13 +20,14 @@ public class SkillShopController : TodoBehaviour {
         BinaryFormatter bf = new BinaryFormatter();
         FileStream fs = File.Open(Application.persistentDataPath + "/PlayerData.data", FileMode.Open);
         pData = (PlayerData) bf.Deserialize(fs);
-        shopItem = GetComponentsInChildren<SkillShopItem>();
+        Debug.Log(pData.Name);
+        //shopItem = GetComponentsInChildren<SkillShopItem>();
 
-        playerSkillDB = new PlayerSkillDatabase(bf);
-        Skill[] skills = playerSkillDB.getSkillsOf(pData.Name);
-        for (int i = 0; i < skills.Length; i++) {
-            shopItem[i].containedSkill = skills[i];
-        }
+        //playerSkillDB = new PlayerSkillDatabase(bf);
+        //Skill[] skills = playerSkillDB.getSkillsOf(pData.Name);
+        //for (int i = 0; i < skills.Length; i++) {
+        //    shopItem[i].containedSkill = skills[i];
+        //}
 	}
 
     public void OnExitScene(){

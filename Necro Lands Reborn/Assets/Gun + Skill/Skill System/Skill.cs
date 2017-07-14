@@ -37,4 +37,9 @@ public class Skill : MonoBehaviour {
     public virtual void Use(){
         coolDownStatus = coolDown;
     }
+
+    public override bool Equals(object other){
+        Skill skill = (Skill) other;
+        return skill.name == name;
+    }
 }
