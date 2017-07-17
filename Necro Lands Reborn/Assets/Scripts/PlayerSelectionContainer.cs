@@ -14,43 +14,63 @@ public class PlayerSelectionContainer : TodoBehaviour {
     private BinaryFormatter bf;
     private FileStream fs;
 
-	public void inc() {
+    public void dec(){
         index--;
-        if (index < -3) index = -3;
+        //if (index < 0) index = 3;
+        //if (index < -3) index = -3;
     }
-    public void dec() {
+    public void inc(){
         index++;
-        if (index > 0) index = 0;
+        //if (index > 3) index = 0;
+        //if (index > 0) index = 0;
     }
 
-    private Vector3 desiredPosition;
+    [SerializeField]
+    private float desiredRotation;
 
-    void Start()
-    {
-        desiredPosition = new Vector3(0, transform.position.y, transform.position.z);
+    void Start(){
+        index = 0;
+        desiredRotation = 0f;
         bf = new BinaryFormatter();
     }
 
     void Update(){
-        desiredPosition.x = 20f * index;
-        if (pos.x < desiredPosition.x)
-            t_a(Vector3.right, 25f);
-        if (pos.x > desiredPosition.x)
-            t_a(Vector3.left, 25f);
+        desiredRotation = 90f * index;
+        if(transform.eulerAngles.y < desiredRotation){
+            r_a(Vector3.up, 90f);
+        }
+        if(transform.eulerAngles.y > desiredRotation){
+            r_a(Vector3.up, -90f);
+        }
     }
 
     public void SavePlayerName(){
-        playerData.Name = attributes[index * -1].getPlayerName();
+        playerData.Name = attributes[index].getPlayerName();
         playerData.Level = 1;
         playerData.TotalMoney = 100;
-        Save<PlayerData>("/PlayerData.data", playerData);
-        Save<InventoryData>("/InventoryData.data", id);
+        Save<PlayerData>(SaveKey.PLAYERDATA_KEY, playerData);
+        Save<InventoryData>(SaveKey.INVENTORY_KEY, id);
+        List<PlayerTalentList> ptl = Load<List<PlayerTalentList>>(SaveKey.PLAYERTALENTDATABASE_KEY);
+        for(int i = 0; i < ptl.Count; i++){
+            if(ptl[i].getName() == playerData.Name){
+                Talent t = ptl[i].getTalentByName(playerData.Name)[0];
+                Save<Talent>(SaveKey.CURRENTTALENT_KEY, t);
+                break;
+            }
+        }
     }
 
-    public void Save<T>(string path, T obj)
+    private void Save<T>(string path, T obj)
     {
         fs = File.Create(Application.persistentDataPath + path);
         bf.Serialize(fs, obj);
         fs.Close();
+    }
+
+    private T Load<T>(string path){
+        fs = File.Open(Application.persistentDataPath + path, FileMode.Open);
+        T t = (T) bf.Deserialize(fs);
+        fs.Close();
+        return t;
     }
 }

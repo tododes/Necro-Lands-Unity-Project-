@@ -20,11 +20,14 @@ public class Skill : MonoBehaviour {
 	}
 
     protected virtual void Update (){
-	    if(coolDownStatus > 0.000f)
-        {
+	    if(coolDownStatus > 0.000f){
             coolDownStatus -= Time.deltaTime;
         }
-	}
+        else if (coolDownStatus < 0.000f){
+            coolDownStatus = 0.000f;
+        }
+
+    }
 
     public bool Ready(){
         return (coolDownStatus <= 0.000f);

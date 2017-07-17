@@ -10,6 +10,7 @@ public class GameSelectionManager : MonoBehaviour {
     [SerializeField] private GameMode[] gameModes;
     [SerializeField] private GameSelectionCamera selectionCamera;
     [SerializeField] private Image proceedImage;
+    [SerializeField] private GameModeEnemyDatabase enemyDB;
 
     void Awake(){
         singleton = this;
@@ -29,6 +30,7 @@ public class GameSelectionManager : MonoBehaviour {
         GameMode mode = gameModes[selectionCamera.getIndex()];
         if (mode.isUnlocked()){
             string scene = mode.Name;
+            enemyDB.setEnemies(mode.getEnemies());
             mode.Save();
             InterSceneImage.singleton.FinishScene(scene);
         }

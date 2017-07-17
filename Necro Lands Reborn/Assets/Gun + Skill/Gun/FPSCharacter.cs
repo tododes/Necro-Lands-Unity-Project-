@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 
 public class FPSCharacter : GameActor
 {
@@ -28,6 +31,7 @@ public class FPSCharacter : GameActor
     private Vector3 playerDown, playerFall;
     private Rigidbody body;
     protected Modifier modifier;
+    private BinaryFormatter bf;
 
     public DamageImage getDamageImage(){
         return damageImage;
@@ -42,6 +46,12 @@ public class FPSCharacter : GameActor
     }
 
     protected void Start () {
+        bf = new BinaryFormatter();
+        if (File.Exists(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY)){
+            FileStream fs = File.Open(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY, FileMode.Open);
+            playerData = (PlayerData) bf.Deserialize(fs);
+        }
+        Name = playerData.Name;
         Bounty = 50;
         totalKill = 0;
         weaponManager = Cp_C<WeaponManager>();

@@ -284,7 +284,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e220c302b43f5c046b7ceb47a7c1d554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewards: []
+  rewards:
+  - goldGain: 100
+    expGain: 0
+    tokenGain: 0
+  - goldGain: 200
+    expGain: 20
+    tokenGain: 0
+  - goldGain: 400
+    expGain: 60
+    tokenGain: 0
+  - goldGain: 600
+    expGain: 100
+    tokenGain: 0
+  - goldGain: 800
+    expGain: 160
+    tokenGain: 0
+  - goldGain: 1200
+    expGain: 200
+    tokenGain: 5
+  - goldGain: 1600
+    expGain: 240
+    tokenGain: 15
+  - goldGain: 2000
+    expGain: 280
+    tokenGain: 25
+  - goldGain: 2800
+    expGain: 360
+    tokenGain: 35
+  - goldGain: 3600
+    expGain: 440
+    tokenGain: 45
   MaxLoginStreak: 10
   CurrentStreak: 0
   playerData:
@@ -532,7 +562,97 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionDB:
-    missions: []
+    missions:
+    - name: Mission1
+      description: 
+      kill: 60
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: 
+      description: 
+      kill: 0
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: 
+      description: 
+      kill: 0
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: 
+      description: 
+      kill: 0
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: 
+      description: 
+      kill: 0
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: 
+      description: 
+      kill: 0
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: 
+      description: 
+      kill: 0
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: 
+      description: 
+      kill: 0
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: 
+      description: 
+      kill: 0
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: 
+      description: 
+      kill: 0
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
     missionsAccomplishment: 
     missionsUnlockStatus: 
   playerData:
@@ -571,6 +691,9 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+  playerTalentCollection:
+    name: 
+    playerTalents: []
 --- !u!4 &664672758
 Transform:
   m_ObjectHideFlags: 0
@@ -584,6 +707,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &733543078
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4847301340250936, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847301340250936, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847301340250936, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.056159016
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847301340250936, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847301340250936, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847301340250936, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847301340250936, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847301340250936, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &814666652
 GameObject:
   m_ObjectHideFlags: 0

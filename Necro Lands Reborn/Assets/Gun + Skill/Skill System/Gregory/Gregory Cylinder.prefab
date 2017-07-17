@@ -138,6 +138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8cc58ad9596304f9f2cbb0d5b163b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
+  spellLifesteal: 0
+  owner: {fileID: 0}
 --- !u!136 &136768991849947650
 CapsuleCollider:
   m_ObjectHideFlags: 1

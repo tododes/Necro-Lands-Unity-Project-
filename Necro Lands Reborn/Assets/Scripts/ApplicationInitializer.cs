@@ -12,6 +12,7 @@ public class ApplicationInitializer : MonoBehaviour {
     [SerializeField] private Chrono loginData;
     [SerializeField] private Mission missionData;
     [SerializeField] private SkillDatabase skillDB;
+    [SerializeField] private List<PlayerTalentList> playerTalentCollection;
     //[SerializeField] private PlayerTalentList pTalentList;
 
     private BinaryFormatter bf;

@@ -364,6 +364,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runes:
   - {fileID: 114627371288693542, guid: 9851016e692fca749b6ca01b995a08a3, type: 2}
+  - {fileID: 114836537464688710, guid: c1a9aea9ec27d664b8d5d0828c945d70, type: 2}
+  - {fileID: 114954117935985684, guid: 90aa10fc1aeb686418f89cc5a3b713a6, type: 2}
 --- !u!4 &97459200
 Transform:
   m_ObjectHideFlags: 0
@@ -644,6 +646,11 @@ Prefab:
       propertyPath: guns.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114383309769976516, guid: 3d184e39aaba2924586e544f317d0a35,
+        type: 2}
+      propertyPath: skillHolder.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 114342248919682350, guid: 3d184e39aaba2924586e544f317d0a35,
         type: 2}
       propertyPath: playerCanvases.Array.size
@@ -744,9 +751,39 @@ Prefab:
       propertyPath: HP
       value: 101
       objectReference: {fileID: 0}
+    - target: {fileID: 114383309769976516, guid: 3d184e39aaba2924586e544f317d0a35,
+        type: 2}
+      propertyPath: skillHolder.Array.data[1]
+      value: 
+      objectReference: {fileID: 193689571}
+    - target: {fileID: 114383309769976516, guid: 3d184e39aaba2924586e544f317d0a35,
+        type: 2}
+      propertyPath: skillHolder.Array.data[0]
+      value: 
+      objectReference: {fileID: 193689572}
+    - target: {fileID: 114383309769976516, guid: 3d184e39aaba2924586e544f317d0a35,
+        type: 2}
+      propertyPath: skillHolder.Array.data[2]
+      value: 
+      objectReference: {fileID: 193689570}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d184e39aaba2924586e544f317d0a35, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &193689570 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1252381956383472, guid: 3d184e39aaba2924586e544f317d0a35,
+    type: 2}
+  m_PrefabInternal: {fileID: 193689569}
+--- !u!1 &193689571 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1794984016115610, guid: 3d184e39aaba2924586e544f317d0a35,
+    type: 2}
+  m_PrefabInternal: {fileID: 193689569}
+--- !u!1 &193689572 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1386781829318580, guid: 3d184e39aaba2924586e544f317d0a35,
+    type: 2}
+  m_PrefabInternal: {fileID: 193689569}
 --- !u!1 &219120006
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,12 +2385,12 @@ GameObject:
   - component: {fileID: 744355271}
   - component: {fileID: 744355270}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: Enemy Factory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &744355270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2365,9 +2402,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5454b9a05199b4ba038a296b8a1dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDB: {fileID: 11400000, guid: 3386575b6a95b9240bc206bd00777fd3, type: 2}
   enemies:
-  - {fileID: 1471400698746944, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+  - {fileID: 0}
   multiplier: 0
+  interval: 5
+  waveWarningText: {fileID: 1962549244}
 --- !u!23 &744355271
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2863,6 +2903,7 @@ RectTransform:
   - {fileID: 506579785}
   - {fileID: 335004044}
   - {fileID: 2132920499}
+  - {fileID: 1962549247}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3257,6 +3298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1edda007a82e349998f1853f7c6ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: 
   MaxHP: 0
   HP: 0
   Attack: 0
@@ -4499,6 +4541,94 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911341838}
+--- !u!1 &1962549243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1962549247}
+  - component: {fileID: 1962549246}
+  - component: {fileID: 1962549245}
+  - component: {fileID: 1962549244}
+  m_Layer: 5
+  m_Name: Wave Warning Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1962549244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962549243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d61f5c1a50ef624f936489a61b99bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Index: 0
+  desiredSize: 1
+--- !u!114 &1962549245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962549243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.99264705, g: 0.30302918, b: -0.007298882, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 46238fb1ad7a7a84ba8954c1c860994c, type: 3}
+    m_FontSize: 36
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "A HUGE WAVE OF \nZOMBIES IS APPROACHING"
+--- !u!222 &1962549246
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962549243}
+--- !u!224 &1962549247
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962549243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1085326523}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 54.7}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1995279913
 GameObject:
   m_ObjectHideFlags: 0

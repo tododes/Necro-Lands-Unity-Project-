@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameActor : TodoBehaviour {
 
+    [SerializeField] protected string Name;
     [SerializeField] protected float MaxHP;
     [SerializeField] protected float HP;
     [SerializeField] protected float Attack;
@@ -13,6 +14,8 @@ public class GameActor : TodoBehaviour {
     [SerializeField] protected float Speed;
     [SerializeField] protected int Bounty;
 
+
+    public string GetName { get { return Name; } protected set { Name = value; } }
     public float GetMaxHP { get { return MaxHP; } protected set { MaxHP = value; } }
     public float GetHP { get { return HP; } protected set { HP = value; } }
     public float GetAttack { get { return Attack; } protected set { Attack = value; } }

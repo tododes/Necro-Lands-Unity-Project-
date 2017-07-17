@@ -8,11 +8,16 @@ public class GameMode : MonoBehaviour {
 
     [SerializeField] protected string SceneName;
 
+    [SerializeField]
     protected Mission mission;
     protected BinaryFormatter binaryFormatter;
     protected FileStream fileStream;
     protected MissionDatabase missionDB;
     protected bool Unlocked;
+
+    [SerializeField] protected Enemy[] enemies;
+
+    public Enemy[] getEnemies() { return enemies; }
      
     public string Name {
         get { return SceneName; }

@@ -18,7 +18,13 @@ public class FPSSkilledCharacter : FPSCharacter
     [SerializeField]
     private WeaponManager weaponManager;
 
-   
+    [SerializeField]
+    private GameObject[] skillHolder;
+
+    [SerializeField]
+    private Talent talent;
+
+    private Dictionary<string, System.Action> playerSkillMapping = new Dictionary<string, System.Action>();
     private BinaryFormatter bf;
 
     void OnEnable(){
@@ -32,9 +38,15 @@ public class FPSSkilledCharacter : FPSCharacter
             skills[i].setOwner(this);
         }
         weaponManager = Cp_C<WeaponManager>();
+      
+    }
+
+    protected new void Start(){
+        base.Start();
+        bf = new BinaryFormatter();
         if (File.Exists(Application.persistentDataPath + SaveKey.CURRENTTALENT_KEY)){
             FileStream fs = File.Open(Application.persistentDataPath + SaveKey.CURRENTTALENT_KEY, FileMode.Open);
-            Talent talent = (Talent)bf.Deserialize(fs);
+            talent = (Talent)bf.Deserialize(fs);
             MaxHP += talent.BonusHP;
             HP += talent.BonusHP;
             Attack += talent.BonusAttack;
@@ -45,12 +57,32 @@ public class FPSSkilledCharacter : FPSCharacter
             spellLifesteal += talent.BonusSpellLifesteal;
             magicAmplification += talent.trevorModifier.bonusMagicDamage;
         }
-    }
 
-    protected new void Start(){
-        base.Start();
-        bf = new BinaryFormatter();
-       
+        playerSkillMapping.Add("Gregory", () => {
+            skillHolder[0].AddComponent<GregoryPassiveSkill>();
+            skillHolder[1].AddComponent<GregoryActiveSkill1>();
+            skillHolder[2].AddComponent<GregoryActiveSkill2>();
+        });
+
+        playerSkillMapping.Add("Trevor", () => {
+            skillHolder[0].AddComponent<TrevorPassiveSkill>();
+            skillHolder[1].AddComponent<TrevorActiveSkill1>();
+            skillHolder[2].AddComponent<TrevorActiveSkill2>();
+        });
+
+        playerSkillMapping.Add("Mira", () => {
+            skillHolder[0].AddComponent<MiraSkill>();
+            skillHolder[1].AddComponent<MiraActiveSkill1>();
+            //skillHolder[2].AddComponent<GregoryActiveSkill2>();
+        });
+
+        playerSkillMapping.Add("Lucy", () => {
+            skillHolder[0].AddComponent<LucySkill>();
+            skillHolder[1].AddComponent<LucyActiveSkill1>();
+            skillHolder[2].AddComponent<LucyActiveSkill2>();
+        });
+
+        playerSkillMapping[Name].Invoke();
     }
 
     public float getSpellLifesteal(){

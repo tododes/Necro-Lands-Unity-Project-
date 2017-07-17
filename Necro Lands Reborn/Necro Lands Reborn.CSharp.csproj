@@ -87,6 +87,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DoubleDamageRune.cs" />
+    <Compile Include="Assets\DoubleSpeedRune.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\Bullet.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\FPSCharacter.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\FPSCharacterController.cs" />
@@ -156,6 +158,7 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\Rune.cs" />
     <Compile Include="Assets\Scripts\ApplicationInitializer.cs" />
     <Compile Include="Assets\Scripts\AreYouSurePanel.cs" />
     <Compile Include="Assets\Scripts\Aura.cs" />
@@ -219,12 +222,14 @@
     <Compile Include="Assets\Scripts\Reward.cs" />
     <Compile Include="Assets\Scripts\RuneGenerator.cs" />
     <Compile Include="Assets\Scripts\SaveKey.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\GameModeEnemyDatabase.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\InventoryData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\ItemSpriteDatabase.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\PlayerData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\ScriptableObjectFactory.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\SettingsData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\SkillDatabase.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\TalentDatabase.cs" />
     <Compile Include="Assets\Scripts\SettingsManager.cs" />
     <Compile Include="Assets\Scripts\ShopListView.cs" />
     <Compile Include="Assets\Scripts\ShopManager.cs" />

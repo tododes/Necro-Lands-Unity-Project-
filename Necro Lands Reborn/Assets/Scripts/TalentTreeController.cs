@@ -19,9 +19,23 @@ public class TalentTreeController : TodoBehaviour {
     private BinaryFormatter bf;
 
     [SerializeField] private Talent currentTalent;
+    //[SerializeField] private TalentDatabase talentDB;
 
     void Awake(){
         singleton = this;
+    }
+
+    void OnEnable(){
+        if(Application.loadedLevelName.Contains("Main Menu")){
+            FileStream fs = File.Create(SaveKey.PLAYERTALENTDATABASE_KEY);
+            bf.Serialize(fs, playerTalentCollection);
+            Destroy(gameObject);
+        }
+        else if (Application.loadedLevelName.Contains("SkillTree")){
+            FileStream fs = File.Open(SaveKey.PLAYERTALENTDATABASE_KEY, FileMode.Open);
+            List<PlayerTalentList> ptl = (List<PlayerTalentList>) bf.Deserialize(fs);
+            playerTalentCollection = ptl;
+        }
     }
 
 	// Use this for initialization

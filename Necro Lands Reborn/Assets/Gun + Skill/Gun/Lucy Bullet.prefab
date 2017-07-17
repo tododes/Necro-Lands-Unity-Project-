@@ -133,8 +133,7 @@ MonoBehaviour:
   damage: 5
   speed: 50
   Range: 170
-  Bouncing: 0
-  next: {fileID: 0}
+  poisonDamage: 50
 --- !u!135 &135287947544532236
 SphereCollider:
   m_ObjectHideFlags: 1

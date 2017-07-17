@@ -5,10 +5,10 @@ using UnityEditor;
 
 public class ScriptableObjectFactory : MonoBehaviour {
 
-    [MenuItem("Assets/Create/Player Skill Database")]
+    [MenuItem("Assets/Create/Talent Database")]
     public static void CreateAsset(){
-        PlayerSkillDatabase instance = ScriptableObject.CreateInstance<PlayerSkillDatabase>();
-        AssetDatabase.CreateAsset(instance, "Assets/Scripts/Scriptable Objects/Player Skill Database.asset");
+        TalentDatabase instance = ScriptableObject.CreateInstance<TalentDatabase>();
+        AssetDatabase.CreateAsset(instance, "Assets/Scripts/Scriptable Objects/Talent Database.asset");
         AssetDatabase.SaveAssets();
     }
 

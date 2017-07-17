@@ -412,6 +412,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: 
+  mission:
+    name: 
+    description: 
+    kill: 0
+    clock:
+      Minute: 0
+      Second: 0
+    useTimer: 0
+    accomplished: 0
+    unlocked: 0
+  enemies: []
 --- !u!1 &653815012
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +505,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: 
+  mission:
+    name: 
+    description: 
+    kill: 0
+    clock:
+      Minute: 0
+      Second: 0
+    useTimer: 0
+    accomplished: 0
+    unlocked: 0
+  enemies: []
 --- !u!1 &715240987
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +598,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Game Scene
+  mission:
+    name: 
+    description: 
+    kill: 0
+    clock:
+      Minute: 0
+      Second: 0
+    useTimer: 0
+    accomplished: 0
+    unlocked: 0
+  enemies: []
 --- !u!1 &806425998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,6 +1049,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1254331065}
+--- !u!114 &1273316962 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114459118770366040, guid: 04ef6698c4febd949ac452bd2f6ccb18,
+    type: 2}
+  m_PrefabInternal: {fileID: 162959250}
+  m_Script: {fileID: 11500000, guid: 1dafe68cdfde0ae4cadb5e0705f92dac, type: 3}
 --- !u!1 &1353474105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,6 +1270,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Ultimate Game Scene
+  mission:
+    name: 
+    description: 
+    kill: 0
+    clock:
+      Minute: 0
+      Second: 0
+    useTimer: 0
+    accomplished: 0
+    unlocked: 0
+  enemies: []
 --- !u!1 &1915572001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,7 +1314,8 @@ MonoBehaviour:
   - {fileID: 653815015}
   - {fileID: 519940051}
   selectionCamera: {fileID: 0}
-  proceedImage: {fileID: 0}
+  proceedImage: {fileID: 1273316962}
+  enemyDB: {fileID: 11400000, guid: 3386575b6a95b9240bc206bd00777fd3, type: 2}
 --- !u!4 &1915572003
 Transform:
   m_ObjectHideFlags: 0
