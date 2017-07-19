@@ -12,7 +12,6 @@ public class GameMode : MonoBehaviour {
     protected Mission mission;
     protected BinaryFormatter binaryFormatter;
     protected FileStream fileStream;
-    protected MissionDatabase missionDB;
     protected bool Unlocked;
 
     [SerializeField] protected Enemy[] enemies;
@@ -23,13 +22,15 @@ public class GameMode : MonoBehaviour {
         get { return SceneName; }
     }
 
+    public void setMission(Mission m){
+        mission = m;
+    }
+
 	// Use this for initialization
 	protected void Start () {
         binaryFormatter = new BinaryFormatter();
         fileStream = File.Open(Application.persistentDataPath + SaveKey.MISSIONDATABASE_KEY, FileMode.Open);
-        missionDB = (MissionDatabase) binaryFormatter.Deserialize(fileStream);
         fileStream.Close();
-        Unlocked = missionDB.isMissionUnlocked(mission);
     }
 
     public Mission getMission() { return mission; }

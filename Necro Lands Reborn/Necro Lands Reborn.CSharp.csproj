@@ -87,8 +87,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DoubleDamageRune.cs" />
-    <Compile Include="Assets\DoubleSpeedRune.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\Bullet.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\FPSCharacter.cs" />
     <Compile Include="Assets\Gun + Skill\Gun\FPSCharacterController.cs" />
@@ -169,6 +167,8 @@
     <Compile Include="Assets\Scripts\DailyRewardManager.cs" />
     <Compile Include="Assets\Scripts\DailyRewardPanel.cs" />
     <Compile Include="Assets\Scripts\DamageImage.cs" />
+    <Compile Include="Assets\Scripts\DoubleDamageRune.cs" />
+    <Compile Include="Assets\Scripts\DoubleSpeedRune.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
@@ -226,6 +226,7 @@
     <Compile Include="Assets\Scripts\Scriptable Objects\InventoryData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\ItemSpriteDatabase.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\SceneTree.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\ScriptableObjectFactory.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\SettingsData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\SkillDatabase.cs" />

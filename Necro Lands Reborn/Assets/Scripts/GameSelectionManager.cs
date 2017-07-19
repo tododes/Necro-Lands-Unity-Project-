@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameSelectionManager : MonoBehaviour {
 
@@ -11,14 +13,32 @@ public class GameSelectionManager : MonoBehaviour {
     [SerializeField] private GameSelectionCamera selectionCamera;
     [SerializeField] private Image proceedImage;
     [SerializeField] private GameModeEnemyDatabase enemyDB;
+    [SerializeField] private List<MissionDatabase> missionDB;
+
+    private BinaryFormatter bf;
+    private PlayerData playerData;
+    private FileStream fs;
 
     void Awake(){
         singleton = this;
     }
 	// Use this for initialization
 	void Start () {
+        gameModes = GetComponentsInChildren<GameMode>();
+        bf = new BinaryFormatter();
         selectionCamera = GameSelectionCamera.singleton;
-        
+        fs = File.Open(SaveKey.MISSIONDATABASE_KEY, FileMode.Open);
+        missionDB = (List<MissionDatabase>) bf.Deserialize(fs);
+        fs.Close();
+        fs = File.Open(SaveKey.PLAYERDATA_KEY, FileMode.Open);
+        playerData = (PlayerData) bf.Deserialize(fs);
+        fs.Close();
+
+        MissionDatabase currentMissionDB = missionDB[playerData.currentStage - 1];
+        List<Mission> currentStageMissions = currentMissionDB.getMissions();
+        for (int i = 0; i < gameModes.Length; i++){
+            gameModes[i].setMission(currentStageMissions[i]);
+        }
 	}
 	
 	// Update is called once per frame

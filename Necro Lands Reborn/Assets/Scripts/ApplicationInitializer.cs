@@ -6,28 +6,32 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class ApplicationInitializer : MonoBehaviour {
 
-    [SerializeField] private MissionDatabase missionDB;
+    public static ApplicationInitializer singleton;
+
+    [SerializeField] private List<MissionDatabase> missionDB;
     [SerializeField] private PlayerData playerData;
     [SerializeField] private InventoryData inventoryData;
     [SerializeField] private Chrono loginData;
     [SerializeField] private Mission missionData;
     [SerializeField] private SkillDatabase skillDB;
-    [SerializeField] private List<PlayerTalentList> playerTalentCollection;
+    [SerializeField] private List<int> talentTreeNodesStatus;
     //[SerializeField] private PlayerTalentList pTalentList;
 
     private BinaryFormatter bf;
 
     void Awake(){
+        singleton = this;
         bf = new BinaryFormatter();
     }
 
     public void Save(){
-        Save<MissionDatabase>(missionDB, SaveKey.MISSIONDATABASE_KEY);
+        Save<List<MissionDatabase>>(missionDB, SaveKey.MISSIONDATABASE_KEY);
         Save<PlayerData>(playerData, SaveKey.PLAYERDATA_KEY);
         Save<InventoryData>(inventoryData, SaveKey.PLAYERDATA_KEY);
         Save<Chrono>(loginData, SaveKey.PLAYERDATA_KEY);
         Save<Mission>(missionData, SaveKey.PLAYERDATA_KEY);
-        Save<SkillDatabase>(skillDB, SaveKey.SKILLDATABASE_KEY);
+        Save<List<int>>(talentTreeNodesStatus, SaveKey.TALENTTREEDATA_KEY);
+        //Save<SkillDatabase>(skillDB, SaveKey.SKILLDATABASE_KEY);
     }
 
     private void Save<T>(T obj, string path){
@@ -42,4 +46,6 @@ public class ApplicationInitializer : MonoBehaviour {
         FileStream fs = File.Open(Application.persistentDataPath + path, FileMode.Open);
         return (T) bf.Deserialize(fs);
     }
+
+    public void setTalentStatusData(List<int> data) { talentTreeNodesStatus = data; }
 }

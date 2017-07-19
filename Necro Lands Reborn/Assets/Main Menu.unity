@@ -323,6 +323,7 @@ MonoBehaviour:
     Level: 0
     Exp: 0
     Token: 0
+    currentStage: 0
   lastLoginChrono:
     Year: 0
     Month: 0
@@ -562,105 +563,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionDB:
-    missions:
-    - name: Mission1
-      description: 
-      kill: 60
-      clock:
-        Minute: 0
-        Second: 0
-      useTimer: 0
-      accomplished: 0
-      unlocked: 0
-    - name: 
-      description: 
-      kill: 0
-      clock:
-        Minute: 0
-        Second: 0
-      useTimer: 0
-      accomplished: 0
-      unlocked: 0
-    - name: 
-      description: 
-      kill: 0
-      clock:
-        Minute: 0
-        Second: 0
-      useTimer: 0
-      accomplished: 0
-      unlocked: 0
-    - name: 
-      description: 
-      kill: 0
-      clock:
-        Minute: 0
-        Second: 0
-      useTimer: 0
-      accomplished: 0
-      unlocked: 0
-    - name: 
-      description: 
-      kill: 0
-      clock:
-        Minute: 0
-        Second: 0
-      useTimer: 0
-      accomplished: 0
-      unlocked: 0
-    - name: 
-      description: 
-      kill: 0
-      clock:
-        Minute: 0
-        Second: 0
-      useTimer: 0
-      accomplished: 0
-      unlocked: 0
-    - name: 
-      description: 
-      kill: 0
-      clock:
-        Minute: 0
-        Second: 0
-      useTimer: 0
-      accomplished: 0
-      unlocked: 0
-    - name: 
-      description: 
-      kill: 0
-      clock:
-        Minute: 0
-        Second: 0
-      useTimer: 0
-      accomplished: 0
-      unlocked: 0
-    - name: 
-      description: 
-      kill: 0
-      clock:
-        Minute: 0
-        Second: 0
-      useTimer: 0
-      accomplished: 0
-      unlocked: 0
-    - name: 
-      description: 
-      kill: 0
-      clock:
-        Minute: 0
-        Second: 0
-      useTimer: 0
-      accomplished: 0
-      unlocked: 0
+  - missions: []
+    missionsAccomplishment: 
+    missionsUnlockStatus: 
+  - missions: []
+    missionsAccomplishment: 
+    missionsUnlockStatus: 
+  - missions: []
+    missionsAccomplishment: 
+    missionsUnlockStatus: 
+  - missions: []
+    missionsAccomplishment: 
+    missionsUnlockStatus: 
+  - missions: []
     missionsAccomplishment: 
     missionsUnlockStatus: 
   playerData:
-    TotalMoney: 0
+    TotalMoney: 100
     Name: 
-    Level: 0
+    Level: 1
     Exp: 0
     Token: 0
+    currentStage: 1
   inventoryData:
     currentSavedItems: []
     allSavedItems: []
@@ -691,9 +615,7 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-  playerTalentCollection:
-    name: 
-    playerTalents: []
+  talentTreeNodesStatus: 
 --- !u!4 &664672758
 Transform:
   m_ObjectHideFlags: 0
@@ -745,6 +667,181 @@ Prefab:
     - target: {fileID: 4847301340250936, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 58007175308580878, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58766509459774120, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58105412807563518, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58291048760553974, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58069216147141374, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58255055193205758, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58139840323786634, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58789627182428290, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58149512015235498, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58627972084573286, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58259130044468968, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58204071067188144, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58326655539150778, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58146184248060596, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644109836914650, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58181609472706476, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58699258024673426, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58962381044521928, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61470199884608310, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61421435302757646, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61949121839541538, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61332237993513454, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61929491876343922, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61770741787316246, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61547846148662708, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61631780157546048, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61689667925998488, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61114115620062038, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61320807685351452, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61414215973993468, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61485505628705432, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61737200492449034, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61077126366483424, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61161834615287952, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61738641191378336, guid: 198e3adb0a409ac4abd2cd1cc38cfbac,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 198e3adb0a409ac4abd2cd1cc38cfbac, type: 2}
@@ -918,6 +1015,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Character Selection
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 664672757}
+        m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

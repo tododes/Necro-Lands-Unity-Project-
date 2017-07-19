@@ -4,15 +4,9 @@ using UnityEngine;
 
 [System.Serializable]
 public class MissionDatabase {
-    [SerializeField] private List<Mission> missions;
-    [SerializeField] private List<bool> missionsAccomplishment;
-    [SerializeField] private List<bool> missionsUnlockStatus;
-
-    public MissionDatabase(){
-        missions = new List<Mission>();
-        missionsAccomplishment = new List<bool>();
-        missionsUnlockStatus = new List<bool>();
-    }
+    [SerializeField] private List<Mission> missions = new List<Mission>();
+    [SerializeField] private List<bool> missionsAccomplishment = new List<bool>();
+    [SerializeField] private List<bool> missionsUnlockStatus = new List<bool>();
 
     public void MissionAccomplished(Mission mission){
         if (!missions.Contains(mission)){
@@ -43,4 +37,6 @@ public class MissionDatabase {
         int i = missions.IndexOf(mission);
         return missionsUnlockStatus[i];
     }
+
+    public List<Mission> getMissions() { return missions; }
 }

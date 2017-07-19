@@ -10,6 +10,7 @@ public class PlayerData{
     public int Level;
     public int Exp;
     public int Token;
+    public int currentStage;
 
     private List<string> skillNames = new List<string>();
 
