@@ -15,6 +15,8 @@ public class ApplicationInitializer : MonoBehaviour {
     [SerializeField] private Mission missionData;
     [SerializeField] private SkillDatabase skillDB;
     [SerializeField] private List<int> talentTreeNodesStatus;
+
+    [SerializeField] private SceneTree sceneTree;
     //[SerializeField] private PlayerTalentList pTalentList;
 
     private BinaryFormatter bf;
@@ -22,6 +24,7 @@ public class ApplicationInitializer : MonoBehaviour {
     void Awake(){
         singleton = this;
         bf = new BinaryFormatter();
+        sceneTree.OnStartApplication();
     }
 
     public void Save(){

@@ -1013,6 +1013,7 @@ MonoBehaviour:
     Level: 0
     Exp: 0
     Token: 0
+    currentStage: 0
   id:
     currentSavedItems: []
     allSavedItems: []
@@ -1360,6 +1361,7 @@ GameObject:
   - component: {fileID: 1840034785}
   - component: {fileID: 1840034784}
   - component: {fileID: 1840034783}
+  - component: {fileID: 1840034786}
   m_Layer: 5
   m_Name: Pick Button
   m_TagString: Untagged
@@ -1447,6 +1449,17 @@ MonoBehaviour:
           m_StringArgument: Player Menu
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1840034784
@@ -1482,6 +1495,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1840034781}
+--- !u!114 &1840034786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840034781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b896127b4f701438d25190cf0655c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  sceneTree: {fileID: 11400000, guid: 844f47a6808fe494ba186324196ddf37, type: 2}
 --- !u!1 &1958544281
 GameObject:
   m_ObjectHideFlags: 0

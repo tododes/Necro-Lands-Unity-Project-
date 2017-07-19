@@ -233,7 +233,9 @@ MonoBehaviour:
   - {fileID: 1029869570}
   - {fileID: 1315525117}
   - {fileID: 756569320}
-  inventoryData: {fileID: 11400000, guid: 64c14941266455e4c802c223f4f49c93, type: 2}
+  inventoryData:
+    currentSavedItems: []
+    allSavedItems: []
 --- !u!1 &19500288
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +914,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &150535886
 GameObject:
@@ -1037,6 +1083,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!224 &167720153 stripped
 RectTransform:
@@ -1241,6 +1331,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &378294628
 GameObject:
@@ -1305,6 +1439,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  itemSpriteDB: {fileID: 0}
 --- !u!222 &378294631
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1454,6 +1589,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  itemSpriteDB: {fileID: 0}
 --- !u!222 &442364712
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1806,6 +1942,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &681163886
 GameObject:
@@ -1892,6 +2072,7 @@ GameObject:
   - component: {fileID: 685941006}
   - component: {fileID: 685941005}
   - component: {fileID: 685941004}
+  - component: {fileID: 685941007}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -2014,6 +2195,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 685941002}
+--- !u!114 &685941007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685941002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b896127b4f701438d25190cf0655c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  sceneTree: {fileID: 11400000, guid: 844f47a6808fe494ba186324196ddf37, type: 2}
 --- !u!1 &693134217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,6 +2504,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &766700375
 GameObject:
@@ -2618,6 +2856,7 @@ GameObject:
   - component: {fileID: 825502986}
   - component: {fileID: 825502985}
   - component: {fileID: 825502984}
+  - component: {fileID: 825502987}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -2729,6 +2968,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825502982}
+--- !u!114 &825502987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825502982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b896127b4f701438d25190cf0655c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
+  sceneTree: {fileID: 11400000, guid: 844f47a6808fe494ba186324196ddf37, type: 2}
 --- !u!1 &826238815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,6 +3105,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &950990596
 GameObject:
@@ -3052,6 +3348,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &964755256
 GameObject:
@@ -3351,6 +3691,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1006381203
 GameObject:
@@ -3550,6 +3934,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1049264737
 GameObject:
@@ -3743,6 +4171,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1130168350
 GameObject:
@@ -4084,6 +4556,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1194016548
 GameObject:
@@ -4148,6 +4664,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  itemSpriteDB: {fileID: 0}
 --- !u!222 &1194016551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4290,6 +4807,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1210907456
 GameObject:
@@ -4563,6 +5124,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1233299042
 GameObject:
@@ -4966,6 +5571,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1351638577
 GameObject:
@@ -4978,6 +5627,7 @@ GameObject:
   - component: {fileID: 1351638581}
   - component: {fileID: 1351638580}
   - component: {fileID: 1351638579}
+  - component: {fileID: 1351638582}
   m_Layer: 5
   m_Name: 'Shop '
   m_TagString: Untagged
@@ -5089,6 +5739,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351638577}
+--- !u!114 &1351638582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1351638577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b896127b4f701438d25190cf0655c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
+  sceneTree: {fileID: 11400000, guid: 844f47a6808fe494ba186324196ddf37, type: 2}
 --- !u!1 &1431638431
 GameObject:
   m_ObjectHideFlags: 0
@@ -5213,6 +5876,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1432390064
 GameObject:
@@ -5493,6 +6200,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  itemSpriteDB: {fileID: 0}
 --- !u!222 &1523179880
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5574,6 +6282,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  itemSpriteDB: {fileID: 0}
 --- !u!222 &1527964526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5745,7 +6454,50 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  item: {fileID: 0}
+  item:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
 --- !u!1 &1590501915
 GameObject:
   m_ObjectHideFlags: 0
@@ -6290,6 +7042,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1748449333
 GameObject:
@@ -6354,6 +7150,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  itemSpriteDB: {fileID: 0}
 --- !u!222 &1748449336
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6993,6 +7790,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1944903192
 GameObject:
@@ -7023,7 +7864,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storage: []
   inventoryForBattle: []
-  inventoryData: {fileID: 11400000, guid: 64c14941266455e4c802c223f4f49c93, type: 2}
+  inventoryData:
+    currentSavedItems: []
+    allSavedItems: []
   DefaultSprite: {fileID: 21300002, guid: a5a780e4a881ea44f88afed421a63c3a, type: 3}
 --- !u!4 &1944903194
 Transform:
@@ -7236,6 +8079,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &1962168797
 GameObject:
@@ -7497,6 +8384,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &2054731327
 GameObject:
@@ -7870,6 +8801,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55895206c7cbdd043a6e4ca530c182cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyItem:
+    name: 
+    Active: 0
+    bonusHP: 0
+    bonusMana: 0
+    bonusAttack: 0
+    bonusArmor: 0
+    bonusSpAttack: 0
+    bonusSpArmor: 0
+    bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
+    activeBonusHP: 0
+    activeBonusAttack: 0
+    activeBonusArmor: 0
+    activeBonusSpAttack: 0
+    activeBonusSpArmor: 0
+    activeBonusSpeed: 0
+    price: 0
+    level: 0
+    passiveModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    activeModifier:
+      critical: 0
+      slow: 0
+      armorReduction: 0
+      lifeSteal: 0
+      bashStun: 0
+      cleave: 0
+      bleed: 0
+    DPSAura: 0
+    damageReturn: 0
+    spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   image: {fileID: 0}
 --- !u!1 &2142808828
 GameObject:
