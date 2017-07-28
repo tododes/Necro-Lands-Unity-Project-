@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e756db684fac03244a29138f17ad2a86, type: 3}
+  m_Name: Skill Database
+  m_EditorClassIdentifier: 
+  skillNames:
+  - GS1
+  - GS2
+  - GS3
+  - TS1
+  - TS2
+  - TS3
+  - LS1
+  - LS2
+  - LS3
+  skills:
+  - {fileID: 114318368619665842, guid: 9429800254bb9154483fbfc4670c70c3, type: 2}
+  - {fileID: 114985580482536990, guid: 56362fd3e7251d04aa57eae9dbc0ea32, type: 2}
+  - {fileID: 114361324327281308, guid: 02226f206e78ace4abc8da2b5e85797e, type: 2}
+  - {fileID: 114341995389642472, guid: b7ced54dd82b11c438c1df169ba4a5f0, type: 2}
+  - {fileID: 114444979570379312, guid: a10ee649c03ec1a4e8367b68ea7e0f54, type: 2}
+  - {fileID: 114283236674834900, guid: c0e887cf62068d44fb068d171ec3a884, type: 2}
+  - {fileID: 114267842316378012, guid: 281e9f88909c1374396e5a3974c3acd6, type: 2}
+  - {fileID: 114130059231622384, guid: 8f82fcd7076782a4ab8a904ec53f8287, type: 2}
+  - {fileID: 114372086074413532, guid: 515039b2b3bdbf344bf90674e2ce6fc3, type: 2}
+  skillSprites: []

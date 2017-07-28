@@ -21,7 +21,6 @@ public class Branch : MonoBehaviour {
             child = coll2D.GetComponent<Node>();
             child.setParent(parent);
             parent.AddChild(child);
-            Debug.Log("Parent meet child");
         }
     }
 }

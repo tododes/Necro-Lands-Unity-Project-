@@ -19,6 +19,8 @@ public class GameSelectionManager : MonoBehaviour {
     private PlayerData playerData;
     private FileStream fs;
 
+    [SerializeField] private MissionDatabase currentMissionDB;
+
     void Awake(){
         singleton = this;
     }
@@ -27,34 +29,38 @@ public class GameSelectionManager : MonoBehaviour {
         gameModes = GetComponentsInChildren<GameMode>();
         bf = new BinaryFormatter();
         selectionCamera = GameSelectionCamera.singleton;
-        fs = File.Open(SaveKey.MISSIONDATABASE_KEY, FileMode.Open);
+        fs = File.Open(Application.persistentDataPath + SaveKey.MISSIONDATABASE_KEY, FileMode.Open);
         missionDB = (List<MissionDatabase>) bf.Deserialize(fs);
         fs.Close();
-        fs = File.Open(SaveKey.PLAYERDATA_KEY, FileMode.Open);
+        fs = File.Open(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY, FileMode.Open);
         playerData = (PlayerData) bf.Deserialize(fs);
         fs.Close();
-
-        MissionDatabase currentMissionDB = missionDB[playerData.currentStage - 1];
+        Debug.Log(playerData.currentStage);
+        currentMissionDB = missionDB[playerData.currentStage - 1];
         List<Mission> currentStageMissions = currentMissionDB.getMissions();
         for (int i = 0; i < gameModes.Length; i++){
             gameModes[i].setMission(currentStageMissions[i]);
         }
 	}
+
+    public void Save(){
+        gameModes[selectionCamera.getIndex()].Save();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        proceedImage.enabled = gameModes[selectionCamera.getIndex()].isUnlocked();
+        //proceedImage.enabled = gameModes[selectionCamera.getIndex()].isUnlocked();
     }
 
-    public void OpenScene(){
-        GameMode mode = gameModes[selectionCamera.getIndex()];
-        if (mode.isUnlocked()){
-            string scene = mode.Name;
-            enemyDB.setEnemies(mode.getEnemies());
-            mode.Save();
-            InterSceneImage.singleton.FinishScene(scene);
-        }
-    }
+    //public void OpenScene(){
+    //    GameMode mode = gameModes[selectionCamera.getIndex()];
+    //    if (mode.isUnlocked()){
+    //        string scene = mode.Name;
+    //        enemyDB.setEnemies(mode.getEnemies());
+    //        mode.Save();
+    //        InterSceneImage.singleton.FinishScene(scene);
+    //    }
+    //}
 
    
 }

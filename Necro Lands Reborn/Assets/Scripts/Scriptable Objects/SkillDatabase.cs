@@ -2,37 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class SkillDatabase {
+public class SkillDatabase : ScriptableObject {
 
-    [SerializeField] private List<string> skillNames;
-    [SerializeField] private List<Skill> skills;
+    [SerializeField] private List<string> skillNames = new List<string>();
+    [SerializeField] private List<Skill> skills = new List<Skill>();
+    [SerializeField] private List<Sprite> skillSprites = new List<Sprite>();
 
-    public SkillDatabase(){
-        skillNames = new List<string>();
-        skills = new List<Skill>();
+    public Sprite getSkillSprite(Skill skill){
+        return skillSprites[skills.IndexOf(skill)];
     }
 
-    public Skill getSkillByName(string n){
-        return skills[skillNames.IndexOf(n)];
+    public Skill getSkillByName(string Name){
+        Debug.Log("Index : " + skillNames.IndexOf(Name));
+        return skills[skillNames.IndexOf(Name)];
     }
 
-    public string getNameOfSkill(Skill sk){
-        return skillNames[skills.IndexOf(sk)];
+    public string getSkillName(Skill skill) {
+        return skillNames[skills.IndexOf(skill)];
     }
-
-    public List<Skill> getSkillsByNames(string[] nn){
-        List<Skill> ss = new List<Skill>();
-        foreach(string n in nn){
-            ss.Add(getSkillByName(n));
-        }
-        return ss;
-    }
-
 }
-
-//[System.Serializable]
-//public class PlayerSkillDatabase {
-//    [SerializeField] private List<string> playerNames;
-//    [SerializeField] private List<List<string>> playerSkills;
-//}

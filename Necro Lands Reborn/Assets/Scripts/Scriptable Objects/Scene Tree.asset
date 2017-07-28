@@ -11,20 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e87966319a62a468ecc9381b2182e0, type: 3}
   m_Name: Scene Tree
   m_EditorClassIdentifier: 
-  Root:
-    name: Main Menu
-    child:
-    - name: Character Selection
-      child:
-      - name: Player Menu
-        child:
-        - name: Game Mode Selection
-          child:
-          - name: Game Scene
-            child: []
-        - name: Settings
-          child: []
-        - name: Shop
-          child: []
-    - name: Settings
-      child: []
+  Root: {fileID: 11400000, guid: a97f24989fc86264caddb46b6e1a9fdc, type: 2}
+  CurrentSceneNode: {fileID: 0}

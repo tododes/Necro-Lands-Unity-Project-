@@ -7,9 +7,10 @@ using System.IO;
 public class SkillShopController : TodoBehaviour {
 
     public static SkillShopController singleton;
-    private PlayerData pData;
+    [SerializeField] private PlayerData pData;
+    [SerializeField] private List<string> currentPlayerSkillNames = new List<string>();
+    private BinaryFormatter bf;
 
-    [SerializeField] private PlayerSkillDatabase playerSkillDB;
     [SerializeField] private SkillShopItem[] shopItem;
 
     void Awake(){
@@ -17,10 +18,15 @@ public class SkillShopController : TodoBehaviour {
     }
 	// Use this for initialization
 	void Start () {
-        BinaryFormatter bf = new BinaryFormatter();
-        FileStream fs = File.Open(Application.persistentDataPath + "/PlayerData.data", FileMode.Open);
+        bf = new BinaryFormatter();
+        FileStream fs = File.Open(Application.persistentDataPath + SaveKey.SKILLDATABASE_KEY, FileMode.Open);
+        currentPlayerSkillNames = (List<string>) bf.Deserialize(fs);
+
+        fs = File.Open(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY, FileMode.Open);
         pData = (PlayerData) bf.Deserialize(fs);
         Debug.Log(pData.Name);
+
+        fs.Close();
         //shopItem = GetComponentsInChildren<SkillShopItem>();
 
         //playerSkillDB = new PlayerSkillDatabase(bf);
@@ -29,6 +35,16 @@ public class SkillShopController : TodoBehaviour {
         //    shopItem[i].containedSkill = skills[i];
         //}
 	}
+
+    public void SaveData(){
+        FileStream fs = File.Create(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY);
+        bf.Serialize(fs, pData);
+        fs = File.Create(Application.persistentDataPath + SaveKey.SKILLDATABASE_KEY);
+        bf.Serialize(fs, currentPlayerSkillNames);
+        fs.Close();
+    }
+
+    public void AddNewSkillName(string st) { currentPlayerSkillNames.Add(st); }
 
     public void OnExitScene(){
 

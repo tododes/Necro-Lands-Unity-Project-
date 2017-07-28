@@ -29,3 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ultimate Game Scene.unity
     guid: e32c30d55dfc33b4e9e03bdab08b9927
+  - enabled: 1
+    path: Assets/Talent Tree.unity
+    guid: 8c942b663c211944bb6b63841e756325
+  - enabled: 1
+    path: Assets/Skill Shop.unity
+    guid: f59ab0ad68e1efe43ad48d7adc149a82

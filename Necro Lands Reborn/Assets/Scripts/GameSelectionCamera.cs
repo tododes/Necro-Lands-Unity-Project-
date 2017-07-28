@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameSelectionCamera : MonoBehaviour {
 
     public static GameSelectionCamera singleton;
-    private int index = 0;
+    [SerializeField] private int index = 0;
     [SerializeField] private int maxIndex;
 
     void Awake(){

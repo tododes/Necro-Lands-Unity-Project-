@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Node : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler {
+public class Node : MonoBehaviour {
 
     [SerializeField] private List<Node> childs = new List<Node>();
     [SerializeField] private Node parent;
@@ -35,6 +35,16 @@ public class Node : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler {
     //    statusChanged = false;
     //}
 
+    public void setChosenChild(Node cc)
+    {
+        chosenChild = cc;
+        for (int i = 0; i < childs.Count; i++)
+        {
+            if (!childs[i].Equals(chosenChild))
+                childs[i].PurelyChangeStatus(0);
+        }
+    }
+
     void Awake(){
         statusColors = new Color[4];
         statusColors[0] = Color.red;
@@ -54,7 +64,7 @@ public class Node : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler {
             NotifyChangeToChild();
             statusChanged = false;
         }
-        
+        spriteRenderer.color = statusColors[status];
     }
 
     public void NotifyChangeToChild(){
@@ -71,8 +81,16 @@ public class Node : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler {
             status = change;
             statusChanged = true;
         }
-        if(change == 2 && parent)
-            parent.ChangeStatus(change + 1);
+        if(change == 2 && parent){
+            Debug.Log(gameObject.name);
+            if(parent)
+                parent.PurelyChangeStatus(change + 1);
+        }
+            
+    }
+
+    public void PurelyChangeStatus(int change){
+        status = change;
     }
 
     public int checkActivatedNode(){
@@ -91,12 +109,25 @@ public class Node : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler {
         talent = t;
     }
 
-    public void OnPointerClick(PointerEventData eventData){
-        ChangeStatus(2);
-        controller.setCurrentTalent(talent);
+    void OnMouseDown(){
+        if(status == 1){
+            ChangeStatus(2);
+            parent.setChosenChild(this);
+            controller.setCurrentTalent(talent);
+        }
     }
 
-    public void OnPointerEnter(PointerEventData eventData){
-        
+    void OnMouseEnter(){
+        //Debug.Log("Enter");
     }
+
+    //public override bool Equals(object other)
+    //{
+    //    Node node = (Node)other;
+    //    if (node.talent.Name == talent.Name)
+    //        Debug.Log(node.talent.Name + " is equal to " + talent.Name);
+    //    else
+    //        Debug.Log(node.talent.Name + " is not equal to " + talent.Name);
+    //    return node.talent.Name == talent.Name;
+    //}
 }

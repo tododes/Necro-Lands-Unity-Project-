@@ -31,6 +31,7 @@ public class DailyRewardManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        playerData = ApplicationInitializer.singleton.getPlayerData();
         if (File.Exists(Application.persistentDataPath + SaveKey.LOGINDATA_KEY))
         {
             lastLoginChrono = LoadLastLoginTime();
@@ -80,9 +81,10 @@ public class DailyRewardManager : MonoBehaviour {
         playerData.TotalMoney += reward.getGoldGain();
         playerData.Exp += reward.getExpGain();
         playerData.Token += reward.getTokenGain();
-        fileStream = File.Create(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY);
-        binaryFormatter.Serialize(fileStream, playerData);
-        fileStream.Close();
+        ApplicationInitializer.singleton.setPlayerData(playerData);
+        //fileStream = File.Create(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY);
+        //binaryFormatter.Serialize(fileStream, playerData);
+        //fileStream.Close();
     }
 
     public void SaveLastLoginTime(Chrono ch){

@@ -433,12 +433,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 04ef6698c4febd949ac452bd2f6ccb18, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &352576103 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114459118770366040, guid: 04ef6698c4febd949ac452bd2f6ccb18,
-    type: 2}
-  m_PrefabInternal: {fileID: 352576102}
-  m_Script: {fileID: 11500000, guid: 1dafe68cdfde0ae4cadb5e0705f92dac, type: 3}
 --- !u!1001 &423216119
 Prefab:
   m_ObjectHideFlags: 0
@@ -563,9 +557,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionDB:
-  - missions: []
-    missionsAccomplishment: 
-    missionsUnlockStatus: 
+  - missions:
+    - name: S1-1
+      description: 
+      kill: 5
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: S1-2
+      description: 
+      kill: 7
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: S1-3
+      description: 
+      kill: 9
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    - name: S1-4
+      description: 
+      kill: 11
+      clock:
+        Minute: 0
+        Second: 0
+      useTimer: 0
+      accomplished: 0
+      unlocked: 0
+    missionsAccomplishment: 00000000
+    missionsUnlockStatus: 01000000
   - missions: []
     missionsAccomplishment: 
     missionsUnlockStatus: 
@@ -630,6 +660,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &733435040
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 384
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 78a90680079f84c409262ac76290c218, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &733543078
 Prefab:
   m_ObjectHideFlags: 0
@@ -1008,17 +1080,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 352576103}
-        m_MethodName: FinishScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Character Selection
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 664672757}
         m_MethodName: Save
         m_Mode: 1
@@ -1100,6 +1161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   sceneTree: {fileID: 11400000, guid: 844f47a6808fe494ba186324196ddf37, type: 2}
+  buttonType: 0
+  image: {fileID: 0}
 --- !u!1 &835512223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,29 +1982,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1914423310}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 352576103}
-        m_MethodName: FinishScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Settings
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1914423310
@@ -2001,3 +2042,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 1
   sceneTree: {fileID: 11400000, guid: 844f47a6808fe494ba186324196ddf37, type: 2}
+  buttonType: 0
+  image: {fileID: 0}

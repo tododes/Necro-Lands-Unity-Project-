@@ -13,7 +13,6 @@ public class ApplicationInitializer : MonoBehaviour {
     [SerializeField] private InventoryData inventoryData;
     [SerializeField] private Chrono loginData;
     [SerializeField] private Mission missionData;
-    [SerializeField] private SkillDatabase skillDB;
     [SerializeField] private List<int> talentTreeNodesStatus;
 
     [SerializeField] private SceneTree sceneTree;
@@ -25,7 +24,15 @@ public class ApplicationInitializer : MonoBehaviour {
         singleton = this;
         bf = new BinaryFormatter();
         sceneTree.OnStartApplication();
+        //playerData = Load<PlayerData>(SaveKey.PLAYERDATA_KEY);
     }
+
+    void Start(){
+        
+    }
+
+    public PlayerData getPlayerData() { return playerData; }
+    public void setPlayerData(PlayerData pd) { playerData = pd; }
 
     public void Save(){
         Save<List<MissionDatabase>>(missionDB, SaveKey.MISSIONDATABASE_KEY);
@@ -38,11 +45,9 @@ public class ApplicationInitializer : MonoBehaviour {
     }
 
     private void Save<T>(T obj, string path){
-        if (!File.Exists(path)) {
-            FileStream fs = File.Create(Application.persistentDataPath + path);
-            bf.Serialize(fs, obj);
-            fs.Close();
-        }
+        FileStream fs = File.Create(Application.persistentDataPath + path);
+        bf.Serialize(fs, obj);
+        fs.Close();
     }
 
     private T Load<T>(string path){

@@ -201,11 +201,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -213,12 +218,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -226,9 +233,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &135874836
@@ -357,11 +369,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -369,12 +386,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -382,9 +401,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &180983110
@@ -513,11 +537,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -525,12 +554,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -538,9 +569,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &213298110
@@ -576,6 +612,48 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 213298106}
+--- !u!1001 &250194701
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 384
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048344569256892, guid: 78a90680079f84c409262ac76290c218, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 78a90680079f84c409262ac76290c218, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &301184428
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,11 +747,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -681,12 +764,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -694,9 +779,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &301184432
@@ -914,11 +1004,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -926,12 +1021,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -939,9 +1036,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &348883313
@@ -977,6 +1079,106 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 348883309}
+--- !u!1001 &443611012
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 700016754}
+    m_Modifications:
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -329
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -220
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898899502410714, guid: ab3bf67fe9c41c84489b7146490828c4,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ab3bf67fe9c41c84489b7146490828c4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &495873268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,11 +1231,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -1041,12 +1248,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -1054,9 +1263,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &495873271
@@ -1313,11 +1527,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -1325,12 +1544,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -1338,9 +1559,19 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
+--- !u!224 &700016754 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22407292, guid: ff79c1a8441257041b9307bffe04244c,
+    type: 2}
+  m_PrefabInternal: {fileID: 700016751}
 --- !u!1 &707889759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,11 +1665,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -1446,12 +1682,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -1459,9 +1697,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &707889763
@@ -1590,11 +1833,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -1602,12 +1850,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -1615,9 +1865,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &839818757
@@ -1746,11 +2001,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -1758,12 +2018,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -1771,9 +2033,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &979642539
@@ -1861,11 +2128,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -1873,12 +2145,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -1886,9 +2160,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1040845919
@@ -2017,11 +2296,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -2029,12 +2313,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -2042,9 +2328,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1075760281
@@ -2314,11 +2605,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -2326,12 +2622,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -2339,9 +2637,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1188560883
@@ -2470,11 +2773,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -2482,12 +2790,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -2495,9 +2805,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1242481343
@@ -2739,11 +3054,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -2751,12 +3071,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -2764,9 +3086,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1407205199
@@ -2854,11 +3181,16 @@ MonoBehaviour:
     name: Green Sword
     Active: 0
     bonusHP: 100
+    bonusMana: 0
     bonusAttack: 20
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -2866,12 +3198,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -2879,9 +3213,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1443648258
@@ -3051,11 +3390,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -3063,12 +3407,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -3076,9 +3422,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1532942519
@@ -3207,11 +3558,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -3219,12 +3575,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -3232,9 +3590,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1623654201
@@ -3322,11 +3685,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -3334,12 +3702,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -3347,9 +3717,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1640429881
@@ -3519,11 +3894,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -3531,12 +3911,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -3544,9 +3926,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1754564811
@@ -3740,11 +4127,16 @@ MonoBehaviour:
     name: 
     Active: 0
     bonusHP: 0
+    bonusMana: 0
     bonusAttack: 0
     bonusArmor: 0
     bonusSpAttack: 0
     bonusSpArmor: 0
     bonusSpeed: 0
+    bonusGoldRegen: 0
+    bonusHPRegen: 0
+    bonusManaRegen: 0
+    shootIntervalReduction: 0
     activeBonusHP: 0
     activeBonusAttack: 0
     activeBonusArmor: 0
@@ -3752,12 +4144,14 @@ MonoBehaviour:
     activeBonusSpArmor: 0
     activeBonusSpeed: 0
     price: 0
+    level: 0
     passiveModifier:
       critical: 0
       slow: 0
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
     activeModifier:
       critical: 0
@@ -3765,9 +4159,14 @@ MonoBehaviour:
       armorReduction: 0
       lifeSteal: 0
       bashStun: 0
+      cleave: 0
       bleed: 0
+    DPSAura: 0
     damageReturn: 0
     spellLifeSteal: 0
+    damageAmplification: 0
+    bonusEvasion: 0
+    maim: 0
   panel: {fileID: 700016753}
   itemSpriteDB: {fileID: 11400000, guid: bdfae1d0a6cc2924c9105032f150f8c0, type: 2}
 --- !u!114 &1821665762
@@ -3898,6 +4297,7 @@ MonoBehaviour:
     Level: 0
     Exp: 0
     Token: 0
+    currentStage: 0
   inventoryData:
     currentSavedItems: []
     allSavedItems: []

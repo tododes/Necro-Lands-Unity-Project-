@@ -9,6 +9,7 @@ public class PlayerMenuManager : MonoBehaviour {
     public static PlayerMenuManager singleton;
     [SerializeField] private List<Item> storage = new List<Item>();
     [SerializeField] private List<Item> inventoryForBattle = new List<Item>();
+    [SerializeField] private List<string> playerSkillNames = new List<string>();
 
     [SerializeField] private InventoryData inventoryData;
 
@@ -23,6 +24,10 @@ public class PlayerMenuManager : MonoBehaviour {
         bf = new BinaryFormatter();
         FileStream fs = File.Open(Application.persistentDataPath + SaveKey.INVENTORY_KEY, FileMode.Open);
         inventoryData = (InventoryData) bf.Deserialize(fs);
+
+        fs = File.Open(Application.persistentDataPath + SaveKey.SKILLDATABASE_KEY, FileMode.Open);
+        playerSkillNames = (List<string>)bf.Deserialize(fs);
+
         fs.Close();
         for (int i = 0; i < inventoryData.getAllSavedItemsCount(); i++){
             storage.Add(inventoryData.getAllSavedItemsAt(i));

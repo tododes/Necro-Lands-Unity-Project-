@@ -17,6 +17,7 @@ public class TalentTreeController : TodoBehaviour {
     private Node Root;
     private StringBuilder sb;
     private BinaryFormatter bf;
+    [SerializeField]
     private List<int> nodeStatusData = new List<int>();
 
     [SerializeField] private Talent currentTalent;
@@ -34,19 +35,21 @@ public class TalentTreeController : TodoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        //File.Delete(Application.persistentDataPath + SaveKey.TALENTTREEDATA_KEY);
         bf = new BinaryFormatter();
         nodes = new List<Node>(GetComponentsInChildren<Node>());
+        //File.Delete(Application.persistentDataPath + SaveKey.TALENTTREEDATA_KEY);
         if (Application.loadedLevelName.Contains("Main Menu")){
             FileStream fs = File.Create(Application.persistentDataPath + SaveKey.PLAYERTALENTDATABASE_KEY);
             bf.Serialize(fs, playerTalentCollection);
             fs.Close();
+            //File.Delete(Application.persistentDataPath + SaveKey.TALENTTREEDATA_KEY);
             if (!File.Exists(Application.persistentDataPath + SaveKey.TALENTTREEDATA_KEY))
-                Root.ChangeStatus(2);
-            else
-                Debug.Log("Did exist");
+                SaveTreeData();
+            loadTalentTree();
             StartCoroutine(DelayToDestroy());
         }
-        else if (Application.loadedLevelName.Contains("SkillTree")) {
+        else if (Application.loadedLevelName.Contains("Talent Tree")) {
             FileStream fs = File.Open(Application.persistentDataPath + SaveKey.PLAYERTALENTDATABASE_KEY, FileMode.Open);
             List<PlayerTalentList> ptl = (List<PlayerTalentList>)bf.Deserialize(fs);
             playerTalentCollection = ptl;
@@ -61,14 +64,14 @@ public class TalentTreeController : TodoBehaviour {
 	}
 
     private IEnumerator DelayToDestroy(){
-        yield return new WaitForSeconds(1);
-        if (!File.Exists(Application.persistentDataPath + SaveKey.TALENTTREEDATA_KEY)){
-            List<int> statuses = new List<int>();
-            for (int i = 0; i < nodes.Count; i++){
-                statuses.Add(nodes[i].getStatus());
-            }
-            ApplicationInitializer.singleton.setTalentStatusData(statuses);
+        yield return new WaitForSeconds(2);
+        
+        List<int> statuses = new List<int>();
+        for (int i = 0; i < nodes.Count; i++){
+            statuses.Add(nodes[i].getStatus());
         }
+        ApplicationInitializer.singleton.setTalentStatusData(statuses);
+
         Destroy(gameObject);
     }
 	
@@ -78,18 +81,28 @@ public class TalentTreeController : TodoBehaviour {
 	}
 
     public void SaveTreeData(){
+        Debug.Log(File.Exists(Application.persistentDataPath + SaveKey.TALENTTREEDATA_KEY));
+        if (!File.Exists(Application.persistentDataPath + SaveKey.TALENTTREEDATA_KEY))
+            Root.ChangeStatus(2);
+        //else
+        //    loadTalentTree();
         FileStream fs = File.Create(Application.persistentDataPath + SaveKey.TALENTTREEDATA_KEY);
-        for(int i = 0; i < 18; i++){
+        if (nodeStatusData.Count > 0)
+            nodeStatusData.Clear();
+        for (int i = 0; i < 18; i++){
             nodeStatusData.Add(nodes[i].getStatus());
         }
+        //Debug.Log("Save it");
         bf.Serialize(fs, nodeStatusData);
         fs.Close();
     }
 
-    private List<Talent> InitializeTalentTreeFromPlayer(){
+    private List<Talent> InitializeTalentTreeFromPlayer()
+    {
         FileStream fs = File.Open(Application.persistentDataPath + SaveKey.PLAYERDATA_KEY, FileMode.Open);
-        PlayerData pd = (PlayerData) bf.Deserialize(fs);
-        for(int i = 0; i < playerTalentCollection.Count; i++){
+        PlayerData pd = (PlayerData)bf.Deserialize(fs);
+        for (int i = 0; i < playerTalentCollection.Count; i++)
+        {
             List<Talent> talents = playerTalentCollection[i].getTalentByName(pd.Name);
             if (talents != null)
                 return talents;
@@ -102,7 +115,7 @@ public class TalentTreeController : TodoBehaviour {
         List<int> data = (List<int>) bf.Deserialize(fs);
         for(int i = 0; i< 18; i++){
             nodeStatusData.Add(data[i]);
-            nodes[i].ChangeStatus(data[i]);
+            nodes[i].PurelyChangeStatus(data[i]);
         }
         fs.Close();
     }

@@ -32,6 +32,7 @@ public class PlayerSelectionContainer : TodoBehaviour {
         index = 0;
         desiredRotation = 0f;
         bf = new BinaryFormatter();
+        //File.Delete(Application.persistentDataPath + SaveKey.SKILLDATABASE_KEY);
     }
 
     void Update(){
@@ -45,10 +46,12 @@ public class PlayerSelectionContainer : TodoBehaviour {
     }
 
     public void SavePlayerName(){
-        playerData.Name = attributes[index].getPlayerName();
-        playerData.Level = 1;
+        PlayerAttribute pa = attributes[index];
+        playerData.Name = pa.getPlayerName();
+        playerData.Level = playerData.currentStage = 1;
         playerData.TotalMoney = 100;
         Save<PlayerData>(SaveKey.PLAYERDATA_KEY, playerData);
+        Save<List<string>>(SaveKey.SKILLDATABASE_KEY, pa.getPlayerSkillNames());
         Save<InventoryData>(SaveKey.INVENTORY_KEY, id);
         List<PlayerTalentList> ptl = Load<List<PlayerTalentList>>(SaveKey.PLAYERTALENTDATABASE_KEY);
         for(int i = 0; i < ptl.Count; i++){

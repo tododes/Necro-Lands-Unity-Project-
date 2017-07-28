@@ -112,7 +112,6 @@
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorActiveSkill1.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorActiveSkill2.cs" />
     <Compile Include="Assets\Gun + Skill\Skill System\Trevor\TrevorPassiveSkill.cs" />
-    <Compile Include="Assets\InterSceneButton.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -157,9 +156,9 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
-    <Compile Include="Assets\Rune.cs" />
     <Compile Include="Assets\Scripts\ApplicationInitializer.cs" />
     <Compile Include="Assets\Scripts\AreYouSurePanel.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Aura.cs" />
     <Compile Include="Assets\Scripts\Branch.cs" />
     <Compile Include="Assets\Scripts\CharacterBody.cs" />
@@ -189,6 +188,7 @@
     <Compile Include="Assets\Scripts\GregoryCylinder.cs" />
     <Compile Include="Assets\Scripts\HPBar.cs" />
     <Compile Include="Assets\Scripts\HealingRune.cs" />
+    <Compile Include="Assets\Scripts\InterSceneButton.cs" />
     <Compile Include="Assets\Scripts\InterSceneImage.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\InventoryItemImage.cs" />
@@ -219,8 +219,8 @@
     <Compile Include="Assets\Scripts\PlayerLevelSlider.cs" />
     <Compile Include="Assets\Scripts\PlayerMenuManager.cs" />
     <Compile Include="Assets\Scripts\PlayerSelectionContainer.cs" />
-    <Compile Include="Assets\Scripts\PlayerSkillDatabase.cs" />
     <Compile Include="Assets\Scripts\Reward.cs" />
+    <Compile Include="Assets\Scripts\Rune.cs" />
     <Compile Include="Assets\Scripts\RuneGenerator.cs" />
     <Compile Include="Assets\Scripts\SaveKey.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\GameModeEnemyDatabase.cs" />
@@ -228,6 +228,7 @@
     <Compile Include="Assets\Scripts\Scriptable Objects\ItemSpriteDatabase.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\PlayerData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\SceneTree.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\SceneTreeNode.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\ScriptableObjectFactory.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\SettingsData.cs" />
     <Compile Include="Assets\Scripts\Scriptable Objects\SkillDatabase.cs" />

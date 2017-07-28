@@ -13,6 +13,7 @@ public class GameMode : MonoBehaviour {
     protected BinaryFormatter binaryFormatter;
     protected FileStream fileStream;
     protected bool Unlocked;
+    //protected GameSelectionCamera selectionCamera;
 
     [SerializeField] protected Enemy[] enemies;
 
@@ -43,8 +44,8 @@ public class GameMode : MonoBehaviour {
     }
 
     public virtual void Save(){
-        Clock clock = new Clock(3, 0);
-        mission = new Mission("Ez standard", "Catch the cat", 3, clock, true, false, true);
+        //Clock clock = new Clock(3, 0);
+        //mission = new Mission("Ez standard", "Catch the cat", 3, clock, true, false, true);
         SaveMission<Mission>(mission, SaveKey.MISSION_KEY);
     }
 }

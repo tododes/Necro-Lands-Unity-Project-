@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour  {
     protected BinaryFormatter bf;
     protected MissionAccomplishedPanel panel;
     protected bool Accomplished;
-    protected MissionDatabase missionDatabase;
+    //protected MissionDatabase missionDatabase;
 
     public bool isAccomplished{
         get { return Accomplished; }
@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour  {
 
     protected virtual void Start () {
         bf = new BinaryFormatter();
-        missionDatabase = LoadMissionDatabase();
+        //missionDatabase = LoadMissionDatabase();
         if(File.Exists(Application.persistentDataPath + SaveKey.MISSION_KEY)){
             game = new Game<Mission>(SaveKey.MISSION_KEY);
             objective = game.getObjective();
@@ -41,15 +41,15 @@ public class GameController : MonoBehaviour  {
         }
         objective.validateAccomplishment(fpsCharacter.getTotalKill());
         if (objective.isAccomplished()){
-            missionDatabase.MissionAccomplished(objective);
+            //missionDatabase.MissionAccomplished(objective);
             panel.Trigger();
         }
 	}
 
-    protected MissionDatabase LoadMissionDatabase(){
-        FileStream fs = File.Open(Application.persistentDataPath + SaveKey.MISSIONDATABASE_KEY, FileMode.Open);
-        MissionDatabase m = (MissionDatabase) bf.Deserialize(fs);
-        fs.Close();
-        return m;
-    }
+    //protected MissionDatabase LoadMissionDatabase(){
+    //    FileStream fs = File.Open(Application.persistentDataPath + SaveKey.MISSIONDATABASE_KEY, FileMode.Open);
+    //    MissionDatabase m = (MissionDatabase) bf.Deserialize(fs);
+    //    fs.Close();
+    //    return m;
+    //}
 }

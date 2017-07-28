@@ -4,12 +4,10 @@ using UnityEngine;
 using UnityEditor;
 
 public class ScriptableObjectFactory : MonoBehaviour {
-
-    [MenuItem("Assets/Create/Scene Tree")]
+    [MenuItem("Assets/Create/Scene Tree Node")]
     public static void CreateAsset(){
-        SceneTree instance = ScriptableObject.CreateInstance<SceneTree>();
-        AssetDatabase.CreateAsset(instance, "Assets/Scripts/Scriptable Objects/Scene Tree.asset");
+        SceneTreeNode instance = ScriptableObject.CreateInstance<SceneTreeNode>();
+        AssetDatabase.CreateAsset(instance, "Assets/Scripts/Scriptable Objects/Scenes/Skill Shop Node.asset");
         AssetDatabase.SaveAssets();
     }
-
 }
