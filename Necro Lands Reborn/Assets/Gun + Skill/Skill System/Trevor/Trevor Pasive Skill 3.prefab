@@ -54,5 +54,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   owner: {fileID: 0}
   gun: {fileID: 0}
-  gun: {fileID: 0}
-  trevorBullet: {fileID: 0}
+  meteorSpawner: {fileID: 1723938662217970, guid: c8de99f2f02318e4eafdcea17252cd9e,
+    type: 2}
+  meteors: {fileID: 1692634560799204, guid: 2172dc4d8d8a8e24f83c848d60d78bfe, type: 2}
