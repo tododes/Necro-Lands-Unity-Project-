@@ -56,7 +56,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4834987861483306}
   - component: {fileID: 114611183466783056}
-  - component: {fileID: 111343051768105424}
   m_Layer: 0
   m_Name: Gun 1
   m_TagString: Untagged
@@ -341,21 +340,6 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1411129802416812}
   m_Enabled: 1
---- !u!111 &111343051768105424
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1492549151433314}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: b37533fdcd9595047a467f832ce2a4bf, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: b37533fdcd9595047a467f832ce2a4bf, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &114164458429174966
 MonoBehaviour:
   m_ObjectHideFlags: 1

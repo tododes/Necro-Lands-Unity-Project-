@@ -54,6 +54,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   owner: {fileID: 0}
   gun: {fileID: 0}
-  damage: 0
+  damage: 40
   InActiveRange: 0
-  AreaRange: 0
+  AreaRange: 4

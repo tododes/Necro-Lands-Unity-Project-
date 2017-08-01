@@ -5,24 +5,23 @@ using UnityEngine;
 public class EnemyBody : CharacterBody {
 
 
-    private Enemy me;
-    [SerializeField] private bool inRange;
+    protected Enemy me;
+    [SerializeField]
+    protected bool inRange;
  
     // Use this for initialization
-    protected override void Start()
-    {
+    protected override void Start(){
         base.Start();
         me = Cp<Enemy>();
         inRange = false;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    protected void Update(){
 
     }
 
-    void OnTriggerEnter(Collider coll)
+    protected void OnTriggerEnter(Collider coll)
     {
         if (coll.tag.Contains("Attack Point"))
         {
@@ -38,7 +37,7 @@ public class EnemyBody : CharacterBody {
         }
     }
 
-    void OnTriggerExit(Collider coll)
+    protected void OnTriggerExit(Collider coll)
     {
         if (coll.tag.Contains("Attack Point"))
         {
@@ -68,7 +67,7 @@ public class EnemyBody : CharacterBody {
 
     }
 
-    private IEnumerator AttackPlayer(FPSCharacter fpsCharacter)
+    protected IEnumerator AttackPlayer(FPSCharacter fpsCharacter)
     {
         while (inRange && !fpsCharacter.isDead())
         {
@@ -76,12 +75,16 @@ public class EnemyBody : CharacterBody {
             int damage = (int)(me.GetAttack * 100 / (100 + (fpsCharacter.GetArmor * 2)));
             if (damage < 1) damage = 1;
             fpsCharacter.getDamage(damage);
+            EnemyBodyModifier(me, damage);
             CharacterBody body = fpsCharacter.GetComponent<CharacterBody>();
             if (body){
                 body.OnGetHitReaction();
             }
-            Debug.Log(inRange);
         }
         
+    }
+
+    protected virtual void EnemyBodyModifier(Enemy enemy, float damage){
+
     }
 }

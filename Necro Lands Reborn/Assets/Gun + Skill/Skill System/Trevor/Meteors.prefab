@@ -1128,7 +1128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0aceabb8a0a8d4f8e54ab0f1196d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 12
+  damage: 5
   spellLifesteal: 0
   owner: {fileID: 0}
 --- !u!114 &114670412026034832

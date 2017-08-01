@@ -133,6 +133,8 @@ MonoBehaviour:
   damage: 10
   speed: 150
   Range: 250
+  FuryShotPercentage: 0
+  CombatFuryBonus: 0
 --- !u!135 &135838558467140848
 SphereCollider:
   m_ObjectHideFlags: 1

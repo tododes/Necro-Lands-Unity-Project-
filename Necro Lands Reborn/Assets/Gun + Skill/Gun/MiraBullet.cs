@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class MiraBullet : Bullet {
 
+    [SerializeField]
+    private float FuryShotPercentage;
+
+    [SerializeField]
+    private int CombatFuryBonus;
+
     public override void OnHitEnemy(Enemy enemy, int damage){
-        StartCoroutine(ActivateDamageFury(0.05f));
+        StartCoroutine(ActivateDamageFury(FuryShotPercentage));
         if(enemy.GetHP <= 0){
             StartCoroutine(ActivateBonusDamage());
         }
     }
 
     private IEnumerator ActivateBonusDamage(){
-        owner.ModifyAttack(20);
+        owner.ModifyAttack(CombatFuryBonus);
         yield return new WaitForSeconds(10);
-        owner.ModifyAttack(-20);
+        owner.ModifyAttack(-CombatFuryBonus);
     }
 
     private IEnumerator ActivateDamageFury(float percentage){
@@ -25,4 +31,7 @@ public class MiraBullet : Bullet {
         Debug.Log("Reset");
         owner.ModifyAttack(-bonusDamage);
     }
+
+    public void ModifyCombatFury(int i) { CombatFuryBonus += i; }
+    public void ModifyFuryShot(float f) { FuryShotPercentage += f; }
 }

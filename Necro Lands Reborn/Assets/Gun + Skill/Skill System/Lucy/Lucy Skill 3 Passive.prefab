@@ -54,4 +54,5 @@ MonoBehaviour:
   sprite: {fileID: 0}
   owner: {fileID: 0}
   gun: {fileID: 0}
-  charmAuraObject: {fileID: 0}
+  charmAuraObject: {fileID: 1978335778703650, guid: 908ffeaa37b21a14f985c02a63786a9c,
+    type: 2}

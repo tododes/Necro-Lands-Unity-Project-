@@ -16,7 +16,9 @@ public class Skill : MonoBehaviour {
 	protected virtual void Start (){
         InitializeSkill();
         coolDownStatus = 0.000f;
-        gun = owner.GetComponentInChildren<Gun>();
+        if(owner)
+            if(owner.GetComponentInChildren<Gun>())
+                gun = owner.GetComponentInChildren<Gun>();
 	}
 
     protected virtual void Update (){

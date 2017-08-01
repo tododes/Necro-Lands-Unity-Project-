@@ -42,8 +42,9 @@ public class Gun : TodoBehaviour {
         anim = Cp<Animation>();
 	}
 
-    protected void Update ()
-    {
+    public bool isThisTheBulletToBeInstantiated(GameObject b) { return bullet == b; }
+
+    protected void Update (){
         if(TotalAmmo > 0 || CurrentStockAmmo > 0)
         {
             if (STYPE == SHOOTTYPE.ASSAULT)
@@ -109,9 +110,12 @@ public class Gun : TodoBehaviour {
 
     public virtual void Shoot()
     {
-        if (anim.isPlaying)
-            anim.Stop();
-        anim.Play();
+        Debug.Log("shoot");
+        if (anim){
+            if (anim.isPlaying)
+                anim.Stop();
+            anim.Play();
+        }
         GameObject g = Instantiate(bullet, gunEnd.position, gunEnd.rotation) as GameObject;
         g.GetComponent<Bullet>().SetOwner(owner);
         CurrentStockAmmo--;

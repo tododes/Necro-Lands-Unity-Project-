@@ -36,6 +36,10 @@ public class FPSCharacterController : TodoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (!myBody)
+            myBody = Cp<CharacterBody>();
+        //if (!currentGun)
+        //    currentGun = Cp_C<Gun>();
         if (!myself.isDead()){
             desiredRotation.y = transform.eulerAngles.y;
             transform.eulerAngles = desiredRotation;

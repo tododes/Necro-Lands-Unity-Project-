@@ -9,9 +9,8 @@ public class Enemy : GameActor {
    
     [SerializeField] private Reward reward;
 
-    void Start(){
-        HP = MaxHP = 100;
-        GoldGain = 50;
+    protected virtual void Start(){
+       
     }
 
     public Reward getReward() { return reward; }

@@ -8,6 +8,8 @@ public class LucyPassiveSkill2 : Skill {
 
     public override void InitializeSkill(){
         base.InitializeSkill();
+        if (!gun)
+            gun = owner.gameObject.GetComponentInChildren<Gun>();
         gun.SetBulletToBeInstantiated(lucyBullet);
     }
 }

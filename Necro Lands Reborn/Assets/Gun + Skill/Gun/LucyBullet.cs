@@ -8,31 +8,40 @@ public class LucyBullet : Bullet {
     private bool onCooldown;
 
     private WaitForSeconds waitForASecond = new WaitForSeconds(1);
+    private MeshRenderer myRenderer;
+    private Light light;
+    private bool NotActiveAnymore;
 
     protected new void Start(){
         base.Start();
         onCooldown = false;
+        myRenderer = GetComponent<MeshRenderer>();
+        light = GetComponent<Light>();
     }
 
     public override void OnHitEnemy(Enemy enemy, int damage){
+        myRenderer.enabled = light.enabled = false;
+        NotActiveAnymore = true;
         if (!onCooldown){
             StartCoroutine(poisonEnemy(enemy));
             StartCoroutine(poisonCooldown());
         }
-        gameObject.SetActive(false);
+        
     }
 
   
 
     protected override void Update(){
-    
+        if(!NotActiveAnymore)
+            base.Update();
     }
 
     private IEnumerator poisonEnemy(Enemy enemy){
-        for(int i = 0; i< 5; i++){
-            yield return waitForASecond;
+        for (int i = 0; i< 5; i++){
+            yield return new WaitForSeconds(1);
             enemy.getDamage(poisonDamage);
         }
+        gameObject.SetActive(false);
     }
 
     private IEnumerator poisonCooldown(){

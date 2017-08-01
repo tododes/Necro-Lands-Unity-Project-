@@ -14,7 +14,7 @@ public class GregoryCylinder : Magic {
     }
 
     void OnTriggerStay(Collider coll){
-        if (coll.tag.Contains("Enemy")){
+        if (coll.tag.Contains("Enemy")) { 
             float dmg = damage * Time.deltaTime;
             coll.GetComponent<Enemy>().getDamage(damage * Time.deltaTime);
             owner.Heal(dmg * spellLifesteal);

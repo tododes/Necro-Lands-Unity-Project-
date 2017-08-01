@@ -54,4 +54,4 @@ MonoBehaviour:
   sprite: {fileID: 0}
   owner: {fileID: 0}
   gun: {fileID: 0}
-  lucyBullet: {fileID: 0}
+  lucyBullet: {fileID: 1666049684428714, guid: 99a2a0252b3f91e48a258728635dbf03, type: 2}

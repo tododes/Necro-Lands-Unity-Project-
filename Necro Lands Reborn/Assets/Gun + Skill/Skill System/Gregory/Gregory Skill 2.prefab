@@ -54,5 +54,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   owner: {fileID: 0}
   gun: {fileID: 0}
-  CylinderPrefab: {fileID: 0}
-  MyCylinder: {fileID: 0}
+  CylinderPrefab: {fileID: 1973909701067262, guid: 647a8cb302e571a4a8acfabbdfa261fb,
+    type: 2}
+  MyCylinder: {fileID: 1973909701067262, guid: 647a8cb302e571a4a8acfabbdfa261fb, type: 2}

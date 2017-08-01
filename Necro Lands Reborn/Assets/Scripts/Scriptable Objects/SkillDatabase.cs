@@ -12,8 +12,7 @@ public class SkillDatabase : ScriptableObject {
         return skillSprites[skills.IndexOf(skill)];
     }
 
-    public Skill getSkillByName(string Name){
-        Debug.Log("Index : " + skillNames.IndexOf(Name));
+    public Skill getSkillByName(string Name) { 
         return skills[skillNames.IndexOf(Name)];
     }
 

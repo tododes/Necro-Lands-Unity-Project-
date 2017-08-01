@@ -4,9 +4,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
+public enum Gender { MALE, FEMALE }
 
 public class FPSCharacter : GameActor
 {
+    //[SerializeField]
+    //public Gender gender;
+
     [SerializeField]
     protected PlayerData playerData;
 
@@ -65,9 +69,11 @@ public class FPSCharacter : GameActor
     public int getTotalKill() { return totalKill; }
     public void killEnemy() { totalKill++; }
 
-	void Update ()
+	protected void Update ()
     {
-
+        if (!gun){
+            gun = weaponManager.getGunAt(0);
+        }
 	}
 
     public void GainReward(Reward reward){

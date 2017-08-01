@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameActor : TodoBehaviour {
 
+    [SerializeField]
+    public Gender gender;
     [SerializeField] protected string Name;
     [SerializeField] protected float MaxHP;
     [SerializeField] protected float HP;
@@ -25,8 +27,21 @@ public class GameActor : TodoBehaviour {
     public float GetSpeed { get { return Speed; } protected set { Speed = value; } }
     public int GetBounty { get { return Bounty; } protected set { Bounty = value; } }
 
+    public void SlowSpeed(float percentage, int duration){
+        StartCoroutine(SlowMovement(percentage, duration));
+    }
+
     public void SlowSpeed(float percentage){
+        Debug.Log(percentage * Speed);
         Speed -= percentage * Speed;
+        Debug.Log(Speed);
+    }
+
+    private IEnumerator SlowMovement(float percentage, int duration){
+        float dec = percentage * Speed;
+        Speed -= dec;
+        yield return new WaitForSeconds(duration);
+        Speed += dec;
     }
 
     public virtual void getDamage(float amount){

@@ -43,7 +43,6 @@ public class FPSSkilledCharacter : FPSCharacter
         //Debug.Log("Skillname : " + skillNames.Count);
         for(int i = 0; i < skillNames.Count; i++){
             Skill skill = skillDB.getSkillByName(skillNames[i]);
-            Debug.Log(skill.name);
             Skill skillObj = Instantiate<Skill>(skill);
            
             skillObj.gameObject.transform.parent = transform;
@@ -111,7 +110,4 @@ public class FPSSkilledCharacter : FPSCharacter
         return spellLifesteal;
     }
 
-    void Update(){
-        
-    }
 }

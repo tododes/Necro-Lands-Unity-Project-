@@ -11,14 +11,30 @@ public class WeaponManager : MonoBehaviour {
     private Transform gunHolder;
 
     private int currentWeaponSlotIndex;
+    private FPSCharacter character;
+    private WaitForSeconds oneSec = new WaitForSeconds(1);
 
     // Use this for initialization
     void Start () {
+        character = GameObject.FindGameObjectWithTag("Player").GetComponent<FPSCharacter>();
         currentWeaponSlotIndex = 0;
+        StartCoroutine(setGuns());
 	}
+
+    private IEnumerator setGuns(){
+        while (!character.isDead()){
+            Gun[] gs = gunHolder.GetComponentsInChildren<Gun>();
+            guns.Clear();
+            for(int i = 0; i < gs.Length; i++){
+                guns.Add(gs[i]);
+            }
+            yield return oneSec;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
+        
         for(int i = 0; i < guns.Count; i++){
             if (i == currentWeaponSlotIndex && !guns[i].gameObject.activeInHierarchy)
                 guns[i].gameObject.SetActive(true);

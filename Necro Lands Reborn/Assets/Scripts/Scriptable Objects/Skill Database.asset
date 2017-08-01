@@ -21,6 +21,9 @@ MonoBehaviour:
   - LS1
   - LS2
   - LS3
+  - MS1
+  - MS2
+  - MS3
   skills:
   - {fileID: 114318368619665842, guid: 9429800254bb9154483fbfc4670c70c3, type: 2}
   - {fileID: 114985580482536990, guid: 56362fd3e7251d04aa57eae9dbc0ea32, type: 2}
@@ -31,4 +34,7 @@ MonoBehaviour:
   - {fileID: 114267842316378012, guid: 281e9f88909c1374396e5a3974c3acd6, type: 2}
   - {fileID: 114130059231622384, guid: 8f82fcd7076782a4ab8a904ec53f8287, type: 2}
   - {fileID: 114372086074413532, guid: 515039b2b3bdbf344bf90674e2ce6fc3, type: 2}
+  - {fileID: 114626506218995590, guid: 1d472e2bfef9b3c4f9f040668b2d5b11, type: 2}
+  - {fileID: 114240261321760020, guid: 5015f36b0eca4564e9c940ac22d1c83c, type: 2}
+  - {fileID: 114413568062171844, guid: 9d69615021efd0848b7d63ece78f530b, type: 2}
   skillSprites: []

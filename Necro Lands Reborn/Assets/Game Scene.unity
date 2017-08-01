@@ -784,6 +784,11 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: e796d4daa43d50c44b0c954be57fbe95,
         type: 2}
+    - target: {fileID: 20376495517978518, guid: 3d184e39aaba2924586e544f317d0a35,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d184e39aaba2924586e544f317d0a35, type: 2}
   m_IsPrefabParent: 0
@@ -2698,6 +2703,10 @@ Prefab:
     - target: {fileID: 1471400698746944, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
       propertyPath: m_Name
       value: Hellephant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471400698746944, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64b4c2f221c46624daa46836bc2bde2b, type: 2}

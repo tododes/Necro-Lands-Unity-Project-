@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82dda5bf05fab8e43820a62146445c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Mira
+  playerName: Lucy
   skillNames:
   - LS1
   - LS2
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82dda5bf05fab8e43820a62146445c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Lucy
+  playerName: Trevor
   skillNames:
   - TS1
   - TS2
@@ -1150,8 +1150,8 @@ MonoBehaviour:
   attributes:
   - {fileID: 1400891985}
   - {fileID: 2002058507}
-  - {fileID: 287676136}
   - {fileID: 1014328410}
+  - {fileID: 287676136}
   playerData:
     TotalMoney: 0
     Name: 
@@ -1278,7 +1278,7 @@ MonoBehaviour:
   playerName: Gregory
   skillNames:
   - GS1
-  - GS2
+  - GS3
   - GS3
 --- !u!1 &1452762658
 GameObject:
@@ -1833,7 +1833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82dda5bf05fab8e43820a62146445c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Trevor
+  playerName: Mira
   skillNames:
   - MS1
   - MS2
